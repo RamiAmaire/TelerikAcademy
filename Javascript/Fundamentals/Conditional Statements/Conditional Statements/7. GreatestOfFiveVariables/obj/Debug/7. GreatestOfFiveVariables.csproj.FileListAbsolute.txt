@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\7. GreatestOfFiveVariables\bin\_7.GreatestOfFiveVariables.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\7. GreatestOfFiveVariables\bin\_7.GreatestOfFiveVariables.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\7. GreatestOfFiveVariables\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\7. GreatestOfFiveVariables\obj\Debug\_7.GreatestOfFiveVariables.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\7. GreatestOfFiveVariables\obj\Debug\_7.GreatestOfFiveVariables.pdb

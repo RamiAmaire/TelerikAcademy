@@ -1,0 +1,5 @@
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\8. MaxSum\bin\_8.MaxSum.dll
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\8. MaxSum\bin\_8.MaxSum.pdb
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\8. MaxSum\obj\Debug\ResolveAssemblyReference.cache
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\8. MaxSum\obj\Debug\_8.MaxSum.dll
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\8. MaxSum\obj\Debug\_8.MaxSum.pdb

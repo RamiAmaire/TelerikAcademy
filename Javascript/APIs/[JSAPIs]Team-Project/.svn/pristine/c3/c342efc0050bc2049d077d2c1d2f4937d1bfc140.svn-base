@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minesweeper</title>
+        <script src="libs/jquery-1.10.1.js"></script>
+        <script src="libs/classical-oop.js"></script>
+    </head>
+
+    <body>
+        <script src="scripts/Cell.js"></script>
+        <script src="scripts/MineCell.js"></script>
+        <script src="scripts/NumberCell.js"></script>
+        <script src="scripts/Field.js"></script>
+        <script src="scripts/Timer.js"></script>
+        <script>
+            // Manual tests
+            var cell = new Cell(5, 5);
+            console.log(cell.row + " " + cell.col);
+
+            var mineCell = new MineCell(5, 5);
+            var mineCell2 = new MineCell(10, 10);
+            console.log(mineCell.row + " " + mineCell.col + " " + mineCell.type);
+            console.log(mineCell2.row + " " + mineCell2.col + " " + mineCell2.type);
+
+            var numberCell = new NumberCell(1, 1, 10);
+            var numberCell2 = new NumberCell(2, 2, 20);
+            console.log(numberCell.row + " " + numberCell.col + " " + numberCell.type + " " + numberCell.value);
+            console.log(numberCell2.row + " " + numberCell2.col + " " + numberCell2.type + " " + numberCell2.value);
+
+            var field = new Field(10, 10, 25);
+            field.generateMines();
+            field.generateNumbers();
+            field.printToConsole();
+
+            //var timer = new Timer();
+            //timer.start();
+            //setInterval(function () {
+            //    timer.printOnConsole();
+            //}, 1000);
+        </script>
+    </body>
+</html>

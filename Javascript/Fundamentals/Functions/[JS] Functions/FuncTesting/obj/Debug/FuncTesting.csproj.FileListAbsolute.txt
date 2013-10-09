@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Functions\FuncTesting\bin\FuncTesting.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Functions\FuncTesting\bin\FuncTesting.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Functions\FuncTesting\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Functions\FuncTesting\obj\Debug\FuncTesting.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Functions\FuncTesting\obj\Debug\FuncTesting.pdb

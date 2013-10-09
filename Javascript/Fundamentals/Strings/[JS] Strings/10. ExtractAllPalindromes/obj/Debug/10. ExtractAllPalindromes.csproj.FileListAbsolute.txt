@@ -1,0 +1,5 @@
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\10. ExtractAllPalindromes\bin\_10.ExtractAllPalindromes.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\10. ExtractAllPalindromes\bin\_10.ExtractAllPalindromes.pdb
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\10. ExtractAllPalindromes\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\10. ExtractAllPalindromes\obj\Debug\_10.ExtractAllPalindromes.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\10. ExtractAllPalindromes\obj\Debug\_10.ExtractAllPalindromes.pdb

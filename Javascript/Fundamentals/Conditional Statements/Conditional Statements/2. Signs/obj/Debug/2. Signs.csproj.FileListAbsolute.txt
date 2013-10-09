@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\2. Signs\bin\_2.Signs.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\2. Signs\bin\_2.Signs.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\2. Signs\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\2. Signs\obj\Debug\_2.Signs.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\2. Signs\obj\Debug\_2.Signs.pdb

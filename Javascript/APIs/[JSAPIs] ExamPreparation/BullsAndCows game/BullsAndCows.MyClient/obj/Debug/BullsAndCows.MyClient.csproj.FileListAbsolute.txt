@@ -1,0 +1,5 @@
+C:\Users\Ramii\Desktop\BullsAndCows\BullsAndCows.MyClient\bin\BullsAndCows.MyClient.dll
+C:\Users\Ramii\Desktop\BullsAndCows\BullsAndCows.MyClient\bin\BullsAndCows.MyClient.pdb
+C:\Users\Ramii\Desktop\BullsAndCows\BullsAndCows.MyClient\obj\Debug\BullsAndCows.MyClient.csprojResolveAssemblyReference.cache
+C:\Users\Ramii\Desktop\BullsAndCows\BullsAndCows.MyClient\obj\Debug\BullsAndCows.MyClient.dll
+C:\Users\Ramii\Desktop\BullsAndCows\BullsAndCows.MyClient\obj\Debug\BullsAndCows.MyClient.pdb

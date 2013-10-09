@@ -1,0 +1,5 @@
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\9. ExtractEmailAddresses\bin\_9.ExtractEmailAddresses.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\9. ExtractEmailAddresses\bin\_9.ExtractEmailAddresses.pdb
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\9. ExtractEmailAddresses\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\9. ExtractEmailAddresses\obj\Debug\_9.ExtractEmailAddresses.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\9. ExtractEmailAddresses\obj\Debug\_9.ExtractEmailAddresses.pdb

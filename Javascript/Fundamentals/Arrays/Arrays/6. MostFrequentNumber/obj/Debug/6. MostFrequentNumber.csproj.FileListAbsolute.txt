@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\6. MostFrequentNumber\bin\_6.MostFrequentNumber.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\6. MostFrequentNumber\bin\_6.MostFrequentNumber.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\6. MostFrequentNumber\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\6. MostFrequentNumber\obj\Debug\_6.MostFrequentNumber.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\6. MostFrequentNumber\obj\Debug\_6.MostFrequentNumber.pdb

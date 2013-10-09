@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMapTourism", "OnlineMapTourism\OnlineMapTourism.csproj", "{498C8A58-B969-4F26-930E-46F0C4643B33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleYoutube", "GoogleYoutube\GoogleYoutube.csproj", "{AAF519F5-30CD-4FA0-AA26-8F2FBDAD5725}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceBookAPI", "FaceBookAPI\FaceBookAPI.csproj", "{735B9B12-345B-46C2-80FC-1A4E978087E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{498C8A58-B969-4F26-930E-46F0C4643B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498C8A58-B969-4F26-930E-46F0C4643B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498C8A58-B969-4F26-930E-46F0C4643B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498C8A58-B969-4F26-930E-46F0C4643B33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF519F5-30CD-4FA0-AA26-8F2FBDAD5725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF519F5-30CD-4FA0-AA26-8F2FBDAD5725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF519F5-30CD-4FA0-AA26-8F2FBDAD5725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF519F5-30CD-4FA0-AA26-8F2FBDAD5725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{735B9B12-345B-46C2-80FC-1A4E978087E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{735B9B12-345B-46C2-80FC-1A4E978087E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{735B9B12-345B-46C2-80FC-1A4E978087E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{735B9B12-345B-46C2-80FC-1A4E978087E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

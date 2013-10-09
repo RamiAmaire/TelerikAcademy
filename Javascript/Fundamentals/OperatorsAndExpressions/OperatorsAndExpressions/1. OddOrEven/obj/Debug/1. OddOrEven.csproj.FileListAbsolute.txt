@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\1. OddOrEven\bin\_1.OddOrEven.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\1. OddOrEven\bin\_1.OddOrEven.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\1. OddOrEven\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\1. OddOrEven\obj\Debug\_1.OddOrEven.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\1. OddOrEven\obj\Debug\_1.OddOrEven.pdb

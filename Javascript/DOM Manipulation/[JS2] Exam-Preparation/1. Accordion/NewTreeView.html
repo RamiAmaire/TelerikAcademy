@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>New Tree View</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="treeview-holder"></div>
+        <div id="treeview-holder1"></div>
+    </div>
+    <script>
+        var controls = (function () {
+            (function () {
+                if (!Storage.prototype.setObject) {
+                    Storage.prototype.setObject = function (key, obj) {
+                        this.setItem(key, JSON.stringify(obj));
+                    }
+                }
+
+                if (!Storage.prototype.getObject) {
+                    Storage.prototype.getObject = function (key) {
+                        return JSON.parse(this.getItem(key));
+                    }
+                }
+            }());
+
+            function setDisplay(item, displayType) {
+                for (var i = 0; i < item.children.length; i++) {
+                    var child = item.children[i];
+                    if (!(child instanceof HTMLAnchorElement)) {
+                        child.style.display = displayType;
+                        for (var j = 0; j < child.children.length; j++) {
+                            var subChild = child.children[j];
+                            subChild.style.display = displayType;
+                        }
+                    }
+                }
+            }
+
+            function hideSiblings(item) {
+                var prevSibling = item.previousElementSibling;
+                while (prevSibling) {
+                    prevSibling.clicked = false;
+                    setDisplay(prevSibling, "none");
+                    prevSibling = prevSibling.previousElementSibling;
+                }
+
+                var nextSibling = item.nextElementSibling;
+                while (nextSibling) {
+                    nextSibling.clicked = false;
+                    setDisplay(nextSibling, "none");
+                    nextSibling = nextSibling.nextElementSibling;
+                }
+            }
+
+            function clearEmptyLists(item) {
+                for (var i = 0; i < item.children.length; i++) {
+                    var child = item.children[i];
+                    if (child instanceof HTMLUListElement) {
+                        if (!child.firstChild) {
+                            item.removeChild(child);
+                            i--;
+                        }
+                    }
+                }
+            }
+
+            function setDefaulEventSettings(ev) {
+                ev.preventDefault();
+                ev.stopPropagation();
+            }
+
+            Array.prototype.remove = function (item) {
+                var index = this.indexOf(item);
+                this.splice(index, 1);
+            }
+
+            function clearElement(element) {
+                while (element.firstChild) {
+                    element.removeChild(element.firstChild);
+                }
+            }
+
+            function TreeView(selector) {
+                var treeViewHolder = document.querySelector(selector);
+                treeViewHolder.addEventListener("click", function (ev) {
+                    ev.preventDefault();
+                    ev.stopPropagation();
+                    target = ev.target.parentNode;
+
+                    if (target instanceof HTMLLIElement) {
+                        if (!target.clicked) {
+                            setDisplay(target, "");
+                            target.clicked = true;
+                            hideSiblings(target);
+                        }
+                        else {
+                            setDisplay(target, "none");
+                            target.clicked = false;
+                        }
+                    }
+                }, false)
+
+                var self = this;
+                var target = self;
+                var items = [];
+                var itemsList = document.createElement("ul");
+
+                this.add = function(title) {
+                    var item = new Item(title);
+                    item.title = title;
+                    items.push(item);
+                    return item;
+                }
+
+                this.render = function() {
+                    clearEmptyLists(treeViewHolder);
+                    clearElement(itemsList);
+                    for (var i = 0; i < items.length; i++) {
+                        var child = items[i];
+                        child.render();
+                        itemsList.appendChild(child);
+                    }
+
+                    treeViewHolder.appendChild(itemsList);
+                }
+
+                function serialize() {
+                    var serializedItems = [];
+                    for (var i = 0; i < items.length; i++) {
+                        var serObject = {
+                        };
+
+                        var child = items[i];
+                        serObject.title = child.title;
+                        serObject.items = child.serialize();
+                        serializedItems.push(serObject);
+                    }
+
+                    return serializedItems;
+                }
+
+                function addItem(holder, item) {
+                   var treeViewItem = holder.add(item.title);
+                    for (var i = 0; i < item.items.length; i++) {
+                        addItem(treeViewItem, item.items[i]);
+                    }
+                }
+
+                function deserialize(selector, data) {
+                    var treeView = new TreeView(selector);
+                    if (data.length > 0) {
+                        for (var i = 0; i < data.length; i++) {
+                            addItem(treeView, data[i]);
+                        }
+                    }
+
+                    return treeView;
+                }
+
+                function Item(title) {
+                    var item = document.createElement("li");
+                    item.innerHTML = "<a href='#' />" + title;
+                    item.clicked = false;
+                    item.title = title;
+
+                    item.items = [];
+                        
+                    item.add = function (title) {
+                        var subItem = new Item(title);
+                        item.items.push(subItem);
+                        return subItem;
+                    }
+
+                    item.render = function () {
+                        clearEmptyLists(item);
+                        var itemsList = document.createElement("ul");
+                        for (var i = 0; i < item.items.length; i++) {
+                            var child = item.items[i];
+                            child.render();
+                            itemsList.appendChild(child);
+                        }
+
+                        item.appendChild(itemsList);
+                    }
+
+                    item.serialize = function () {
+                        var serializedItems = [];
+                        for (var i = 0; i < this.items.length; i++) {
+                            var serObject = {
+                            };
+
+                            var child = this.items[i];
+                            serObject.title = child.title;
+                            serObject.items = child.serialize();
+                            serializedItems.push(serObject);
+                        }
+
+                        return serializedItems;
+                    }
+
+                    return item;
+                }
+
+                function initialize() {
+                    var label = document.createElement("label");
+                    label.innerHTML = "Folder name : ";
+                    label.for = "name-input";
+                    treeViewHolder.appendChild(label);
+
+                    var nameInput = document.createElement("input");
+                    nameInput.type = "text";
+                    nameInput.id = "name-input";
+                    treeViewHolder.appendChild(nameInput);
+
+                    var addButton = document.createElement("button");
+                    addButton.innerHTML = "Add folder";
+                    addButton.id = "add-button";
+                    addButton.addEventListener("click", function (ev) {
+                        ev.preventDefault();
+                        ev.stopPropagation();
+                        if (!(target instanceof HTMLLIElement)) {
+                            self.add(nameInput.value);
+                        }
+                        else {
+                            target.add(nameInput.value);
+                        }
+
+                        self.render();
+                    }, false)
+                    treeViewHolder.appendChild(addButton);
+
+
+                    var removeButton = document.createElement("button");
+                    removeButton.innerHTML = "Remove folder";
+                    removeButton.id = "remove-button";
+                    removeButton.addEventListener("click", function (ev) {
+                        ev.preventDefault();
+                        ev.stopPropagation();
+                        if (!(target instanceof HTMLLIElement) || 
+                            !(target.parentNode.parentNode instanceof HTMLLIElement)) {
+                            items.pop();
+                            target.parentNode.removeChild(target);
+                        }
+                        else {
+                            target.parentNode.parentNode.items.
+                                remove(target);
+                            target.parentNode.removeChild(target);
+                        }
+
+                        self.render();
+                    }, false)
+                    treeViewHolder.appendChild(removeButton);
+
+                    var serializeButton = document.createElement("button");
+                    serializeButton.innerHTML = "Serialize";
+                    serializeButton.id = "serialize-button";
+                    serializeButton.addEventListener("click", function (ev) {
+                        ev.preventDefault();
+                        ev.stopPropagation();
+                        var serializedData = serialize();
+                        localStorage.clear();
+                        localStorage.setObject("TreeView", serializedData);
+                        console.log(localStorage);
+                    }, false)
+                    treeViewHolder.appendChild(serializeButton);
+
+                    var deserializeButton = document.createElement("button");
+                    deserializeButton.innerHTML = "Deserialize";
+                    deserializeButton.id = "deserialize-button";
+                    deserializeButton.addEventListener("click", function (ev) {
+                        ev.preventDefault();
+                        ev.stopPropagation();
+                        var deserializedData = localStorage.getObject("TreeView");
+                        var newTreeViewHolder = deserialize("#treeview-holder1", deserializedData);
+                        newTreeViewHolder.render();
+                    }, false)
+                    treeViewHolder.appendChild(deserializeButton);
+                }
+                initialize();
+
+                return self;
+            }
+
+            return {
+                getTreeView: function (selector) {
+                    return new TreeView(selector);
+                }
+            }
+        }());
+
+        var treeView = controls.getTreeView("#treeview-holder");
+    </script>
+</body>
+</html>

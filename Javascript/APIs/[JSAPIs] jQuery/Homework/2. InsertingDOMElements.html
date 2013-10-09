@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Inserting DOM elements</title>
+</head>
+<body>
+    <div id="wrapper"></div>
+    <script src="utils/jquery-1.9.1.min.js"></script>
+    <script>
+        var insertBeforeButton = $("<button>Insert before</button>").on("click", onInsertBefoe);
+        insertBeforeButton.attr("disabled", "true");
+        insertBeforeButton.prependTo("body");
+
+        var insertAfterButton = $("<button>Insert after</button>").on("click", onInsertAfter);
+        insertAfterButton.prependTo("body");
+
+        var elementIndex = 1;
+
+        function onInsertAfter() {
+            var li = $("<li> Element " + elementIndex++ + "</li>");
+            li.appendTo("#wrapper");
+            insertBeforeButton.removeAttr("disabled");
+        };
+
+        function onInsertBefoe() {
+            var li = $("<li> Element " + elementIndex++ + "</li>");
+            li.prependTo("#wrapper");
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\2. ComparingTwoCharArrays\bin\_2.ComparingTwoCharArrays.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\2. ComparingTwoCharArrays\bin\_2.ComparingTwoCharArrays.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\2. ComparingTwoCharArrays\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\2. ComparingTwoCharArrays\obj\Debug\_2.ComparingTwoCharArrays.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\2. ComparingTwoCharArrays\obj\Debug\_2.ComparingTwoCharArrays.pdb

@@ -1,0 +1,634 @@
+﻿/// <reference path="../libs/jquery-1.10.1.js" />
+/// <reference path="../libs/classical-oop.js" />
+/// <reference path="../libs/queue.js" />
+/// <reference path="GameEndsHandler.js" />
+/// <reference path="NumberCell.js" />
+/// <reference path="Renderer.js" />
+/// <reference path="Timer.js" />
+/// <reference path="MineCell.js" />
+/// <reference path="Field.js" />
+var InputHandler = Class.create({
+
+    init: function (field, renderer, timer, gameEndsHandler) {
+        this.field = field;
+        this.timer = timer;
+        this.renderer = renderer;
+        this.gameEndsHandler = gameEndsHandler;
+    },
+
+    attachEvents: function () {
+        var that = this;
+        var fieldWrapper = $("#field-wrapper");
+
+        fieldWrapper.dblclick(function (event) {
+            var cell = $(event.target);
+            var cellData = cell.data();
+
+            var clickedCell = that.field.matrix[cellData.row][cellData.col];
+            if (clickedCell.opened) {
+                var fieldRows = that.field.rows;
+                var fieldCols = that.field.cols;
+
+                that._openUnflagedNeighbors(clickedCell);
+            }
+        });
+
+        fieldWrapper.mouseup(function (event) {
+            event.preventDefault();
+            if (event.target instanceof HTMLDivElement) {
+                return;
+
+            }
+
+            var cell = $(event.target);
+            var cellData = cell.data();
+            var result;
+            switch (event.which) {
+                case 1:
+                    timer.start();
+                    result = field.clickCell(cellData.row, cellData.col, "left-mouse");
+                    if (result.type == "number") {
+                        if (!cell.hasClass("Number")) {
+                            var color = that._switchNumberColor(result.value);
+                            cell.first().css({
+                                "color": color
+                            });
+                            cell.flip({
+                                direction: 'tb',
+                                content: result.value,
+                                color: that._switchNumberColor(result.value),
+                                oldClass: "Cell",
+                                newClass: "Number",
+                                speed: 100
+                            });
+                        }
+
+                        if (result.value === 0) {
+                            that._openNeighborCells(that.field.matrix[cellData.row][cellData.col]);
+                        }
+                    }
+                    else if (result.type == "mine") {
+
+                        cell.first().css({
+                            "color": "#000"
+                        });
+                        cell.flip({
+                            direction: 'tb',
+                            content: "✺",
+                            color: "#00000",
+                            oldClass: "Cell",
+                            newClass: "Mine",
+                            speed: 100
+                        })
+
+                        that.timer.stop();
+                        that.gameEndsHandler.openMenu();
+                    }
+
+                    break;
+                case 3:
+                    result = field.clickCell(cellData.row, cellData.col, "right-mouse");
+                    var countMines;
+                    if (result.type == "Flag") {
+                        that._flagCell(cell);
+                    }
+                    else {
+                        that._unflagCell(cell);
+                    }
+
+                    break;
+                default:
+                    alert('You have a strange mouse');
+            }
+        });
+    },
+
+    _switchNumberColor: function (value) {
+        switch (value) {
+            case 0:
+                return "#eee";
+                break;
+            case 1:
+                return "#2327D5";
+                break;
+            case 2:
+                return "#3EC900";
+                break;
+            case 3:
+                return "#E80400";
+                break;
+            case 4:
+                return "#DD56F3";
+                break;
+            case 5:
+                return "#800000";
+                break;
+            case 6:
+                return "#10CDE3";
+                break;
+            case 7:
+                return "#000";
+                break;
+            case 8:
+                return "gray";
+                break;
+        }
+    },
+
+    _checkTopLeftCellNeighbors: function (clickedCell) {
+        var domMatrix = this.renderer.domMatrix;
+        var fieldMatrix = this.field.matrix;
+        var minesCount = clickedCell.value;
+        var flagsCount = 0;
+        var row = clickedCell.row;
+        var col = clickedCell.col;
+
+        for (var i = row; i <= row + 1; i += 1) {
+            for (var j = col; j <= col + 1; j += 1) {
+                if (fieldMatrix[i][j].flagged) {
+                    flagsCount += 1;
+                }
+            }
+        }
+
+        if (flagsCount === minesCount) {
+            for (var i = row; i <= row + 1; i += 1) {
+                for (var j = col; j <= col + 1; j += 1) {
+                    if (!fieldMatrix[i][j].flagged && !fieldMatrix[i][j].opened) {
+                        this.field.clickCell(i, j, "left-mouse");
+                        this._flipCell(fieldMatrix, domMatrix, i, j);
+
+                        if (this.field.matrix[i][j].value === 0) {
+                            this._openNeighborCells(this.field.matrix[i][j]);
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    _checkTopMiddleCellsNeighbors: function (clickedCell) {
+        var domMatrix = this.renderer.domMatrix;
+        var fieldMatrix = this.field.matrix;
+        var minesCount = clickedCell.value;
+        var flagsCount = 0;
+        var row = clickedCell.row;
+        var col = clickedCell.col;
+
+        for (var i = row; i <= row + 1; i += 1) {
+            for (var j = col - 1; j <= col + 1; j += 1) {
+                if (fieldMatrix[i][j].flagged) {
+                    flagsCount += 1;
+                }
+            }
+        }
+
+        if (flagsCount === minesCount) {
+            for (var i = row; i <= row + 1; i += 1) {
+                for (var j = col - 1; j <= col + 1; j += 1) {
+                    if (!fieldMatrix[i][j].flagged && !fieldMatrix[i][j].opened) {
+                        this.field.clickCell(i, j, "left-mouse");
+                        this._flipCell(fieldMatrix, domMatrix, i, j);
+
+                        if (this.field.matrix[i][j].value === 0) {
+                            this._openNeighborCells(this.field.matrix[i][j]);
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    _checkTopRightCellNeighbors: function (clickedCell) {
+        var domMatrix = this.renderer.domMatrix;
+        var fieldMatrix = this.field.matrix;
+        var minesCount = clickedCell.value;
+        var flagsCount = 0;
+        var row = clickedCell.row;
+        var col = clickedCell.col;
+
+        for (var i = row; i <= row + 1; i += 1) {
+            for (var j = col - 1; j <= col; j += 1) {
+                if (fieldMatrix[i][j].flagged) {
+                    flagsCount += 1;
+                }
+            }
+        }
+
+        if (flagsCount === minesCount) {
+            for (var i = row; i <= row + 1; i += 1) {
+                for (var j = col - 1; j <= col; j += 1) {
+                    if (!fieldMatrix[i][j].flagged && !fieldMatrix[i][j].opened) {
+                        this.field.clickCell(i, j, "left-mouse");
+                        this._flipCell(fieldMatrix, domMatrix, i, j);
+
+                        if (this.field.matrix[i][j].value === 0) {
+                            this._openNeighborCells(this.field.matrix[i][j]);
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    _checkLeftMiddleCellsNeighbors: function (clickedCell) {
+        var domMatrix = this.renderer.domMatrix;
+        var fieldMatrix = this.field.matrix;
+        var minesCount = clickedCell.value;
+        var flagsCount = 0;
+        var row = clickedCell.row;
+        var col = clickedCell.col;
+
+        for (var i = row - 1; i <= row + 1; i += 1) {
+            for (var j = col; j <= col + 1; j += 1) {
+                if (fieldMatrix[i][j].flagged) {
+                    flagsCount += 1;
+                }
+            }
+        }
+
+        if (flagsCount === minesCount) {
+            for (var i = row - 1; i <= row + 1; i += 1) {
+                for (var j = col; j <= col + 1; j += 1) {
+                    if (!fieldMatrix[i][j].flagged && !fieldMatrix[i][j].opened) {
+                        this.field.clickCell(i, j, "left-mouse");
+                        this._flipCell(fieldMatrix, domMatrix, i, j);
+
+                        if (this.field.matrix[i][j].value === 0) {
+                            this._openNeighborCells(this.field.matrix[i][j]);
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    _checkMiddleCellsNeighbors: function (clickedCell) {
+        var domMatrix = this.renderer.domMatrix;
+        var fieldMatrix = this.field.matrix;
+        var minesCount = clickedCell.value;
+        var flagsCount = 0;
+        var row = clickedCell.row;
+        var col = clickedCell.col;
+
+        for (var i = row - 1; i <= row + 1; i += 1) {
+            for (var j = col - 1; j <= col + 1; j += 1) {
+                if (fieldMatrix[i][j].flagged) {
+                    flagsCount += 1;
+                }
+            }
+        }
+
+        if (flagsCount === minesCount) {
+            for (var i = row - 1; i <= row + 1; i += 1) {
+                for (var j = col - 1; j <= col + 1; j += 1) {
+                    if (!fieldMatrix[i][j].flagged && !fieldMatrix[i][j].opened) {
+                        this.field.clickCell(i, j, "left-mouse");
+                        this._flipCell(fieldMatrix, domMatrix, i, j);
+
+                        if (this.field.matrix[i][j].value === 0) {
+                            this._openNeighborCells(this.field.matrix[i][j]);
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    _checkRightMiddleCellsNeighbors: function (clickedCell) {
+        var domMatrix = this.renderer.domMatrix;
+        var fieldMatrix = this.field.matrix;
+        var minesCount = clickedCell.value;
+        var flagsCount = 0;
+        var row = clickedCell.row;
+        var col = clickedCell.col;
+
+        for (var i = row - 1; i <= row + 1; i += 1) {
+            for (var j = col - 1; j <= col; j += 1) {
+                if (fieldMatrix[i][j].flagged) {
+                    flagsCount += 1;
+                }
+            }
+        }
+
+        if (flagsCount === minesCount) {
+            for (var i = row - 1; i <= row + 1; i += 1) {
+                for (var j = col - 1; j <= col; j += 1) {
+                    if (!fieldMatrix[i][j].flagged && !fieldMatrix[i][j].opened) {
+                        this.field.clickCell(i, j, "left-mouse");
+                        this._flipCell(fieldMatrix, domMatrix, i, j);
+
+                        if (this.field.matrix[i][j].value === 0) {
+                            this._openNeighborCells(this.field.matrix[i][j]);
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    _checkBottomLeftCellNeighbors: function (clickedCell) {
+        var domMatrix = this.renderer.domMatrix;
+        var fieldMatrix = this.field.matrix;
+        var minesCount = clickedCell.value;
+        var flagsCount = 0;
+        var row = clickedCell.row;
+        var col = clickedCell.col;
+
+        for (var i = row - 1; i <= row; i += 1) {
+            for (var j = col; j <= col + 1; j += 1) {
+                if (fieldMatrix[i][j].flagged) {
+                    flagsCount += 1;
+                }
+            }
+        }
+
+        if (flagsCount === minesCount) {
+            for (var i = row - 1; i <= row; i += 1) {
+                for (var j = col; j <= col + 1; j += 1) {
+                    if (!fieldMatrix[i][j].flagged && !fieldMatrix[i][j].opened) {
+                        this.field.clickCell(i, j, "left-mouse");
+                        this._flipCell(fieldMatrix, domMatrix, i, j);
+
+                        if (this.field.matrix[i][j].value === 0) {
+                            this._openNeighborCells(this.field.matrix[i][j]);
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    _checkBottomMiddleCellsNeighbors: function (clickedCell) {
+        var domMatrix = this.renderer.domMatrix;
+        var fieldMatrix = this.field.matrix;
+        var minesCount = clickedCell.value;
+        var flagsCount = 0;
+        var row = clickedCell.row;
+        var col = clickedCell.col;
+
+        for (var i = row - 1; i <= row; i += 1) {
+            for (var j = col - 1; j <= col + 1; j += 1) {
+                if (fieldMatrix[i][j].flagged) {
+                    flagsCount += 1;
+                }
+            }
+        }
+
+        if (flagsCount === minesCount) {
+            for (var i = row - 1; i <= row; i += 1) {
+                for (var j = col - 1; j <= col + 1; j += 1) {
+                    if (!fieldMatrix[i][j].flagged && !fieldMatrix[i][j].opened) {
+                        this.field.clickCell(i, j, "left-mouse");
+                        this._flipCell(fieldMatrix, domMatrix, i, j);
+
+                        if (this.field.matrix[i][j].value === 0) {
+                            this._openNeighborCells(this.field.matrix[i][j]);
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    _checkBottomRightCellNeighbors: function (clickedCell) {
+        var domMatrix = this.renderer.domMatrix;
+        var fieldMatrix = this.field.matrix;
+        var minesCount = clickedCell.value;
+        var flagsCount = 0;
+        var row = clickedCell.row;
+        var col = clickedCell.col;
+
+        for (var i = row - 1; i <= row; i += 1) {
+            for (var j = col - 1; j <= col; j += 1) {
+                if (fieldMatrix[i][j].flagged) {
+                    flagsCount += 1;
+                }
+            }
+        }
+
+        if (flagsCount === minesCount) {
+            for (var i = row - 1; i <= row; i += 1) {
+                for (var j = col - 1; j <= col; j += 1) {
+                    if (!fieldMatrix[i][j].flagged && !fieldMatrix[i][j].opened) {
+                        this.field.clickCell(i, j, "left-mouse");
+                        this._flipCell(fieldMatrix, domMatrix, i, j);
+
+                        if (fieldMatrix[i][j].value === 0) {
+                            this._openNeighborCells(fieldMatrix[i][j]);
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    _normalFlipCell: function (fieldMatrix, domMatrix, row, col) {
+        if (fieldMatrix[row][col].type === "number") {
+            domMatrix[row][col].removeClass("Cell").addClass("Number");
+            domMatrix[row][col].html(fieldMatrix[row][col].value);
+            var color = this._switchNumberColor(fieldMatrix[row][col].value);
+            domMatrix[row][col].css({
+                "color": color
+            });
+        }
+        else {
+            domMatrix[row][col].removeClass("Cell").addClass("Mine");
+            domMatrix[row][col].html("✺");
+            domMatrix[row][col].css({
+                "color": "#000"
+            });
+        }
+    },
+
+    _flipCell: function (fieldMatrix, domMatrix, row, col) {
+        if (fieldMatrix[row][col].type === "mine") {
+            domMatrix[row][col].first().css({
+                "color": "#000"
+            });
+
+            domMatrix[row][col].flip({
+                direction: 'tb',
+                content: "✺",
+                color: "#000",
+                oldClass: "Cell",
+                newClass: "Mine",
+                speed: 100
+            });
+
+            this.timer.stop();
+            this.gameEndsHandler.openMenu();
+        }
+        else {
+            var color = this._switchNumberColor(fieldMatrix[row][col].value);
+            domMatrix[row][col].first().css({
+                "color": color
+            });
+
+            domMatrix[row][col].flip({
+                direction: 'tb',
+                content: fieldMatrix[row][col].value,
+                color: color,
+                oldClass: "Cell",
+                newClass: "Number",
+                speed: 100
+            });
+        }
+    },
+
+    _flagCell: function (clickedCell) {
+        clickedCell.flip({
+            direction: 'tb',
+            content: "☂",
+            oldClass: "Cell",
+            newClass: "Flag",
+            speed: 100
+        });
+
+        countMines = $("#MineCount").html();
+        countMines--;
+        $("#MineCount").html(countMines);
+    },
+
+    _unflagCell: function (clickedCell) {
+        clickedCell.flip({
+            direction: 'tb',
+            content: "C",
+            bgColor: "#81B1E8",
+            oldClass: "Flag",
+            newClass: "Cell",
+            speed: 100
+        });
+
+        countMines = $("#MineCount").html();
+        countMines++;
+        $("#MineCount").html(countMines);
+    },
+
+    _openUnflagedNeighbors: function (clickedCell) {
+        var that = this;
+        var fieldCols = that.field.cols;
+        var fieldRows = that.field.rows;
+
+        if (clickedCell.col > 0 && clickedCell.col < fieldCols - 1 &&
+                clickedCell.row > 0 && clickedCell.row < fieldRows - 1) {
+            that._checkMiddleCellsNeighbors(clickedCell);
+        }
+        else if (clickedCell.row === fieldRows - 1 && clickedCell.col > 0 && clickedCell.col < fieldCols - 1) {
+            that._checkBottomMiddleCellsNeighbors(clickedCell);
+        }
+        else if (clickedCell.row === 0 && clickedCell.col === 0) {
+            that._checkTopLeftCellNeighbors(clickedCell);
+        }
+        else if (clickedCell.row === 0 && clickedCell.col === fieldCols - 1) {
+            that._checkTopRightCellNeighbors(clickedCell);
+        }
+        else if (clickedCell.col === 0 && clickedCell.row > 0 && clickedCell.row < fieldRows - 1) {
+            that._checkLeftMiddleCellsNeighbors(clickedCell);
+        }
+        else if (clickedCell.col === 0 && clickedCell.row === fieldRows - 1) {
+            that._checkBottomLeftCellNeighbors(clickedCell);
+        }
+        else if (clickedCell.col === fieldCols - 1 && clickedCell.row === fieldRows - 1) {
+            that._checkBottomRightCellNeighbors(clickedCell);
+        }
+        else if (clickedCell.col === fieldCols - 1 && clickedCell.row > 0 && clickedCell.row < fieldRows - 1) {
+            that._checkRightMiddleCellsNeighbors(clickedCell);
+        }
+        else {
+            that._checkTopMiddleCellsNeighbors(clickedCell);
+        }
+    },
+
+    _openNeighborCells: function (cell) {
+        var queue = new Queue();
+        queue.enqueue(cell);
+
+        var alreadyFlipped = new Queue();
+
+        while (queue.length() > 0) {
+            var currentCell = queue.dequeue();
+            var row = currentCell.row;
+            var col = currentCell.col;
+            this.field.clickCell(row, col, "left-mouse");
+            this._normalFlipCell(this.field.matrix, this.renderer.domMatrix, row, col);
+            alreadyFlipped.enqueue(currentCell);
+
+            if (currentCell.value === 0) {
+                // We clicked on a cell that has no mines around it
+
+                // If there a top-left neighbor exists
+                if (currentCell.row > 0 && currentCell.col > 0) {
+
+                    // We check if it was flipped already, and if not it's put in the queue
+                    if (!alreadyFlipped.contains(this.field.matrix[currentCell.row - 1][currentCell.col - 1])) {
+                        queue.enqueue(this.field.matrix[currentCell.row - 1][currentCell.col - 1]);
+                    }
+                }
+
+                // If there a top-middle neighbor exists
+                if (currentCell.row > 0) {
+
+                    // We check if it was flipped already, and if not it's put in the queue
+                    if (!alreadyFlipped.contains(this.field.matrix[currentCell.row - 1][currentCell.col])) {
+                        queue.enqueue(this.field.matrix[currentCell.row - 1][currentCell.col]);
+                    }
+                }
+
+                // If a top-right neighbor exists
+                if (currentCell.row > 0 && currentCell.col < this.field.cols - 1) {
+
+                    // We check if it was flipped already, and if not it's put in the queue
+                    if (!alreadyFlipped.contains(this.field.matrix[currentCell.row - 1][currentCell.col + 1])) {
+                        queue.enqueue(this.field.matrix[currentCell.row - 1][currentCell.col + 1]);
+                    }
+                }
+
+                // if a middle-left neighbor exists
+                if (currentCell.col > 0) {
+
+                    // We check if it was flipped already, and if not it's put in the queue
+                    if (!alreadyFlipped.contains(this.field.matrix[currentCell.row][currentCell.col - 1])) {
+                        queue.enqueue(this.field.matrix[currentCell.row][currentCell.col - 1]);
+                    }
+                }
+
+                // if a middle-right neighbor exists
+                if (currentCell.col < this.field.cols - 1) {
+
+                    // We check if it was flipped already, and if not it's put in the queue
+                    if (!alreadyFlipped.contains(this.field.matrix[currentCell.row][currentCell.col + 1])) {
+                        queue.enqueue(this.field.matrix[currentCell.row][currentCell.col + 1]);
+                    }
+                }
+
+                // if a bottom-left neighbor exists
+                if (currentCell.row < this.field.rows - 1 && currentCell.col > 0) {
+
+                    // We check if it was flipped already, and if not it's put in the queue
+                    if (!alreadyFlipped.contains(this.field.matrix[currentCell.row + 1][currentCell.col - 1])) {
+                        queue.enqueue(this.field.matrix[currentCell.row + 1][currentCell.col - 1]);
+                    }
+                }
+
+                // if a bottom-middle neighbor exists
+                if (currentCell.row < this.field.rows - 1) {
+
+                    // We check if it was flipped already, and if not it's put in the queue
+                    if (!alreadyFlipped.contains(this.field.matrix[currentCell.row + 1][currentCell.col])) {
+                        queue.enqueue(this.field.matrix[currentCell.row + 1][currentCell.col]);
+                    }
+                }
+
+                // if a bottom-right neighbor exists
+                if (currentCell.row < this.field.rows - 1 && currentCell.col < this.field.cols - 1) {
+
+                    // We check if it was flipped already, and if not it's put in the queue
+                    if (!alreadyFlipped.contains(this.field.matrix[currentCell.row + 1][currentCell.col + 1])) {
+                        queue.enqueue(this.field.matrix[currentCell.row + 1][currentCell.col + 1]);
+                    }
+                }
+            }
+        }
+    }
+});

@@ -1,0 +1,1 @@
+D:\Telerik\DataBases\7. ADO.NET\SqlParameters\bin\Debug\SqlParametersDemo.exe.config

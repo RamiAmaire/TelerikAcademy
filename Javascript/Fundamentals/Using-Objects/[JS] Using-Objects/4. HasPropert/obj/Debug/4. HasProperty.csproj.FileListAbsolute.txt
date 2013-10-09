@@ -1,0 +1,5 @@
+C:\Documents and Settings\Rami\My Documents\Visual Studio 2010\Homework\[JS] Using-Objects\4. HasPropert\bin\_4.HasPropert.dll
+C:\Documents and Settings\Rami\My Documents\Visual Studio 2010\Homework\[JS] Using-Objects\4. HasPropert\bin\_4.HasPropert.pdb
+C:\Documents and Settings\Rami\My Documents\Visual Studio 2010\Homework\[JS] Using-Objects\4. HasPropert\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\My Documents\Visual Studio 2010\Homework\[JS] Using-Objects\4. HasPropert\obj\Debug\_4.HasPropert.dll
+C:\Documents and Settings\Rami\My Documents\Visual Studio 2010\Homework\[JS] Using-Objects\4. HasPropert\obj\Debug\_4.HasPropert.pdb

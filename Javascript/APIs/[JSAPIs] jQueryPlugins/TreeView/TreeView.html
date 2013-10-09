@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="utils/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+    <script src="utils/jquery-1.9.1.min.js"></script>
+    <script src="utils/jquery-ui-1.10.3.custom.min.js"></script>
+    <style>
+        li {
+            list-style:none;
+        }
+
+        a {
+            text-decoration:none;
+            color:black;
+        }
+
+        .displayable {
+            display:normal;
+        }
+
+        .hidable {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <ul id="products-holder">
+    </ul>
+    <script>
+        (function ($) {
+            $.fn.changeStyle = function (overColor, outColor, fontSizeOver, fontSizeOut) {
+                var elements = this;
+                elements.on("mouseover", function () {
+                    $(this).css("color", overColor);
+                    $(this).css("font-size", fontSizeOver);
+                });
+
+                elements.on("mouseout", function myfunction() {
+                    $(this).css("color", outColor);
+                    $(this).css("font-size", fontSizeOut);
+                });
+
+                return this;
+            }
+
+            $.fn.treeView = function (productsNumber, levels) {
+                var element = this;
+                generateElements(element, "Product ", productsNumber, levels, 0)
+                element.on("click", "li", function (ev) {
+                    ev.stopPropagation();
+                    var currentElement = this;
+                    if (!currentElement.clicked) {
+                        currentElement.clicked = true;
+                        displayChildren(currentElement);
+                        hideSiblings(currentElement);
+                    }
+                    else {
+                        currentElement.clicked = false;
+                        hideChildren(currentElement);
+                    }
+                });
+                return this;
+            }
+        }(jQuery))
+
+        function displayChildren(element) {
+            var currentElement = $(element);
+            var children = currentElement.children().children();
+            children.removeClass("hidable");
+            children.addClass("displayable");
+        }
+
+        function hideChildren(element) {
+            var currentElement = $(element);
+            var children = currentElement.children().children();
+            children.removeClass("displayable");
+            children.addClass("hidable");
+        }
+
+        function hideSiblings(element) {
+            var currentElement = $(element);
+            var siblings = currentElement.siblings();
+            for (var i = 0; i < siblings.length; i++) {
+                siblings[i].clicked = false;
+                hideChildren(siblings[i]);
+            }
+        }
+
+        function generateElements(element, text, productsNumber, levels, currentLevel) {
+            currentLevel++;
+            if (currentLevel > 1) {
+                element.addClass("hidable");
+            }
+
+            if (currentLevel <= levels) {
+                for (var i = 1; i <= productsNumber; i++) {
+                    var anchor = $("<a></a>").html(text + i);
+                    var ul = $("<ul></ul>").appendTo(anchor);
+                    var li = $("<li class='products'></li>");
+                    anchor.changeStyle("red", "black", 18, 16);
+                    anchor.appendTo(li);
+                    li.appendTo(element);
+                    generateElements(ul, "Sub" + text + i, productsNumber, levels, currentLevel);
+                }
+            }
+        }
+
+        $("#products-holder").treeView(3, 3)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+C:\Users\Ramii\Documents\Visual Studio 2012\Projects\[JSAPIs] OOP\4. FavouritesBar\bin\_4.FavouritesBar.dll
+C:\Users\Ramii\Documents\Visual Studio 2012\Projects\[JSAPIs] OOP\4. FavouritesBar\bin\_4.FavouritesBar.pdb
+C:\Users\Ramii\Documents\Visual Studio 2012\Projects\[JSAPIs] OOP\4. FavouritesBar\obj\Debug\_4.FavouritesBar.dll
+C:\Users\Ramii\Documents\Visual Studio 2012\Projects\[JSAPIs] OOP\4. FavouritesBar\obj\Debug\_4.FavouritesBar.pdb

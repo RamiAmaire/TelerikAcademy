@@ -1,0 +1,8 @@
+var employeesFromSofia = from e in dbContext.Employees
+                                         join a in dbContext.Addresses
+                                         on e.AddressID equals a.AddressID
+                                         join t in dbContext.Towns
+                                         on a.TownID equals t.TownID
+                                         where t.Name == "Sofia"
+                                         orderby e.LastName
+                                         select new { EmployeeName = e.LastName, Town = t.Name };

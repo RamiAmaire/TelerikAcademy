@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Circling Divs</title>
+    <link href="styles/CirclingDivs.css" rel="stylesheet" />
+</head>
+<body>
+    <section>
+        <div id="button-wrapper">
+            <button id="start" onclick="onStartCircling()">
+                Start/Speed up
+            </button>
+            <button id="stop" onclick="onStopCircling()">
+                Stop
+            </button>
+            <input type="text" autofocus placeholder="Enter number 1-1000"  id="div-Count"/>
+            <button id="div-generator" onclick="onGenerateDivs()">
+                Generate
+            </button>
+        </div>
+
+        <div id="div-wrapper">
+        </div>
+    </section>
+
+    <script>
+        function generateRandomColor() {
+            var red = (Math.random() * 256) | 0;
+            var green = (Math.random() * 256) | 0;
+            var blue = (Math.random() * 256) | 0;
+
+            return "rgb(" + red + "," + green + "," + blue + ")";
+        }
+
+        function Resetter() {
+            while (divs.length > 0) {
+                divs.pop();
+            }
+
+            while (divWrapper.firstChild) {
+                divWrapper.removeChild(divWrapper.firstChild);
+            }
+        }
+
+        function onGenerateDivs() {
+            startButton.disabled = false;
+            Resetter();
+
+            var divCount = document.getElementById("div-Count").value;
+            increase = (Math.PI * 2) / divCount;
+
+            for (var i = 0; i < divCount; i++) {
+                x = 100 * Math.cos(angle) + 200;
+                y = 100 * Math.sin(angle) + 200;
+
+                var div = document.createElement("div");
+                div.style.left = x + "px";
+                div.style.top = y + "px";
+                div.style.backgroundColor = generateRandomColor();
+
+                divs.push(div);
+                divWrapper.appendChild(div);
+
+                angle += increase;
+            }
+        }
+
+        function generatingMovement() {
+            for (var i = 0; i < divs.length; i++) {
+                x = 100 * Math.cos(angle) + 200;
+                y = 100 * Math.sin(angle) + 200;
+                divs[i].style.left = x + "px";
+                divs[i].style.top = y + "px";
+
+                angle += increase;
+            }
+
+            angle += 0.06;
+        }
+
+        function onStartCircling() {
+            generateButton.disabled = true;
+
+            timer = 0;
+            timer = setInterval(generatingMovement, 1000/30);
+        }
+
+        function onStopCircling() {
+            generateButton.disabled = false;
+        }
+
+        var divWrapper = document.getElementById("div-wrapper");
+        var generateButton = document.getElementById("div-generator");
+        var startButton = document.getElementById("start");
+        startButton.disabled = true;
+        
+        var divs = [];
+        var currentDivsCount = 0;
+        var timer = 0;
+        var increase;
+        var angle = 0;
+        var x = 0;
+        var y = 0;
+    </script>
+</body>
+</html>

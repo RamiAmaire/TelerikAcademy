@@ -1,0 +1,5 @@
+c:\users\ramii\documents\visual studio 2012\Projects\[JS2] OOP\[JS2] OOP\bin\[JS2] OOP.dll
+c:\users\ramii\documents\visual studio 2012\Projects\[JS2] OOP\[JS2] OOP\bin\[JS2] OOP.pdb
+c:\users\ramii\documents\visual studio 2012\Projects\[JS2] OOP\[JS2] OOP\obj\Debug\[JS2] OOP.csprojResolveAssemblyReference.cache
+c:\users\ramii\documents\visual studio 2012\Projects\[JS2] OOP\[JS2] OOP\obj\Debug\[JS2] OOP.dll
+c:\users\ramii\documents\visual studio 2012\Projects\[JS2] OOP\[JS2] OOP\obj\Debug\[JS2] OOP.pdb

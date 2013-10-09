@@ -1,0 +1,10 @@
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\Indices\bin\Indices.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\Indices\bin\Indices.pdb
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\Indices\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\Indices\obj\Debug\Indices.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\Indices\obj\Debug\Indices.pdb
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\Indices\bin\Indices.dll
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\Indices\bin\Indices.pdb
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\Indices\obj\Debug\ResolveAssemblyReference.cache
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\Indices\obj\Debug\Indices.dll
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\Indices\obj\Debug\Indices.pdb

@@ -1,0 +1,24 @@
+Register
+{
+"Username":"RamiAmaire",
+"Displayname":"Ramito",
+"AuthCode":"1ad1f2167dc4e2d5e306b1dccfcec56ce5fa2c23"
+}
+
+Login
+{
+"Username":"Rami91",
+"AuthCode":"1ad1f2167dc4e2d5e306b1dccfcec56ce5fa2c23"
+}
+
+Create post
+{
+"Title":"Da jivee Bulgaria",
+"Tags":["bulgaria"],
+"Text":"Programmers heaven"
+}
+
+Comment
+{
+"text":"Abe kefi me"
+}

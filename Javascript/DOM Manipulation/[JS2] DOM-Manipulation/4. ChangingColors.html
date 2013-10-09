@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Changing Colors</title>
+    <link href="styles/ChangingColors.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="background-holder">
+            <label for="background-color">Pick background color : </label>
+            <input type="color" id="background-color"/ onchange="onGenerateBackgroundColor()">
+        </div>
+
+        <div id="font-holder">
+            <label for="font-color">Pick font color : </label>
+            <input type="color" id="font-color"/ onchange="onGenerateFontColor()"> 
+        </div>
+
+        <div id="border-holder">
+            <label for="border-color">Pick border color : </label>
+            <input type="color" id="border-color"/ onchange="onGenerateBorderColor()"> 
+        </div>
+
+        <div id="text-area">
+            <label for="txtArea">Enter text here :</label>
+            <textarea id="txtArea">
+            </textarea>
+        </div>
+    </div>
+
+    <script>
+        var backgroundColorInput = document.getElementById("background-color");
+        var fontColorInput = document.getElementById("font-color");
+        var borderColorInput = document.getElementById("border-color");
+        var textArea = document.getElementsByTagName("textarea")[0];
+
+        function onGenerateBackgroundColor() {
+            textArea.style.backgroundColor = backgroundColorInput.value;
+        }
+
+        function onGenerateFontColor() {
+            textArea.style.color = fontColorInput.value;
+        }
+
+        function onGenerateBorderColor() {
+            textArea.style.borderColor = borderColorInput.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Random Divs</title>
+</head>
+<body>
+    <input type="text" id="generate-divs" />
+    <a href="#" onclick="onGenerateDivs()">Generate Divs</a>
+    <div id="wrapper">
+    </div>
+    <script>
+
+        function generateRandomColor() {
+            var red = (Math.random() * 256) | 0;
+            var green = (Math.random() * 256) | 0;
+            var blue = (Math.random() * 256) | 0;
+
+            return "rgb(" + red + "," + green + "," + blue + ")";
+        }
+
+        function onGenerateDivs() {
+            var wrapper = document.getElementById("wrapper");
+            while (wrapper.firstChild) {
+                wrapper.removeChild(wrapper.firstChild);
+            }
+
+            var count = document.getElementById("generate-divs").value;
+            var docFragment = document.createDocumentFragment();
+
+            for (var i = 0; i < count; i++) {
+                var newDiv = document.createElement("div");
+                newDiv.className = "special-div";
+                newDiv.innerHTML = "div";
+
+                // CSS
+
+                // Width/Height
+                newDiv.style.width = Math.floor(Math.random() * (100 - 20 + 1)) + 20 + "px";
+                newDiv.style.height = Math.floor(Math.random() * (100 - 20 + 1)) + 20 + "px";
+
+                // Colors, fonts and text
+                newDiv.style.backgroundColor = generateRandomColor();
+                newDiv.style.color = generateRandomColor().toString();
+                newDiv.style.fontWeight = "bold";
+                newDiv.style.textAlign = "center";
+
+                // Position
+                newDiv.style.position = "absolute";
+                newDiv.style.top = Math.random() * 800 + "px";
+                newDiv.style.left = Math.random() * 800 + "px";
+
+                // Radius
+                newDiv.style.borderRadius = Math.floor(Math.random() * (100 - 20 + 1)) + 20 + "px";
+                newDiv.style.borderStyle = "solid";
+                newDiv.style.borderWidth = Math.floor(Math.random() * (20 - 1 + 1)) + 1 + "px";
+                newDiv.style.borderColor = generateRandomColor();
+
+                docFragment.appendChild(newDiv);
+            }
+
+            wrapper.appendChild(docFragment);
+            return false;
+        }
+    </script>
+</body>
+</html>

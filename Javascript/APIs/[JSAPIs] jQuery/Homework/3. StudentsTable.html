@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Students Table</title>
+    <style type="text/css">
+        table {
+	        font-family: verdana,arial,sans-serif;
+	        font-size:11px;
+	        color:#333333;
+	        border-width: 1px;
+	        border-color: #666666;
+	        border-collapse: collapse;
+        }
+
+        table th {
+	        border-width: 1px;
+	        padding: 8px;
+	        border-style: solid;
+	        border-color: #666666;
+	        background-color: #dedede;
+        }
+
+        table td {
+	        border-width: 1px;
+	        padding: 8px;
+	        border-style: solid;
+	        border-color: #666666;
+	        background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <script src="utils/ClassicalOOP.js"></script>
+    <script src="utils/jquery-1.9.1.min.js"></script>
+    <script>
+        var Student = Class.create({
+            init: function (fName, lName, grade) {
+                this.fName = fName;
+                this.lName = lName;
+                this.grade = grade;
+            },
+        })
+
+        var joro = new Student("Joro", "Mechkata", 5);
+        var pesho = new Student("Pesho", "Gorilata", 6);
+        var ceco = new Student("Ceco", "Mengemeto", 7);
+        var students = [joro, pesho, ceco];
+
+        var studentsTable = $("<table></table>").attr("id", "table-studs");
+        studentsTable.append("<tr><th>FirstName</th><th>LastName</th><th>Grade</th></tr>");
+
+        for (var i = 0; i < students.length; i++) {
+            var currentFirstName = students[i].fName;
+            var currentLastName = students[i].lName;
+            var grade = students[i].grade;
+            studentsTable.append("<tr><td>" + currentFirstName + "</td><td>" + currentLastName +
+                "</td><td>" + grade + "</td></tr>")
+        }
+
+        studentsTable.appendTo("body");
+    </script>
+</body>
+</html>

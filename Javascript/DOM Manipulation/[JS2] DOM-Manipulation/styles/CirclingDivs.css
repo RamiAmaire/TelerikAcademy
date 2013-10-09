@@ -1,0 +1,25 @@
+﻿body {
+}
+
+#button-wrapper {
+    position:relative;
+    left:500px;
+    top:100px;
+}
+
+#div-wrapper {
+    position:relative;
+    top:200px;
+    left:380px;
+}
+
+#div-wrapper div {
+    position:absolute;
+    height:50px;
+    width:50px;
+    border-radius:35px;
+}
+
+input {
+    padding-left:10px;
+}

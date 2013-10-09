@@ -1,0 +1,394 @@
+﻿/// <reference path="../libs/jquery-1.10.1.js" />
+var InputHandler = Class.create({
+    
+    init: function (field, renderer) {
+    	this.field = field;
+    	this.renderer = renderer;
+        this.mouse1 = false;
+        this.mouse2 = false;
+        this.dualClick = false;
+    },
+
+    attachEvents: function () {
+    	var that = this;
+        var fieldWrapper = $("#field-wrapper");
+
+        fieldWrapper.dblclick(function (event) {
+        	var cell = $(event.target);
+        	var cellData = cell.data();
+
+        	var clickedCell = that.field.matrix[cellData.row][cellData.col];
+        	if (clickedCell.opened) {
+        		var fieldRows = that.field.rows;
+        		var fieldCols = that.field.cols;
+
+        		if (clickedCell.row === 0 && clickedCell.col > 0 & clickedCell.col < fieldRows - 1) {
+        			that._checkTopMiddleCellsNeighbors(clickedCell);
+        		}
+        		else if (clickedCell.row === fieldRows - 1 && clickedCell.col > 0 && clickedCell.col < fieldCols - 1) {
+        			that._checkBottomMiddleCellsNeighbors(clickedCell);
+        		}
+        		else if (clickedCell.row === 0 && clickedCell.col === 0) {
+        			that._checkTopLeftCellNeighbors(clickedCell);
+        		}
+        		else if (clickedCell.row === 0 && clickedCell.col === fieldCols - 1) {
+        			that._checkTopRightCellNeighbors(clickedCell);
+        		}
+        		else if (clickedCell.col === 0 && clickedCell.row > 0 && clickedCell.row < fieldRows - 1) {
+        			that._checkLeftMiddleCellsNeighbors(clickedCell);
+        		}
+        		else if (clickedCell.col === 0 && clickedCell.row === fieldRows - 1) {
+        			that._checkBottomLeftCellNeighbors(clickedCell);
+        		}
+        		else if (clickedCell.col === fieldCols - 1 && clickedCell.row === fieldRows - 1) {
+        			that._checkBottomRightCellNeighbors(clickedCell);
+        		}
+        		else if (clickedCell.col === fieldCols - 1 && clickedCell.row > 0 && clickedCell.row < fieldRows - 1) {
+        			that._checkRightMiddleCellsNeighbors(clickedCell);
+        		}
+        		else {
+        			that._checkMiddleCellsNeighbors(clickedCell);
+        		}
+        	}
+        });
+
+        fieldWrapper.mouseup(function (event) {
+        	event.preventDefault();
+        	if (event.target instanceof HTMLDivElement) {
+        		return;
+
+        	}
+
+        	var cell = $(event.target);
+        	var cellData = cell.data();
+
+        	switch (event.which) {
+        		case 1:
+        			var result = field.clickCell(cellData.row, cellData.col, 1);
+        			if (result.type == "number") {
+        				cell.removeClass("Cell").addClass("Number");
+        				cell.first().html(result.value);
+        			}
+        			else if (result.type == "mine") {
+        				cell.removeClass("Cell").addClass("Mine");
+        				cell.first().html("*");
+        			}
+
+        			break;
+        		case 3:
+        			var result = field.clickCell(cellData.row, cellData.col, 3);
+        			if (result.type == "Flag") {
+        				cell.removeClass("Cell").addClass("Flag");
+        				cell.first().html("+");
+        			}
+        			else {
+        				cell.removeClass("Flag").addClass("Cell");
+        				cell.first().html("C");
+        			}
+
+        			break;
+        		default:
+        			alert('You have a strange mouse');
+        	}
+        });
+
+        //fieldWrapper.mouseup(function myfunction() {
+        //    if (this.mouse1 && this.mouse2) {
+        //        alert("a");
+        //    }
+        //    this.mouse1 = false;
+        //    this.mouse2 = false;
+        //});
+
+        //fieldWrapper.mousedown(function (event) {
+
+        //    if (this.mouse1 == true && this.mouse2 == false) {
+        //        this.dualClick = true;
+        //    }
+        //    else {
+        //        this.mouse1 = true;
+
+        //    }
+        //}).mousedown(function (event) {
+        //    if (this.mouse1 ) {
+        //        this.mouse2 = true;
+        //    }
+        //});
+
+        //fieldWrapper.mouseup(function (event) {
+        //    if (this.mouse2 && this.dualClick) {
+        //        alert("a");
+        //    }
+        //    this.dualClick = false;
+        //    this.mouse1 = false;
+        //    this.mouse2 = false;
+        //});
+    },
+
+    _checkTopLeftCellNeighbors: function (clickedCell) {
+    	var domMatrix = this.renderer.domMatrix;
+    	var fieldMatrix = this.field.matrix;
+    	var minesCount = clickedCell.value;
+    	var flagsCount = 0;
+    	var row = clickedCell.row;
+    	var col = clickedCell.col;
+
+    	for (var i = row; i <= row + 1; i += 1) {
+    		for (var j = col; j <= col + 1; j += 1) {
+    			if (fieldMatrix[i][j].flagged) {
+    				flagsCount += 1;
+    			}
+    		}
+    	}
+
+    	if (flagsCount === minesCount) {
+    		if (flagsCount === minesCount) {
+    			for (var i = row; i <= row + 1; i += 1) {
+    				for (var j = col; j <= col + 1; j += 1) {
+    					if (!fieldMatrix[i][j].flagged) {
+    						this.field.clickCell(i, j, 1);
+    						this._flipCell(fieldMatrix, domMatrix, i, j);
+    					}
+    				}
+    			}
+    		}
+    	}
+    },
+
+    _checkTopMiddleCellsNeighbors: function (clickedCell) {
+    	var domMatrix = this.renderer.domMatrix;
+    	var fieldMatrix = this.field.matrix;
+    	var minesCount = clickedCell.value;
+    	var flagsCount = 0;
+    	var row = clickedCell.row;
+    	var col = clickedCell.col;
+
+    	for (var i = row; i <= row + 1; i += 1) {
+    		for (var j = col - 1; j <= col + 1; j += 1) {
+    			if (fieldMatrix[i][j].flagged) {
+    				flagsCount += 1;
+    			}
+    		}
+    	}
+
+    	if (flagsCount === minesCount) {
+    		if (flagsCount === minesCount) {
+    			for (var i = row; i <= row + 1; i += 1) {
+    				for (var j = col - 1; j <= col + 1; j += 1) {
+    					if (!fieldMatrix[i][j].flagged) {
+    						this.field.clickCell(i, j, 1);
+    						this._flipCell(fieldMatrix, domMatrix, i, j);
+    					}
+    				}
+    			}
+    		}
+    	}
+    },
+
+    _checkTopRightCellNeighbors: function (clickedCell) {
+    	var domMatrix = this.renderer.domMatrix;
+    	var fieldMatrix = this.field.matrix;
+    	var minesCount = clickedCell.value;
+    	var flagsCount = 0;
+    	var row = clickedCell.row;
+    	var col = clickedCell.col;
+
+    	for (var i = row; i <= row + 1; i += 1) {
+    		for (var j = col - 1; j <= col; j += 1) {
+    			if (fieldMatrix[i][j].flagged) {
+    				flagsCount += 1;
+    			}
+    		}
+    	}
+
+    	if (flagsCount === minesCount) {
+    		for (var i = row; i <= row + 1; i += 1) {
+    			for (var j = col - 1; j <= col; j += 1) {
+    				if (!fieldMatrix[i][j].flagged) {
+    					this.field.clickCell(i, j, 1);
+    					this._flipCell(fieldMatrix, domMatrix, i, j);
+    				}
+    			}
+    		}
+    	}
+    },
+
+    _checkLeftMiddleCellsNeighbors: function (clickedCell) {
+    	var domMatrix = this.renderer.domMatrix;
+    	var fieldMatrix = this.field.matrix;
+    	var minesCount = clickedCell.value;
+    	var flagsCount = 0;
+    	var row = clickedCell.row;
+    	var col = clickedCell.col;
+
+    	for (var i = row - 1; i <= row + 1; i += 1) {
+    		for (var j = col; j <= col + 1; j += 1) {
+    			if (fieldMatrix[i][j].flagged) {
+    				flagsCount += 1;
+    			}
+    		}
+    	}
+
+    	if (flagsCount === minesCount) {
+    		for (var i = row - 1; i <= row + 1; i += 1) {
+    			for (var j = col; j <= col + 1; j += 1) {
+    				if (!fieldMatrix[i][j].flagged) {
+    					this.field.clickCell(i, j, 1);
+    					this._flipCell(fieldMatrix, domMatrix, i, j);
+    				}
+    			}
+    		}
+    	}
+    },
+
+    _checkMiddleCellsNeighbors: function (clickedCell) {
+    	var domMatrix = this.renderer.domMatrix;
+    	var fieldMatrix = this.field.matrix;
+    	var minesCount = clickedCell.value;
+    	var flagsCount = 0;
+    	var row = clickedCell.row;
+    	var col = clickedCell.col;
+
+    	for (var i = row - 1; i <= row + 1; i += 1) {
+    		for (var j = col - 1; j <= col + 1; j += 1) {
+    			if (fieldMatrix[i][j].flagged) {
+    				flagsCount += 1;
+    			}
+    		}
+    	}
+
+    	if (flagsCount === minesCount) {
+    		for (var i = row - 1; i <= row + 1; i += 1) {
+    			for (var j = col - 1; j <= col + 1; j += 1) {
+    				if (!fieldMatrix[i][j].flagged) {
+    					this.field.clickCell(i, j, 1);
+    					this._flipCell(fieldMatrix, domMatrix, i, j);
+    				}
+    			}
+    		}
+    	}
+    },
+
+    _checkRightMiddleCellsNeighbors: function (clickedCell) {
+    	var domMatrix = this.renderer.domMatrix;
+    	var fieldMatrix = this.field.matrix;
+    	var minesCount = clickedCell.value;
+    	var flagsCount = 0;
+    	var row = clickedCell.row;
+    	var col = clickedCell.col;
+
+    	for (var i = row - 1; i <= row + 1; i += 1) {
+    		for (var j = col - 1; j <= col; j += 1) {
+    			if (fieldMatrix[i][j].flagged) {
+    				flagsCount += 1;
+    			}
+    		}
+    	}
+
+    	if (flagsCount === minesCount) {
+    		for (var i = row - 1; i <= row + 1; i += 1) {
+    			for (var j = col - 1; j <= col; j += 1) {
+    				if (!fieldMatrix[i][j].flagged) {
+    					this.field.clickCell(i, j, 1);
+    					this._flipCell(fieldMatrix, domMatrix, i, j);
+    				}
+    			}
+    		}
+    	}
+    },
+
+    _checkBottomLeftCellNeighbors: function (clickedCell) {
+    	var domMatrix = this.renderer.domMatrix;
+    	var fieldMatrix = this.field.matrix;
+    	var minesCount = clickedCell.value;
+    	var flagsCount = 0;
+    	var row = clickedCell.row;
+    	var col = clickedCell.col;
+
+    	for (var i = row - 1; i <= row; i += 1) {
+    		for (var j = col; j <= col + 1; j += 1) {
+    			if (fieldMatrix[i][j].flagged) {
+    				flagsCount += 1;
+    			}
+    		}
+    	}
+
+    	if (flagsCount === minesCount) {
+    		for (var i = row - 1; i <= row; i += 1) {
+    			for (var j = col; j <= col + 1; j += 1) {
+    				if (!fieldMatrix[i][j].flagged) {
+    					this.field.clickCell(i, j, 1);
+    					this._flipCell(fieldMatrix, domMatrix, i, j);
+    				}
+    			}
+    		}
+    	}
+    },
+
+    _checkBottomMiddleCellsNeighbors: function (clickedCell) {
+    	var domMatrix = this.renderer.domMatrix;
+    	var fieldMatrix = this.field.matrix;
+    	var minesCount = clickedCell.value;
+    	var flagsCount = 0;
+    	var row = clickedCell.row;
+    	var col = clickedCell.col;
+
+    	for (var i = row - 1; i <= row; i += 1) {
+    		for (var j = col - 1; j <= col + 1; j += 1) {
+    			if (fieldMatrix[i][j].flagged) {
+    				flagsCount += 1;
+    			}
+    		}
+    	}
+
+    	if (flagsCount === minesCount) {
+    		for (var i = row - 1; i <= row; i += 1) {
+    			for (var j = col - 1; j <= col + 1; j += 1) {
+    				if (!fieldMatrix[i][j].flagged) {
+    					this.field.clickCell(i, j, 1);
+    					this._flipCell(fieldMatrix, domMatrix, i, j);
+    				}
+    			}
+    		}
+    	}
+    },
+
+    _checkBottomRightCellNeighbors: function (clickedCell) {
+    	var domMatrix = this.renderer.domMatrix;
+    	var fieldMatrix = this.field.matrix;
+    	var minesCount = clickedCell.value;
+    	var flagsCount = 0;
+    	var row = clickedCell.row;
+    	var col = clickedCell.col;
+
+    	for (var i = row - 1; i <= row; i += 1) {
+    		for (var j = col - 1; j <= col; j += 1) {
+    			if (fieldMatrix[i][j].flagged) {
+    				flagsCount += 1;
+    			}
+    		}
+    	}
+
+    	if (flagsCount === minesCount) {
+    		for (var i = row - 1; i <= row; i += 1) {
+    			for (var j = col - 1; j <= col; j += 1) {
+    				if (!fieldMatrix[i][j].flagged) {
+    					this.field.clickCell(i, j, 1);
+    					this._flipCell(fieldMatrix, domMatrix, i, j);
+    				}
+    			}
+    		}
+    	}
+    },
+
+    _flipCell: function (fieldMatrix, domMatrix, row, col) {
+    	if (fieldMatrix[row][col].type === "mine") {
+    		domMatrix[row][col].removeClass("Cell").addClass("Mine");
+    		domMatrix[row][col].first().html("*");
+    	}
+    	else {
+    		domMatrix[row][col].removeClass("Cell").addClass("Number");
+    		domMatrix[row][col].first().html(fieldMatrix[row][col].value);
+    	}
+    }
+});

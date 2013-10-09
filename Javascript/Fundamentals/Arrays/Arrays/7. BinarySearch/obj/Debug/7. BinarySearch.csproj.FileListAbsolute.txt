@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\7. BinarySearch\bin\_7.BinarySearch.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\7. BinarySearch\bin\_7.BinarySearch.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\7. BinarySearch\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\7. BinarySearch\obj\Debug\_7.BinarySearch.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\7. BinarySearch\obj\Debug\_7.BinarySearch.pdb

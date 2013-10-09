@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Changing background color</title>
+</head>
+<body>
+    <script src="utils/jquery-1.9.1.min.js"></script>
+    <script>
+        function onColorChange() {
+            var color = this.value;
+            $("body").css("background-color", color);
+        }
+
+        var colorPicker = $("<input type='color'</input>").attr("id", "color").
+            on("change", onColorChange);
+
+        colorPicker.appendTo("body");
+    </script>
+</body>
+</html>

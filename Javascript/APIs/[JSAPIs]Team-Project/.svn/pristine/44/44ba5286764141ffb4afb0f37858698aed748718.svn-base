@@ -1,0 +1,128 @@
+﻿body, div, button, form, img {
+    margin:0;
+    padding:0;
+    border:none;
+    font-family: Arial;
+}
+#gameInfo {
+    margin-top: 15px;
+    padding: 15px 15px 0 100px;
+}
+    #gameInfo span {
+        display: inline-block;
+        font-weight: bold;
+    }
+#Time, #MineCount {
+    margin: 0 200px 0 10px;
+    width: 70px;
+}
+#field-wrapper {
+    float: left;
+    background: #606060;
+    padding: 2px;
+    margin: 30px;
+}
+#field-wrapper button {
+    margin: 2px;
+    border: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px; 
+    font-weight: bold;
+    font-size: 20px;
+    color: #81B1E8;
+}
+#field-wrapper .Mine {
+    background-color: #FF2631;
+     font-size: 19px;
+    width: 35px;
+    height: 34px;
+}
+
+#field-wrapper .Flag {
+    background-color: #FFF04E;
+     font-size: 19px;
+    width: 35px;
+    height: 34px;
+}
+
+.Number {
+    background-color: #eee;
+}
+
+.Cell {
+    background-color: #81B1E8;
+}
+
+#user-menu-popup {
+    background-color:white;
+    position:absolute;
+    top:250px;
+    left:350px;
+    height:500px;
+    width:500px;
+    border-radius:15px;
+}
+
+#popup-menu{
+    padding: 25px;
+    background: #fff;
+    width: 633px;
+    display: none;
+    box-shadow: 0 0 45px 5px #fff;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+    #popup-menu #gameImage {
+        width: 275px;
+        height: 165px;
+        float: left;
+        padding: 0;
+        margin-right: 65px;
+    }
+    #popup-menu h3 {
+        font: bold 155% 'Arial';
+        color: #81B1E8;
+        margin-top: 0;
+        margin-left: 8px;
+    }
+    #popup-menu button {
+        display: inline-block;
+    }
+#start-game-button{
+    padding: 10px 40px;
+    background: #fff;
+    box-shadow: 0 0 35px #81B1E8 inset;
+    border-radius: 5px;
+    font: bold 155% 'Arial';
+    color: #81B1E8;
+    margin-bottom: 20px;
+}
+
+#share-button {
+    width: 30px;
+    height: 30px;
+    background: url('images/facebook.png');
+    background-size: 32px 32px;
+    background-position: -2px -2px;
+    border: none;
+}
+.b-close {
+    background-color: #81B1E8;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: none;
+    font: bold 131% sans-serif;
+    padding: 6px 12px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    border: none;
+
+}
+label {
+    margin-right:5px;
+    color: #486FC1;
+    font: bold 131% 'Petrona',sans;
+}

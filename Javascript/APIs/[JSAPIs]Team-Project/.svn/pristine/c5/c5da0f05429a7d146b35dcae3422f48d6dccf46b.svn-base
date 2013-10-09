@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minesweeper</title>
+        <script src="libs/jquery-1.10.1.js"></script>
+        <script src="libs/classical-oop.js"></script>
+        <script src="libs/queue.js"></script>
+        <link href="MinesCSS.css" rel="stylesheet" />
+    </head>
+
+    <body oncontextmenu="return false;">
+        <div id="gameInfo">
+            <span>Time: </span><span id="Time"></span>
+            <span>Mines: </span><span id="MineCount"></span>
+        </div>
+        <div id="field-wrapper"></div>
+
+        <script src="scripts/InputHandler.js"></script>
+        <script src="scripts/Cell.js"></script>
+        <script src="scripts/MineCell.js"></script>
+        <script src="scripts/NumberCell.js"></script>
+        <script src="scripts/Field.js"></script>
+        <script src="scripts/Renderer.js"></script>
+        <script src="scripts/Timer.js"></script>
+        <script src="scripts/jquery.flip.js"></script>
+        
+        <script>
+            var timer = new Timer();
+            timer.init();
+            timer.start();
+
+            var field = new Field(16, 30, 99);
+            field.generate();
+            field.draw(); 
+
+            var renderer = new Renderer(field);
+            renderer.generateDOMElements();
+
+            var inputHanlder = new InputHandler(field, renderer, timer);
+            inputHanlder.attachEvents();
+        </script>
+    </body>
+</html>

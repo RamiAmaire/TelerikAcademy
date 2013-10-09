@@ -1,0 +1,5 @@
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\4. ChangeText\bin\_4.ChangeText.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\4. ChangeText\bin\_4.ChangeText.pdb
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\4. ChangeText\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\4. ChangeText\obj\Debug\_4.ChangeText.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\4. ChangeText\obj\Debug\_4.ChangeText.pdb

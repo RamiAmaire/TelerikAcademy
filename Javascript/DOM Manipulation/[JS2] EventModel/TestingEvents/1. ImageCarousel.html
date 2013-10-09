@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Carousel</title>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+            border:none;
+        }
+
+        #carousel {
+            position:absolute;
+            height:281px;
+            width:500px;
+            top:300px;
+            left:350px;
+            border:3px solid black;
+            background-image: url(images/image0.jpg);
+        }
+
+        .buttons {
+            position:absolute;
+        }
+
+        #forward {
+            top:410px;
+            left:865px;
+        }
+
+        #forward:hover {
+            left:875px;
+        }
+
+        #backward {
+            top:410px;
+            left:250px;
+        }
+
+        #backward:hover {
+            left:240px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="carousel"></div>
+        <button id="forward" class="buttons">
+            <img src="images/arrow-right.jpg" />
+        </button>
+        <button id="backward" class="buttons">
+            <img src="images/arrow-left.jpg" />
+        </button>
+    </div>
+    <script>
+        function onBackwardButtonClick() {
+            imageCounter--;
+            if (imageCounter == -1) {
+                imageCounter = images.length - 1;
+            }
+
+            var imageSrc = images[imageCounter];
+            carousel.style.backgroundImage = imageSrc;
+        }
+
+        function onForwardButtonClick() {
+            imageCounter++;
+            if (imageCounter == images.length) {
+                imageCounter = 0;
+            }
+
+            var imageSrc = images[imageCounter];
+            carousel.style.backgroundImage = imageSrc;
+        }
+
+        function onKeyDown(e) {
+            if (e.keyCode == LEFT_ARROW_KEY) {
+                onBackwardButtonClick();
+            }
+            if (e.keyCode == RIGHT_ARROW_KEY) {
+                onForwardButtonClick();
+            }
+        }
+
+        // best in Chrome
+        var carousel = document.getElementById("carousel");
+        var buttonForward = document.getElementById("forward");
+        var buttonBackward = document.getElementById("backward");
+
+        buttonForward.addEventListener("click", onForwardButtonClick, false);
+        buttonBackward.addEventListener("click", onBackwardButtonClick, false);
+
+        var LEFT_ARROW_KEY = 37;
+        var RIGHT_ARROW_KEY = 39;
+        window.addEventListener("keydown", onKeyDown, false);
+
+        var imageCounter = 0;
+        var images = ["url('images/image0.jpg')", "url('images/image1.jpg')",
+            "url('images/image2.jpg')", "url('images/image3.jpg')", "url('images/image4.jpg')"];
+    </script>
+</body>
+</html>

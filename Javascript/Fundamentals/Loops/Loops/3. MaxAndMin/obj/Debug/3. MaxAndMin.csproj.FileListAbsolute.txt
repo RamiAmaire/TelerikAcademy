@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Loops\3. MaxAndMin\bin\_3.MaxAndMin.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Loops\3. MaxAndMin\bin\_3.MaxAndMin.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Loops\3. MaxAndMin\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Loops\3. MaxAndMin\obj\Debug\_3.MaxAndMin.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Loops\3. MaxAndMin\obj\Debug\_3.MaxAndMin.pdb

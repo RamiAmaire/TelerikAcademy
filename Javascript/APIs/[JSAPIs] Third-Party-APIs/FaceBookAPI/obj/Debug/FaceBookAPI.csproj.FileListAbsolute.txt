@@ -1,0 +1,5 @@
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\FaceBookAPI\bin\FaceBookAPI.dll
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\FaceBookAPI\bin\FaceBookAPI.pdb
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\FaceBookAPI\obj\Debug\FaceBookAPI.csprojResolveAssemblyReference.cache
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\FaceBookAPI\obj\Debug\FaceBookAPI.dll
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\FaceBookAPI\obj\Debug\FaceBookAPI.pdb

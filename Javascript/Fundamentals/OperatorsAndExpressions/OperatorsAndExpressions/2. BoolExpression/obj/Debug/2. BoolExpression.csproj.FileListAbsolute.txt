@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\2. BoolExpression\bin\_2.BoolExpression.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\2. BoolExpression\bin\_2.BoolExpression.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\2. BoolExpression\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\2. BoolExpression\obj\Debug\_2.BoolExpression.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\2. BoolExpression\obj\Debug\_2.BoolExpression.pdb

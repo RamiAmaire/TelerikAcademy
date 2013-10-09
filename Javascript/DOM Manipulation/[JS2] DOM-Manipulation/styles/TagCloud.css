@@ -1,0 +1,24 @@
+﻿body {
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+#button-holder {
+    position:relative;
+    margin-top:15px;
+}
+
+#wrapper {
+    position:relative;
+    left:400px;
+    top:200px;
+}
+
+#wrapper div {
+    font-weight:bold;
+    font-family:Calibri;
+    position:absolute;
+    text-align:center;
+    display:inline-block;
+}

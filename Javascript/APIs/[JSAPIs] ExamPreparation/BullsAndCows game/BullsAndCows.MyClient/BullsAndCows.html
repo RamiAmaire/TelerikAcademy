@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #create-game-holder {
+            height:50px;
+            margin-bottom:50px;
+        }
+
+        #open-games-holder {
+            height:50px;
+            margin-bottom:50px;
+        }
+
+        #active-games-holder {
+            height:50px;
+            margin-bottom:150px;
+        }
+    </style>
+    <title>Bull and cows game</title>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha1.js"></script>
+    <script src="scripts/utils/class.js"></script>
+    <script src="scripts/utils/jquery-1.9.1.min.js"></script>
+    <script src="scripts/httpRequester.js"></script>
+    <script src="scripts/persister.js"></script>
+    <script src="scripts/controller.js"></script>
+</head>
+<body>
+    <div id="wrapper"></div>
+    
+    <script>
+        var controller = controllers.get("http://localhost:40643/api");
+        controller.loadUI("#wrapper");
+    </script>
+</body>
+</html>

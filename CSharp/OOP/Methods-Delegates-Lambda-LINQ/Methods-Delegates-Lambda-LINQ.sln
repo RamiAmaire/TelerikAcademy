@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. ExtendedStringBuilder", "ExtendedStringBuilder\1. ExtendedStringBuilder.csproj", "{8CE4B240-C502-45A8-94F6-F322768A38B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. ExtendedIEnumerable", "ExtendedIEnumerable\2. ExtendedIEnumerable.csproj", "{0248D774-D931-4302-BC0B-4D837FDCA09B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. FindStudentsAlphabetically", "FindStudentsAlphabetically\3. FindStudentsAlphabetically.csproj", "{D0C1E4CC-6994-4062-BD28-7E9AA17CCC2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. FindStudsBetween18-24", "FindStudsBetween18-24\4. FindStudsBetween18-24.csproj", "{E2868770-DD9C-468C-9054-5857F4B0B790}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. SortingByFirstAndLastName", "SortingByFirstAndLastName\5. SortingByFirstAndLastName.csproj", "{9880112B-C5A7-4F86-8E7F-DDE623013450}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. DivisibleBy7And3", "6. DivisibleBy7And3\6. DivisibleBy7And3.csproj", "{CE0A2852-A410-47FE-947B-A1C9B536BE7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. ToTitleCase", "7. ToTitleCase\7. ToTitleCase.csproj", "{7B0599FB-D749-48B9-8A2D-F536BF9C8FA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CE4B240-C502-45A8-94F6-F322768A38B0}.Debug|x86.ActiveCfg = Debug|x86
+		{8CE4B240-C502-45A8-94F6-F322768A38B0}.Debug|x86.Build.0 = Debug|x86
+		{8CE4B240-C502-45A8-94F6-F322768A38B0}.Release|x86.ActiveCfg = Release|x86
+		{8CE4B240-C502-45A8-94F6-F322768A38B0}.Release|x86.Build.0 = Release|x86
+		{0248D774-D931-4302-BC0B-4D837FDCA09B}.Debug|x86.ActiveCfg = Debug|x86
+		{0248D774-D931-4302-BC0B-4D837FDCA09B}.Debug|x86.Build.0 = Debug|x86
+		{0248D774-D931-4302-BC0B-4D837FDCA09B}.Release|x86.ActiveCfg = Release|x86
+		{0248D774-D931-4302-BC0B-4D837FDCA09B}.Release|x86.Build.0 = Release|x86
+		{D0C1E4CC-6994-4062-BD28-7E9AA17CCC2D}.Debug|x86.ActiveCfg = Debug|x86
+		{D0C1E4CC-6994-4062-BD28-7E9AA17CCC2D}.Debug|x86.Build.0 = Debug|x86
+		{D0C1E4CC-6994-4062-BD28-7E9AA17CCC2D}.Release|x86.ActiveCfg = Release|x86
+		{D0C1E4CC-6994-4062-BD28-7E9AA17CCC2D}.Release|x86.Build.0 = Release|x86
+		{E2868770-DD9C-468C-9054-5857F4B0B790}.Debug|x86.ActiveCfg = Debug|x86
+		{E2868770-DD9C-468C-9054-5857F4B0B790}.Debug|x86.Build.0 = Debug|x86
+		{E2868770-DD9C-468C-9054-5857F4B0B790}.Release|x86.ActiveCfg = Release|x86
+		{E2868770-DD9C-468C-9054-5857F4B0B790}.Release|x86.Build.0 = Release|x86
+		{9880112B-C5A7-4F86-8E7F-DDE623013450}.Debug|x86.ActiveCfg = Debug|x86
+		{9880112B-C5A7-4F86-8E7F-DDE623013450}.Debug|x86.Build.0 = Debug|x86
+		{9880112B-C5A7-4F86-8E7F-DDE623013450}.Release|x86.ActiveCfg = Release|x86
+		{9880112B-C5A7-4F86-8E7F-DDE623013450}.Release|x86.Build.0 = Release|x86
+		{CE0A2852-A410-47FE-947B-A1C9B536BE7F}.Debug|x86.ActiveCfg = Debug|x86
+		{CE0A2852-A410-47FE-947B-A1C9B536BE7F}.Debug|x86.Build.0 = Debug|x86
+		{CE0A2852-A410-47FE-947B-A1C9B536BE7F}.Release|x86.ActiveCfg = Release|x86
+		{CE0A2852-A410-47FE-947B-A1C9B536BE7F}.Release|x86.Build.0 = Release|x86
+		{7B0599FB-D749-48B9-8A2D-F536BF9C8FA6}.Debug|x86.ActiveCfg = Debug|x86
+		{7B0599FB-D749-48B9-8A2D-F536BF9C8FA6}.Debug|x86.Build.0 = Debug|x86
+		{7B0599FB-D749-48B9-8A2D-F536BF9C8FA6}.Release|x86.ActiveCfg = Release|x86
+		{7B0599FB-D749-48B9-8A2D-F536BF9C8FA6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

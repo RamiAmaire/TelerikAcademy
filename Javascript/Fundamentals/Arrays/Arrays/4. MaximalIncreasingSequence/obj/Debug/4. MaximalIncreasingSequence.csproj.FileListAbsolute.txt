@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\4. MaximalIncreasingSequence\bin\_4.MaximalIncreasingSequence.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\4. MaximalIncreasingSequence\bin\_4.MaximalIncreasingSequence.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\4. MaximalIncreasingSequence\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\4. MaximalIncreasingSequence\obj\Debug\_4.MaximalIncreasingSequence.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\4. MaximalIncreasingSequence\obj\Debug\_4.MaximalIncreasingSequence.pdb

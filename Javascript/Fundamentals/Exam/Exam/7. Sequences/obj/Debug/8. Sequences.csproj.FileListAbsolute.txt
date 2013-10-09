@@ -1,0 +1,5 @@
+D:\Telerik\JS\JS PartOne\Exam\Exam\10. Sequences\bin\_10.Sequences.dll
+D:\Telerik\JS\JS PartOne\Exam\Exam\10. Sequences\bin\_10.Sequences.pdb
+D:\Telerik\JS\JS PartOne\Exam\Exam\10. Sequences\obj\Debug\ResolveAssemblyReference.cache
+D:\Telerik\JS\JS PartOne\Exam\Exam\10. Sequences\obj\Debug\_10.Sequences.dll
+D:\Telerik\JS\JS PartOne\Exam\Exam\10. Sequences\obj\Debug\_10.Sequences.pdb

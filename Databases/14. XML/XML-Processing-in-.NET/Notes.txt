@@ -1,0 +1,2 @@
+Ako trqbva da se chovurka po xml-a DOM Parser e nai dobre.
+Ako trqbva samo da se chete ili zapisva XML Reader i XML Writer

@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\8. NumberToEnglish\bin\_8.NumberToEnglish.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\8. NumberToEnglish\bin\_8.NumberToEnglish.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\8. NumberToEnglish\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\8. NumberToEnglish\obj\Debug\_8.NumberToEnglish.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\8. NumberToEnglish\obj\Debug\_8.NumberToEnglish.pdb

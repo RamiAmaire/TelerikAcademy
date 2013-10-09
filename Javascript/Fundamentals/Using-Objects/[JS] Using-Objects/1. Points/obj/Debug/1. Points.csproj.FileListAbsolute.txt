@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Using-Objects\1. Points\bin\_1.Points.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Using-Objects\1. Points\bin\_1.Points.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Using-Objects\1. Points\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Using-Objects\1. Points\obj\Debug\_1.Points.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Using-Objects\1. Points\obj\Debug\_1.Points.pdb

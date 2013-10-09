@@ -1,0 +1,5 @@
+c:\users\ramii\documents\visual studio 2012\Projects\[JSAPIs] jQuery\Demos\bin\Demos.dll
+c:\users\ramii\documents\visual studio 2012\Projects\[JSAPIs] jQuery\Demos\bin\Demos.pdb
+c:\users\ramii\documents\visual studio 2012\Projects\[JSAPIs] jQuery\Demos\obj\Debug\Demos.csprojResolveAssemblyReference.cache
+c:\users\ramii\documents\visual studio 2012\Projects\[JSAPIs] jQuery\Demos\obj\Debug\Demos.dll
+c:\users\ramii\documents\visual studio 2012\Projects\[JSAPIs] jQuery\Demos\obj\Debug\Demos.pdb

@@ -1,0 +1,5 @@
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\11. FormatString\bin\_11.FormatString.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\11. FormatString\bin\_11.FormatString.pdb
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\11. FormatString\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\11. FormatString\obj\Debug\_11.FormatString.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\11. FormatString\obj\Debug\_11.FormatString.pdb

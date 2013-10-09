@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\4. 3rdDigitIs7\bin\4. 3rdDigitIs7.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\4. 3rdDigitIs7\bin\4. 3rdDigitIs7.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\4. 3rdDigitIs7\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\4. 3rdDigitIs7\obj\Debug\4. 3rdDigitIs7.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\4. 3rdDigitIs7\obj\Debug\4. 3rdDigitIs7.pdb

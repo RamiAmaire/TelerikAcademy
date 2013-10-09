@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. DecimalToBinary", "1. DecimalToBinary\1. DecimalToBinary.csproj", "{9889143C-0A40-4B55-BBB3-160983F70F24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. BinaryToDecimal", "2. BinaryToDecimal\2. BinaryToDecimal.csproj", "{C3987FD6-EBF3-4DBC-9B75-1AE98449C5ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. DecimalToHex", "3. DecimalToHex\3. DecimalToHex.csproj", "{279D309D-E92A-43DB-83EF-992F1E7974FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. HexToDecimal", "4. HexToDecimal\4. HexToDecimal.csproj", "{6535A6E4-5E80-46F1-9D1A-CD9D9295BEDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. HexToBinary", "5. HexToBinary\5. HexToBinary.csproj", "{45428B60-7A98-47DA-8105-426F285E9845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. BinToHex", "6. BinToHex\6. BinToHex.csproj", "{9BD3B28D-86F5-4095-B5A4-2042AE805DC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. ConvertNSD", "7. ConvertNSD\7. ConvertNSD.csproj", "{3FE92756-6045-44D2-B60E-27A4EC66D1D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. ShortToBinary", "8. ShortToBinary\8. ShortToBinary.csproj", "{B60A8705-1CB9-4B6E-8E5A-E1E0B4377744}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9889143C-0A40-4B55-BBB3-160983F70F24}.Debug|x86.ActiveCfg = Debug|x86
+		{9889143C-0A40-4B55-BBB3-160983F70F24}.Debug|x86.Build.0 = Debug|x86
+		{9889143C-0A40-4B55-BBB3-160983F70F24}.Release|x86.ActiveCfg = Release|x86
+		{9889143C-0A40-4B55-BBB3-160983F70F24}.Release|x86.Build.0 = Release|x86
+		{C3987FD6-EBF3-4DBC-9B75-1AE98449C5ED}.Debug|x86.ActiveCfg = Debug|x86
+		{C3987FD6-EBF3-4DBC-9B75-1AE98449C5ED}.Debug|x86.Build.0 = Debug|x86
+		{C3987FD6-EBF3-4DBC-9B75-1AE98449C5ED}.Release|x86.ActiveCfg = Release|x86
+		{C3987FD6-EBF3-4DBC-9B75-1AE98449C5ED}.Release|x86.Build.0 = Release|x86
+		{279D309D-E92A-43DB-83EF-992F1E7974FD}.Debug|x86.ActiveCfg = Debug|x86
+		{279D309D-E92A-43DB-83EF-992F1E7974FD}.Debug|x86.Build.0 = Debug|x86
+		{279D309D-E92A-43DB-83EF-992F1E7974FD}.Release|x86.ActiveCfg = Release|x86
+		{279D309D-E92A-43DB-83EF-992F1E7974FD}.Release|x86.Build.0 = Release|x86
+		{6535A6E4-5E80-46F1-9D1A-CD9D9295BEDD}.Debug|x86.ActiveCfg = Debug|x86
+		{6535A6E4-5E80-46F1-9D1A-CD9D9295BEDD}.Debug|x86.Build.0 = Debug|x86
+		{6535A6E4-5E80-46F1-9D1A-CD9D9295BEDD}.Release|x86.ActiveCfg = Release|x86
+		{6535A6E4-5E80-46F1-9D1A-CD9D9295BEDD}.Release|x86.Build.0 = Release|x86
+		{45428B60-7A98-47DA-8105-426F285E9845}.Debug|x86.ActiveCfg = Debug|x86
+		{45428B60-7A98-47DA-8105-426F285E9845}.Debug|x86.Build.0 = Debug|x86
+		{45428B60-7A98-47DA-8105-426F285E9845}.Release|x86.ActiveCfg = Release|x86
+		{45428B60-7A98-47DA-8105-426F285E9845}.Release|x86.Build.0 = Release|x86
+		{9BD3B28D-86F5-4095-B5A4-2042AE805DC3}.Debug|x86.ActiveCfg = Debug|x86
+		{9BD3B28D-86F5-4095-B5A4-2042AE805DC3}.Debug|x86.Build.0 = Debug|x86
+		{9BD3B28D-86F5-4095-B5A4-2042AE805DC3}.Release|x86.ActiveCfg = Release|x86
+		{9BD3B28D-86F5-4095-B5A4-2042AE805DC3}.Release|x86.Build.0 = Release|x86
+		{3FE92756-6045-44D2-B60E-27A4EC66D1D1}.Debug|x86.ActiveCfg = Debug|x86
+		{3FE92756-6045-44D2-B60E-27A4EC66D1D1}.Debug|x86.Build.0 = Debug|x86
+		{3FE92756-6045-44D2-B60E-27A4EC66D1D1}.Release|x86.ActiveCfg = Release|x86
+		{3FE92756-6045-44D2-B60E-27A4EC66D1D1}.Release|x86.Build.0 = Release|x86
+		{B60A8705-1CB9-4B6E-8E5A-E1E0B4377744}.Debug|x86.ActiveCfg = Debug|x86
+		{B60A8705-1CB9-4B6E-8E5A-E1E0B4377744}.Debug|x86.Build.0 = Debug|x86
+		{B60A8705-1CB9-4B6E-8E5A-E1E0B4377744}.Release|x86.ActiveCfg = Release|x86
+		{B60A8705-1CB9-4B6E-8E5A-E1E0B4377744}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

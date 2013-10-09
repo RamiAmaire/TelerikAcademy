@@ -1,0 +1,5 @@
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\5. ReplaceWhiteSpaces\bin\_5.ReplaceWhiteSpaces.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\5. ReplaceWhiteSpaces\bin\_5.ReplaceWhiteSpaces.pdb
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\5. ReplaceWhiteSpaces\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\5. ReplaceWhiteSpaces\obj\Debug\_5.ReplaceWhiteSpaces.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\5. ReplaceWhiteSpaces\obj\Debug\_5.ReplaceWhiteSpaces.pdb

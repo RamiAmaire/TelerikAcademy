@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Favourites Bar</title>
+    <style>
+        .displayed {
+            display:block;
+        }
+    </style>
+    <script src="ClassicalOOP.js"></script>
+    <script src="jquery-1.9.1.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+
+    </div>
+    <script>
+        var FavouritesBar = Class.create({
+            init: function (urls, folders) {
+                this.urls = urls;
+                this.folders = folders;
+                this.element = $("<div></div>");
+            },
+
+            _appendChildren: function () {
+                for (var i = 0; i < this.urls.length; i++) {
+                    this.element.append(this.urls[i].element);
+                }
+
+                for (var i = 0; i < this.folders.length; i++) {
+                    this.element.append(this.folders[i].element);
+                }
+            },
+
+            render: function () {
+                this._appendChildren();
+                var wrapper = $("#wrapper");
+                wrapper.append(this.element);
+            }
+        });
+
+        var Folder = Class.create({
+            init: function (title, urls) {
+                this.title = title;
+                this.urls = urls;
+                this.element = $("<span></span>").html(this.title).on("click", this._displayChildren);
+                this._displayed = false;
+                this._appendChildren();
+            },
+
+            _displayChildren: function () {
+                if (!this._displayed) {
+                    for (var i = 0; i < this.element.children.length; i++) {
+                        this.urls[i].element.addClass("displayed");
+                    }
+
+                    this._displayed = true;
+                }
+                else {
+                    for (var i = 0; i < this.element.children.length; i++) {
+                        this.urls[i].element.removeClass("displayed");
+                    }
+
+                    this._displayed = false;
+                }
+            },
+
+            _appendChildren: function () {
+                for (var i = 0; i < this.urls.length; i++) {
+                    this.element.append(urls[i].element);
+                }
+            }
+        });
+
+        var Url = Class.create({
+            init: function (title, url) {
+                this.title = title;
+                this.url = url;
+                this.element = $("<a></a>").attr("href", this.url);
+                this.element.html(this.title);
+            }
+        });
+
+        var urls = [new Url("Sportal", "www.sportal.bg"), new Url("Sport1", "www.sport1.bg"),
+            new Url("Sky Sports", "www.SkySports.com")];
+
+        var sportsFolder = new Folder("Sport", urls);
+        var folders = [sportsFolder]
+
+        var favourites = new FavouritesBar(urls, folders);
+        favourites.render();
+        
+        // it's not full done ;(, but I'am sooooo tired right now, falling on the table.
+    </script>
+</body>
+</html>

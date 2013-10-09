@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\3. MaximalSeqOfEqualElements\bin\_3.MaximalSeqOfEqualElements.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\3. MaximalSeqOfEqualElements\bin\_3.MaximalSeqOfEqualElements.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\3. MaximalSeqOfEqualElements\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\3. MaximalSeqOfEqualElements\obj\Debug\_3.MaximalSeqOfEqualElements.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\3. MaximalSeqOfEqualElements\obj\Debug\_3.MaximalSeqOfEqualElements.pdb

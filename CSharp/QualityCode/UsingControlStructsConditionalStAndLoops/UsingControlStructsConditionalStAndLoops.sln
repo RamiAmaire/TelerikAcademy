@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. CookingChef", "Testing\1. CookingChef.csproj", "{CC7669F2-99F4-4C60-962C-98FFCE4E4229}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. RefactoringIfStatementsA", "Task2\2. RefactoringIfStatementsA.csproj", "{8C2504AB-C65B-4AED-9D6B-AF64C569F546}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. RefactoringIfStatementsB", "3. Task2b\2. RefactoringIfStatementsB.csproj", "{F67071D9-952D-42BE-9B97-FCFB8AA67485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.  RefactoringLoop", "3. Task3\3.  RefactoringLoop.csproj", "{13289AE3-4C58-41EF-ABE6-C9341E762A31}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ramiamaire.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 3.\u0020Task2b\\2.\u0020RefactoringIfStatementsB.csproj
+		SccProjectName1 = 3.\u0020Task2b
+		SccLocalPath1 = 3.\u0020Task2b
+		SccProjectUniqueName2 = 3.\u0020Task3\\3.\u0020\u0020RefactoringLoop.csproj
+		SccProjectName2 = 3.\u0020Task3
+		SccLocalPath2 = 3.\u0020Task3
+		SccProjectUniqueName3 = Task2\\2.\u0020RefactoringIfStatementsA.csproj
+		SccProjectName3 = Task2
+		SccLocalPath3 = Task2
+		SccProjectUniqueName4 = Testing\\1.\u0020CookingChef.csproj
+		SccProjectName4 = Testing
+		SccLocalPath4 = Testing
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC7669F2-99F4-4C60-962C-98FFCE4E4229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC7669F2-99F4-4C60-962C-98FFCE4E4229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC7669F2-99F4-4C60-962C-98FFCE4E4229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC7669F2-99F4-4C60-962C-98FFCE4E4229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C2504AB-C65B-4AED-9D6B-AF64C569F546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C2504AB-C65B-4AED-9D6B-AF64C569F546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C2504AB-C65B-4AED-9D6B-AF64C569F546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C2504AB-C65B-4AED-9D6B-AF64C569F546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F67071D9-952D-42BE-9B97-FCFB8AA67485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F67071D9-952D-42BE-9B97-FCFB8AA67485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F67071D9-952D-42BE-9B97-FCFB8AA67485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F67071D9-952D-42BE-9B97-FCFB8AA67485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13289AE3-4C58-41EF-ABE6-C9341E762A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13289AE3-4C58-41EF-ABE6-C9341E762A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13289AE3-4C58-41EF-ABE6-C9341E762A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13289AE3-4C58-41EF-ABE6-C9341E762A31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

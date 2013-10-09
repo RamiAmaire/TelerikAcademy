@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+    <div>Template</div>
+    <div data-type="template" id="list-item">
+        <strong>-{name}-</strong> <span>-{age}-</span>
+    </div>
+    <div>Result</div>
+    <div id="ul-result"></div>
+        <script>
+            function generateList(array, template) {
+                var result = "<ul>";
+                var replacementRegExp = /-{(.*?)}-/;
+                //debugger;
+                for (var i in array) {
+                    var listItem = template;
+                    var match;
+                    while (match = listItem.match(replacementRegExp)) {
+                        var replacementValue = array[i][match[1]];
+                        listItem = listItem.replace(replacementRegExp, replacementValue);
+                    }
+
+
+                    result += "<li>" + listItem + "</li>";
+                }
+
+                result += "</ul>";
+                return result;
+            }
+
+            var people =
+            [
+                { name: "Van Persie", age: 29 },
+                { name: "Fernando Torres", age: 29 },
+                { name: "Cristiano Ronaldo", age: 28 },
+                { name: "Lionel Messi", age: 25 }
+            ];
+
+            var template = document.getElementById("list-item").innerHTML;
+            var peopleList = generateList(people, template);
+
+            document.getElementById("ul-result").innerHTML = peopleList;
+ 
+        </script>
+</body>
+</html>

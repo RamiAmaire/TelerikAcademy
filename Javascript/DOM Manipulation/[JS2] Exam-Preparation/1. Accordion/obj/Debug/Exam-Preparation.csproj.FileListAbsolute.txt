@@ -1,0 +1,5 @@
+c:\users\ramii\documents\visual studio 2012\Projects\[JS2] Exam-Preparation\1. Accordion\bin\_1.Accordion.dll
+c:\users\ramii\documents\visual studio 2012\Projects\[JS2] Exam-Preparation\1. Accordion\bin\_1.Accordion.pdb
+c:\users\ramii\documents\visual studio 2012\Projects\[JS2] Exam-Preparation\1. Accordion\obj\Debug\Exam-Preparation.csprojResolveAssemblyReference.cache
+c:\users\ramii\documents\visual studio 2012\Projects\[JS2] Exam-Preparation\1. Accordion\obj\Debug\_1.Accordion.dll
+c:\users\ramii\documents\visual studio 2012\Projects\[JS2] Exam-Preparation\1. Accordion\obj\Debug\_1.Accordion.pdb

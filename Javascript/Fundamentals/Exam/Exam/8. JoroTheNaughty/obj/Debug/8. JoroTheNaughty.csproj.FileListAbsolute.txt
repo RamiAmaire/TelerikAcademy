@@ -1,0 +1,5 @@
+D:\Telerik\JS\JS PartOne\Exam\Exam\8. JoroTheNaughty\bin\JoroTheNaughty.dll
+D:\Telerik\JS\JS PartOne\Exam\Exam\8. JoroTheNaughty\bin\JoroTheNaughty.pdb
+D:\Telerik\JS\JS PartOne\Exam\Exam\8. JoroTheNaughty\obj\Debug\ResolveAssemblyReference.cache
+D:\Telerik\JS\JS PartOne\Exam\Exam\8. JoroTheNaughty\obj\Debug\JoroTheNaughty.dll
+D:\Telerik\JS\JS PartOne\Exam\Exam\8. JoroTheNaughty\obj\Debug\JoroTheNaughty.pdb

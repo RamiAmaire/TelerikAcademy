@@ -1,0 +1,10 @@
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\5. DurankulakNumbers\bin\_5.DurankulakNumbers.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\5. DurankulakNumbers\bin\_5.DurankulakNumbers.pdb
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\5. DurankulakNumbers\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\5. DurankulakNumbers\obj\Debug\_5.DurankulakNumbers.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\5. DurankulakNumbers\obj\Debug\_5.DurankulakNumbers.pdb
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\5. DurankulakNumbers\bin\_5.DurankulakNumbers.dll
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\5. DurankulakNumbers\bin\_5.DurankulakNumbers.pdb
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\5. DurankulakNumbers\obj\Debug\ResolveAssemblyReference.cache
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\5. DurankulakNumbers\obj\Debug\_5.DurankulakNumbers.dll
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\5. DurankulakNumbers\obj\Debug\_5.DurankulakNumbers.pdb

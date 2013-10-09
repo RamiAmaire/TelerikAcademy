@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Loops\2. NotDivisibleBy7And3\bin\_2.NotDivisibleBy7And3.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Loops\2. NotDivisibleBy7And3\bin\_2.NotDivisibleBy7And3.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Loops\2. NotDivisibleBy7And3\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Loops\2. NotDivisibleBy7And3\obj\Debug\_2.NotDivisibleBy7And3.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Loops\2. NotDivisibleBy7And3\obj\Debug\_2.NotDivisibleBy7And3.pdb

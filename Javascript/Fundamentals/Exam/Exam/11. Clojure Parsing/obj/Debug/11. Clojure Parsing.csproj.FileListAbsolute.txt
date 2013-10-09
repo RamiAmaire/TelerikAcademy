@@ -1,0 +1,5 @@
+D:\Telerik\JS\JS PartOne\Exam\Exam\11. Clojure Parsing\bin\_11.Clojure_Parsing.dll
+D:\Telerik\JS\JS PartOne\Exam\Exam\11. Clojure Parsing\bin\_11.Clojure_Parsing.pdb
+D:\Telerik\JS\JS PartOne\Exam\Exam\11. Clojure Parsing\obj\Debug\ResolveAssemblyReference.cache
+D:\Telerik\JS\JS PartOne\Exam\Exam\11. Clojure Parsing\obj\Debug\_11.Clojure_Parsing.dll
+D:\Telerik\JS\JS PartOne\Exam\Exam\11. Clojure Parsing\obj\Debug\_11.Clojure_Parsing.pdb

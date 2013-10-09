@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script>
+        var wrapperCSS = {
+            "background-color": "yellow",
+            "width": "500px",
+            "height": "500px",
+            "font-size": "30px",
+            "font-weight": "bold",
+            "text-align": "center",
+            "vertical-align": "text-bottom"
+        }
+
+        var hiderCSS = {
+            "position": "absolute",
+            "top": "700px",
+            "left": "300px"
+        }
+
+        var wrapper = $("<div> Wrapper Baby !</div>").attr("id", "wrapper").html("hahaha").css(wrapperCSS);
+        wrapper.appendTo("body");
+
+        var faded = false;
+        var button = $("<button> Let's Hide ! </div>").attr("id", "hider").css(hiderCSS).
+            on("click", function () {
+                if (!faded) {
+                    $("#wrapper").fadeOut(500);
+                    faded = true;
+                }
+                else {
+                    $("#wrapper").fadeIn(500);
+                    faded = false;
+                }
+            });
+
+        button.appendTo('body');
+    </script>
+</body>
+</html>

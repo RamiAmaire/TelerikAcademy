@@ -1,0 +1,5 @@
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\6. ExtractHTMLContent\bin\_6.ExtractHTMLContent.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\6. ExtractHTMLContent\bin\_6.ExtractHTMLContent.pdb
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\6. ExtractHTMLContent\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\6. ExtractHTMLContent\obj\Debug\_6.ExtractHTMLContent.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\6. ExtractHTMLContent\obj\Debug\_6.ExtractHTMLContent.pdb

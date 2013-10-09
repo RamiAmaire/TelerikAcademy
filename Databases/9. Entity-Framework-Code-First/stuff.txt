@@ -1,0 +1,12 @@
+Enable-Migrations-EnableAutomaticMigrations 
+
+Database.SetInitializer(new MigrateDatabaseToLatestVersion
+            <ForumContext, Configuration>());
+
+<connectionStrings>
+   <add name="ForumDb" connectionString="Data Source=.;Initial Catalog=ForumDb;Integrated Security=True" providerName="System.Data.SqlClient" />
+</connectionStrings>
+
+system.componentmodel.dataanotations
+
+

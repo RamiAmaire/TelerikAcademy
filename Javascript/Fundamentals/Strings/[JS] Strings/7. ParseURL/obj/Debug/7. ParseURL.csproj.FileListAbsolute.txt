@@ -1,0 +1,5 @@
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\7. ParseURL\bin\_7.ParseURL.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\7. ParseURL\bin\_7.ParseURL.pdb
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\7. ParseURL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\7. ParseURL\obj\Debug\_7.ParseURL.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\7. ParseURL\obj\Debug\_7.ParseURL.pdb

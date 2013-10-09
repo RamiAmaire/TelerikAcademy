@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="qunit-1.11.0.css" rel="stylesheet" />
+    <script src="../libs/jquery-1.10.1.js"></script>
+    <script src="../libs/queue.js"></script>
+    <script src="../libs/bPopup.js"></script>
+    <script src="../libs/classical-oop.js"></script>
+    <script src="../libs/jquery.flip.js"></script>
+    <link href="../MinesCSS.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+
+    <div id="gameInfo">
+        <span>Time: </span><span id="Time"></span>
+        <span>Mines: </span><span id="MineCount"></span>
+    </div>
+
+    <form id="popup-menu">
+        <button id="start-game-button">Start new game</button>
+        <button id="share-button">Share your scode</button>
+        <button id="close-button">Close</button>
+    </form>
+
+    <div id="field-wrapper"></div>
+
+    <script src="../scripts/Cell.js"></script>
+    <script src="../scripts/Field.js"></script>
+    <script src="../scripts/GameEndsHandler.js"></script>
+    <script src="../scripts/InputHandler.js"></script>
+    <script src="../scripts/MineCell.js"></script>
+    <script src="../scripts/NumberCell.js"></script>
+    <script src="../scripts/Renderer.js"></script>
+    <script src="../scripts/Timer.js"></script>
+    <script src="qunit-1.11.0.js"></script>
+
+    <script src="shims.js"></script>
+    <script>
+        test("test example", function () {
+            var value = "hello";
+            equal(value, "hello", "We expect 'hello'");
+        });
+        //var timer = new Timer();
+        //timer.init();
+        //timer.stop();
+
+
+
+
+        test("1 mine 3x3 field", function () {
+            var field = new Field(3, 3, 1);
+            field.generate = function () {
+                this.matrix[1][1] = new MineCell(1, 1);
+                this._generateNumbers();
+            };
+            field.generate();
+            console.log("1 mine 3x3 field");
+            field.draw();
+
+            var isNumber = true;
+            for (var i = 0; i < 3; i++) {
+                for (var j = 0; j < 3; j++) {
+                    if (field.matrix[i][j].type != "number" && i != 1 && j != 1) {
+                        isNumber = false;
+                    }
+                }
+            }
+
+            equal(isNumber, true, "Numbers 1 around mine are placed correctly.");
+        });
+
+        test("8 mines 3x3 field", function () {
+            var field = new Field(3, 3, 8);
+            field.generate = function () {
+                for (var i = 0; i < 3; i++) {
+                    for (var j = 0; j < 3; j++) {
+                        if (j == 1 && i == 1) {
+
+                        }
+                        else {
+                            this.matrix[i][j] = new MineCell(i, j);
+                        }
+                    }
+                }
+                this._generateNumbers();
+            };
+            field.generate();
+            console.log("8 mines 3x3 field");
+            field.draw();
+
+            var isNumber = true;
+            for (var i = 0; i < 3; i++) {
+                for (var j = 0; j < 3; j++) {
+                    if (i == 1 && j == 1) {
+                        if (field.matrix[i][j].type != "number" || field.matrix[i][j].value != 8) {
+                            isNumber = false;
+                        }
+                    }
+                }
+            }
+
+            equal(isNumber, true, "Numbers 1 around mine are placed correctly.");
+        });
+
+        test("4 mines at each corner 3x3 field", function () {
+            var field = new Field(3, 3, 8);
+            field.generate = function () {
+                for (var i = 0; i < 3; i++) {
+                    for (var j = 0; j < 3; j++) {
+                        if (j != 1 && i != 1) {
+                            this.matrix[i][j] = new MineCell(i, j);
+                        }
+                    }
+                }
+                this._generateNumbers();
+            };
+            
+            field.generate();
+            console.log("4 mines at each corner 3x3 field");
+            field.draw();
+
+            var isNumber = true;
+            if (field.matrix[1][1].type != "number" || field.matrix[1][1].value != 4) {
+                isNumber = false;
+            }
+            if (field.matrix[0][1].type != "number" || field.matrix[0][1].value != 2) {
+                isNumber = false;
+            }
+            if (field.matrix[1][0].type != "number" || field.matrix[1][0].value != 2) {
+                isNumber = false;
+            }
+            if (field.matrix[1][2].type != "number" || field.matrix[1][2].value != 2) {
+                isNumber = false;
+            }
+            if (field.matrix[2][1].type != "number" || field.matrix[2][1].value != 2) {
+                isNumber = false;
+            }
+
+            equal(isNumber, true, "Numbers 1 around mine are placed correctly.");
+        });
+
+        //var renderer = new Renderer(field);
+        //renderer.generateDOMElements();
+
+        //var gameEndsHandler = new GameEndsHandler();
+
+        //var inputHanlder = new InputHandler(field, renderer, timer, gameEndsHandler);
+        //inputHanlder.attachEvents();
+
+    </script>
+</body>
+</html>

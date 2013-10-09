@@ -1,0 +1,5 @@
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\JoroTheNaughty\bin\JoroTheNaughty.dll
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\JoroTheNaughty\bin\JoroTheNaughty.pdb
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\JoroTheNaughty\obj\Debug\ResolveAssemblyReference.cache
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\JoroTheNaughty\obj\Debug\JoroTheNaughty.dll
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\JoroTheNaughty\obj\Debug\JoroTheNaughty.pdb

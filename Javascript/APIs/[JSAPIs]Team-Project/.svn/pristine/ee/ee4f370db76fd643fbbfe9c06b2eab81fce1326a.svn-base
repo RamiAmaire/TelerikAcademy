@@ -1,0 +1,18 @@
+﻿/// <reference path="../libs/jquery-1.10.1.js" />
+var GameEndsHandler = Class.create({
+    init: function () {
+        this.popUpMenu = $("#popup-menu");
+    },
+
+    openMenu: function () {
+        this.popUpMenu.fadeIn(500).css({
+            left: ($(window).width() - this.popUpMenu.width()) / 2,
+            top: ($(window).width() - this.popUpMenu.width()) / 7,
+            position: 'absolute'
+        });
+    },
+
+    closeMenu: function () {
+        this.popUpMenu.fadeOut(500);
+    }
+});

@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tree View</title>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+            border:none;
+        }
+        
+        #wrapper {
+            margin:25px;
+        }
+
+        #wrapper input {
+            padding-left:5px;
+        }
+
+        #wrapper label {
+            font-weight:bold;
+        }
+
+        #wrapper button {
+            font-weight:bold;
+        }
+
+        #menu {
+            margin-top:20px;
+            font-weight:bold;
+            font-size:20px;
+        }
+
+        #drop-container {
+            position:absolute;
+            top:100px;
+            left:500px;
+            border:3px solid black;
+            height:100px;
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="treeview-holder"></div>
+    </div>
+    <script>
+        var controls = (function () {
+            function removeEmptyLists(item) {
+                for (var i = 0; i < item.children.length; i++) {
+                    var child = item.children[i];
+                    if (child instanceof HTMLUListElement) {
+                        if (!child.firstChild) {
+                            item.removeChild(child);
+                            i--;
+                        }
+                    }
+                }
+            }
+
+            function setDisplay(item, displayType) {
+                if (item.children.length > 0) {
+                    for (var i = 0; i < item.children.length; i++) {
+                        var child = item.children[i];
+                        if (!(child instanceof HTMLAnchorElement)) {
+                            child.style.display = displayType;
+                            for (var j = 0; j < child.children.length; j++) {
+                                var subChild = child.children[j];
+                                subChild.style.display = displayType;
+                            }
+                        }
+                    }
+                }
+            }
+
+            function hideSiblings(item) {
+                var prevSibling = item.previousElementSibling;
+                while (prevSibling) {
+                    prevSibling.clicked = false;
+                    setDisplay(prevSibling, "none");
+                    prevSibling = prevSibling.previousElementSibling;
+                }
+
+                var nextSibling = item.nextElementSibling;
+                while (nextSibling) {
+                    nextSibling.clicked = false;
+                    setDisplay(nextSibling, "none");
+                    nextSibling = nextSibling.nextElementSibling;
+                }
+            }
+
+            var itemCounter = 0;
+
+            function treeView(selector) {
+                var treeViewHolder = document.querySelector(selector);
+                var items = [];
+                var self = this;
+                var target = this;
+
+                function initialize() {
+                    var folderNameLabel = document.createElement("label");
+                    folderNameLabel.for = "folder-name";
+                    folderNameLabel.textContent = "Folder name : ";
+                    treeViewHolder.appendChild(folderNameLabel);
+
+                    var folderNameInput = document.createElement("input");
+                    folderNameInput.type = "text";
+                    folderNameInput.id = "folder-name";
+                    treeViewHolder.appendChild(folderNameInput);
+
+                    var addFolderButton = document.createElement("button");
+                    addFolderButton.innerHTML = "Add folder";
+                    addFolderButton.addEventListener("click", function (ev) {
+                        target.add(folderNameInput.value);
+                        render();
+                    }, false)
+                    treeViewHolder.appendChild(addFolderButton);
+
+                    var removeFolderButton = document.createElement("button");
+                    removeFolderButton.innerHTML = "Remove folder";
+                    removeFolderButton.addEventListener("click", function (ev) {
+                        var parent = target.parentNode;
+                        var grandParent = parent.parentNode;
+                        if (grandParent instanceof HTMLLIElement) {
+                            var targetIndex = grandParent.subItems.indexOf(target);
+                            grandParent.subItems.splice(targetIndex, 1);
+                            parent.removeChild(target);
+                        }
+                        else {
+                            remove(target);
+                            parent.removeChild(target);
+                        }
+
+                        render();
+                    }, false);
+                    treeViewHolder.appendChild(removeFolderButton);
+
+                    var menuIndexer = document.createElement("div");
+                    menuIndexer.innerHTML = "<a href='#' />" + "Menu";
+                    menuIndexer.id = "menu";
+                    menuIndexer.addEventListener("click", function (ev) {
+                        target = self;
+                    }, false);
+                    treeViewHolder.appendChild(menuIndexer);
+                }
+                initialize();
+
+                this.add = function add(folderName) {
+                    var item = new treeItem(folderName);
+                    item.onclick = function (ev) {
+                        ev.preventDefault();
+                        target = ev.target.parentNode;
+                        if (!target.clicked) {
+                            setDisplay(target, "");
+                            target.clicked = true;
+                            hideSiblings(target);
+                        }
+                        else {
+                            setDisplay(target, "none");
+                            target.clicked = false;
+                        }
+                    }
+
+                    // DND
+                    item.draggable = "true";
+                    item.ondragstart = function (ev) {
+                        ev.dataTransfer.setData("dragged-id", ev.target.parentNode.id);
+                        //TODO make item.remove method
+                        remove(ev.target.parentNode);
+                        render();
+                        ev.stopPropagation();
+                    };
+
+                    item.ondrop = function (ev) {
+                        ev.preventDefault();
+                        var data = ev.dataTransfer.getData("dragged-id");
+                        var draggedItem = document.getElementById(data);
+                        ev.target.parentNode.add(draggedItem.innerHTML);
+                        render();
+                        ev.stopPropagation();
+                    };
+
+                    item.ondragover = function (ev) {
+                        ev.preventDefault();
+                        ev.stopPropagation();
+                    };
+
+                    item.style.display = "";
+                    items.push(item);
+                    return item;
+                }
+
+                function remove(item) {
+                    var itemIndex = items.indexOf(item);
+                    items.splice(itemIndex, 1);
+                }
+
+                function render() {
+                    if (items.length > 0) {
+                        removeEmptyLists(treeViewHolder);
+                        var itemsList = document.createElement("ul");
+                        for (var i = 0; i < items.length; i++) {
+                            var item = items[i];
+                            item.render();
+                            itemsList.appendChild(item);
+                        }
+
+                        treeViewHolder.appendChild(itemsList);
+                    }
+                }
+
+                function treeItem(folderName) {
+                    var item;
+                    initItem();
+                    item.subItems = [];
+
+                    item.add = function (folderName) {
+                        var subItem = new treeItem(folderName);
+                        item.subItems.push(subItem);
+                        return subItem;
+                    }
+
+                    item.render = function () {
+                        if (item.subItems.length > 0) {
+                            removeEmptyLists(item);
+                            var subItemsList = document.createElement("ul");
+                            for (var i = 0; i < item.subItems.length; i++) {
+                                var subItem = item.subItems[i];
+                                subItem.render();
+                                subItemsList.appendChild(subItem);
+                            }
+
+                            item.appendChild(subItemsList);
+                        }
+                    }
+
+                    function initItem() {
+                        item = document.createElement("li");
+                        item.innerHTML = "<a href='#' />" + folderName;
+                        item.id = "folderName" + itemCounter++;
+                        item.clicked = false;
+                    }
+
+                    return item;
+                }
+                
+                return self;
+            };
+
+            return {
+                getTreeView: function (selector) {
+                    return new treeView(selector);
+                }
+            }
+        }());
+
+        var treeView = controls.getTreeView("#treeview-holder");
+    </script>
+</body>
+</html>

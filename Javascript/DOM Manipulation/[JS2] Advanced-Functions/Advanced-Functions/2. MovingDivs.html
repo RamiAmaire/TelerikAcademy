@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Moving divs</title>
+    <style>
+        #wrapper {
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+    <button id="add-banner" onclick="onAddBannerElement()">
+        Add banner element
+    </button>
+    <button id="add-rect" onclick="onAddRectangularElement()">
+        Add rectangular element
+    </button>
+    <button id="add-circ" onclick="onAddCircularElement()">
+        Add circular element
+    </button>
+    <div id="wrapper">
+    </div>
+    <script>
+        var movingdivs = (function () {
+            'use strict';
+            var ELEMENT_HEIGHT = 50;
+            var ELEMENT_WIDTH = 50;
+
+            var BANNER_WIDTH = 100;
+            var BANNER_HEIGHT = 20;
+            var CIRCLE_BORDER_RADIUS = 30;
+
+            var BANNER_INNER_HTML = 'B';
+            var RECTANGLE_INNER_HTML = 'R';
+            var CIRCLE_INNER_HTML = 'C';
+
+            var MIN_TOP = 100;
+            var MIN_LEFT = 100;
+            var MAX_TOP = screen.height - 500;
+            var MAX_LEFT = screen.width - 690;
+
+            var RECT_SPEED = 5;
+            var RECT_WIDTH_RATE = 400;
+            var RECT_HEIGHT_RATE = 400;
+            var CIRCLE_RADIUS = 100;
+            var ANGLE = 0;
+            var INCREASE = 2 * Math.PI;
+
+            var banners = [];
+            var rectangles = [];
+            var circles = [];
+
+            var firstBanner = true;
+            var firstRect = true;
+            var firstCirc = true;
+
+            function generateRandomColor() {
+                var red = (Math.random() * 256) | 0;
+                var green = (Math.random() * 256) | 0;
+                var blue = (Math.random() * 256) | 0;
+
+                return "rgb(" + red + "," + green + "," + blue + ")";
+            }
+
+            function getRandomInt(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            function setRandomPosition(element) {
+                element.style.position = "absolute";
+                
+                var top = getRandomInt(MIN_TOP, MAX_TOP);
+                var left = getRandomInt(MIN_LEFT, MAX_LEFT);
+
+                element.StartingTop = top;
+                element.StartingLeft = left;
+                element.Angle = ANGLE;
+
+                element.style.top = top + "px";
+                element.style.left = left + "px";
+            }
+
+            function getCurrentPosition(element) {
+                var currentPosition = {
+                    Top: parseInt(element.style.top.substring(0, element.style.top.length - 2)),
+                    Right: parseInt(element.style.left.substring(0, element.style.top.length - 2)),
+                    Down: parseInt(element.style.top.substring(0, element.style.top.length - 2)),
+                    Left: parseInt(element.style.left.substring(0, element.style.top.length - 2))
+                };
+
+                return currentPosition;
+            }
+
+            function setCSS(element) {
+                element.style.color = generateRandomColor();
+                element.style.backgroundColor = generateRandomColor();
+                element.style.borderWidth = 3 + "px";
+                element.style.borderStyle = "solid";
+                element.style.borderColor = generateRandomColor();
+                element.style.width = ELEMENT_HEIGHT + "px";
+                element.style.height = ELEMENT_WIDTH + "px";
+                element.style.fontWeight = "bold";
+                element.style.textAlign = "center";
+                element.style.verticalAlign = "center";
+                setRandomPosition(element);
+            }
+
+            function generateBannerMovement() {
+                var x, banner;
+                for (var i = 0; i < banners.length; i++) {
+                    banner = banners[i];
+                    x = 150 * Math.sin(banner.Angle) + banner.StartingTop;
+                    banner.style.top = x + "px";
+                    banner.Angle += 0.06;
+                }
+            }
+
+            function generateRectMovement() {
+                var rectangle, currentPosition;
+                for (var i = 0; i < rectangles.length; i++) {
+                    rectangle = rectangles[i];
+                    currentPosition = getCurrentPosition(rectangle);
+
+                    if (currentPosition.Top <= rectangle.StartingTop) {
+                        rectangle.style.left = currentPosition.Left + RECT_SPEED + "px";
+                    }
+
+                    if (currentPosition.Right >= rectangle.StartingLeft + RECT_WIDTH_RATE) {
+                        rectangle.style.top = currentPosition.Top + RECT_SPEED + "px";
+                    }
+
+                    if (currentPosition.Down >= rectangle.StartingTop + RECT_HEIGHT_RATE) {
+                        rectangle.style.left = currentPosition.Left - RECT_SPEED + "px";
+                    }
+
+                    if (currentPosition.Left <= rectangle.StartingLeft &&
+                        currentPosition.Top > rectangle.StartingTop) {
+                        rectangle.style.top = currentPosition.Top - RECT_SPEED + "px";
+                    }
+                }
+            }
+
+            function generateCircMovement() {
+                var x, y, circle;
+                for (var i = 0; i < circles.length; i++) {
+                    circle = circles[i];
+
+                    x = CIRCLE_RADIUS * Math.cos(circle.Angle) + circle.StartingTop;
+                    y = CIRCLE_RADIUS * Math.sin(circle.Angle) + circle.StartingLeft;
+                    circle.style.top = x + "px";
+                    circle.style.left = y + "px";
+
+                    circle.Angle += INCREASE;
+                    circle.Angle += 0.06;
+                }
+            }
+
+            function add(movement) {
+                var div = document.createElement("div");
+                setCSS(div);
+
+                if (movement == "banner") {
+                    div.style.width = BANNER_WIDTH + "px";
+                    div.style.height = BANNER_HEIGHT + "px";
+                    div.innerHTML = BANNER_INNER_HTML;
+                    banners.push(div);
+
+                    if (firstBanner) {
+                        setInterval(generateBannerMovement, 1000 / 40);
+                        firstBanner = false;
+                    }
+                }
+
+                if (movement == "rect") {
+                    div.innerHTML = RECTANGLE_INNER_HTML;
+                    rectangles.push(div);
+
+                    if (firstRect) {
+                        setInterval(generateRectMovement, 1000 / 40);
+                        firstRect = false;
+                    }
+                }
+
+                if (movement == "circ") {
+                    div.style.borderRadius = CIRCLE_BORDER_RADIUS + "px";
+                    div.innerHTML = CIRCLE_INNER_HTML;
+                    circles.push(div);
+
+                    if (firstCirc) {
+                        setInterval(generateCircMovement, 1000 / 40);
+                        firstCirc = false;
+                    }
+                }
+
+                wrapper.appendChild(div);
+            }
+
+            return {
+                add: add
+            };
+        }());
+
+        var wrapper = document.getElementById("wrapper");
+
+        var addBannerButton = document.getElementById("add-banner");
+        addBannerButton.addEventListener("click", command = function () { movingdivs.add("banner"); }, false);
+
+        var addRectButton = document.getElementById("add-rect");
+        addRectButton.addEventListener("click", command = function () { movingdivs.add("rect"); }, false);
+
+        var addCircButton = document.getElementById("add-circ");
+        addCircButton.addEventListener("click", command = function () { movingdivs.add("circ"); }, false);
+    </script>
+</body>
+</html>

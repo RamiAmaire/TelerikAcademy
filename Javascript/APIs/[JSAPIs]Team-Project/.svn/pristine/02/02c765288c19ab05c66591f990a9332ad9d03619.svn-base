@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minesweeper</title>
+		<meta property="og:site_name" content="Blueberry Teamwork"/>
+		<meta property="og:image" content="http://innovation-hub.bg/Blueberry/images/mines.png"/>
+		<meta property="og:title" content="Blueberry Minesweeper"/>
+		<meta property="og:description" content="The best teamwork, created by several crazy ninjas."/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="http://innovation-hub.bg/Blueberry/"/>
+        <script src="libs/jquery-1.10.1.js"></script>
+        <script src="libs/jquery.flip.js"></script>
+        <script src="libs/classical-oop.js"></script>
+        <script src="libs/queue.js"></script>
+        <script src="libs/bPopup.js"></script>
+        <script src="libs/easing.1.3.js"></script>
+        <script type="text/javascript">
+            var isChrome = window.chrome;
+            if (isChrome) {
+                $("#field-wrapper .Mine").css("height", "35px");
+                $("#field-wrapper .Flag").css("height", "35px");
+            }
+        </script>
+        <link href="MinesCSS.css" rel="stylesheet" />
+    </head>
+
+    <body oncontextmenu="return false;">
+	<div id="fb-root"></div>
+	<script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/bg_BG/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	
+	<div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="tahoma"></div>
+        <div id="gameInfo">
+            <span>Time: </span><span id="Time"></span>
+            <span>Mines: </span><span id="MineCount"></span>
+        </div>
+
+        <form id="popup-menu">
+            <span id="left">
+                <span id="Head">Blueberry Mines</span>
+                <span id="gameImage"></span>
+            </span>
+            <span id="right">
+                <span id="gameover"></span><br />
+                <label>Opened : <span id="score"></span> of the field</label>
+                <span id="start-game-button" class="b-close">Start new game</span>
+                <label>Share your score in:</label>
+                <span id="share-button"></span>
+            </span>
+            
+            <span class="button b-close" id="b-close">X</span>
+        </form>
+        <div id="field-wrapper"></div>
+
+        <script src="scripts/InputHandler.js"></script>
+        <script src="scripts/Cell.js"></script>
+        <script src="scripts/MineCell.js"></script>
+        <script src="scripts/NumberCell.js"></script>
+        <script src="scripts/Field.js"></script>
+        <script src="scripts/Renderer.js"></script>
+        <script src="scripts/Timer.js"></script>
+        <script src="scripts/GameEndsHandler.js"></script>
+        <script src="scripts/Score.js"></script>
+        
+        <script type="text/javascript">
+            var timer = new Timer();
+            timer.init();
+            timer.stop();
+
+            var field = new Field(16, 30, 99);
+            field.generate();
+            field.draw();
+
+            var score = new Score();
+            score.init();
+
+            var renderer = new Renderer(field);
+            renderer.generateDOMElements();
+
+            var gameEndsHandler = new GameEndsHandler();
+
+            var inputHanlder = new InputHandler(field, renderer, timer, gameEndsHandler, score);
+            inputHanlder.attachEvents();
+
+            var restartGame = $("#start-game-button").click(function () {
+                location.reload();
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tag cloud</title>
+    <link href="styles/TagCloud.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="button-holder">
+        <button id="tag-button" onclick="onGenerateTagCloud()">
+            Generate tag cloud
+        </button>
+        <button id="circle-button" onclick="onStartAnimation()">
+            Start/Speed up animation
+        </button>
+    </div>
+    
+
+    <div id="wrapper">
+    </div>
+    <script>
+        function generateRandomColor() {
+            var red = (Math.random() * 256) | 0;
+            var green = (Math.random() * 256) | 0;
+            var blue = (Math.random() * 256) | 0;
+
+            return "rgb(" + red + "," + green + "," + blue + ")";
+        }
+
+        function countWords(words) {
+            var wordsCount = {};
+            for (var i in words) {
+                var word = words[i].toLowerCase();
+                if (wordsCount[word]) wordsCount[word]++;
+                else wordsCount[word] = 1;
+            }
+
+            return wordsCount;
+        }
+
+        function getObjectLength(obj) {
+            var length = 0;
+            var key;
+            for (key in obj) {
+                if (obj.hasOwnProperty(key)) length++;
+            }
+
+            return length;
+        }
+
+        function styleTags(minFontSize, maxFontSize) {
+            for (var word in words) {
+                var tag = document.createElement("div");
+                tag.innerHTML = word;
+
+                // Setting position and updating angle
+                tag.style.left = 100 * Math.cos(angle) + 200 + "px";
+                tag.style.top = 100 * Math.sin(angle) + 200 + "px";
+                angle += increase;
+
+                // Setting font size
+                var fontSize = words[word];
+                fontSize *= minFontSize;
+                if (fontSize > maxFontSize) {
+                    fontSize = maxFontSize;
+                }
+
+                tag.style.fontSize = fontSize + "px";
+
+                styledTags.push(tag);
+            }
+        }
+
+        function onGenerateTagCloud() {
+            styleTags(17, 42);
+
+            for (var i = 0; i < styledTags.length; i++) {
+                var tag = styledTags[i];
+                wrapper.appendChild(tag);
+            }
+        }
+
+        function generateTagsMovement() {
+            var multiplier = 200 * Math.sin(angle);
+            for (var i = 0; i < styledTags.length; i++) {
+                styledTags[i].style.top = multiplier * Math.cos(angle) + 100 + "px";
+                styledTags[i].style.left = multiplier * Math.sin(angle) + 100 + "px";
+
+                angle += increase;
+            }
+
+            angle += 0.06;
+        }
+
+        function generateWrapperMovement() {
+
+        }
+
+        function onStartAnimation() {
+            generateTagsButton.disabled = true;
+            timer = setInterval(generateTagsMovement, 1000 / 35);
+        }
+
+        var tags = ["cms", "javascript", "js", "ASP.NET MVC", ".net", ".net", "css",
+            "wordpress", "xaml", "js", "http", "web", "asp.net", "asp.net MVC", "ASP.NET MVC",
+            "wp", "javascript", "js", "cms", "html", "javascript", "http", "http", "CMS"
+        ];
+        
+        var words = countWords(tags);
+        var wrapper = document.getElementById("wrapper");
+        var generateTagsButton = document.getElementById("tag-button");
+        var styledTags = [];
+        
+        var wordsCount = getObjectLength(words);
+        var increase = (Math.PI * 2) / wordsCount;
+        var angle = 0;
+        var timer;
+    </script>
+</body>
+</html>

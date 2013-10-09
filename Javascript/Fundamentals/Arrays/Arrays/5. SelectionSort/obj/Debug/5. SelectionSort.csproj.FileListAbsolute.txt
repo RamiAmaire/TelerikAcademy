@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\5. SelectionSort\bin\_5.SelectionSort.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\5. SelectionSort\bin\_5.SelectionSort.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\5. SelectionSort\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\5. SelectionSort\obj\Debug\_5.SelectionSort.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Arrays\5. SelectionSort\obj\Debug\_5.SelectionSort.pdb

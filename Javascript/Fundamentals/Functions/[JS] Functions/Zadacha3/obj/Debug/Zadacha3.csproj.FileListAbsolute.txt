@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Functions\Zadacha3\bin\Zadacha3.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Functions\Zadacha3\bin\Zadacha3.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Functions\Zadacha3\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Functions\Zadacha3\obj\Debug\Zadacha3.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] Functions\Zadacha3\obj\Debug\Zadacha3.pdb

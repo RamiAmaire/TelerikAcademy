@@ -1,0 +1,28 @@
+﻿/// <reference path="Field.js" />
+/// <reference path="../libs/classical-oop.js" />
+var Renderer = Class.create({
+	init: function (field) {
+	    this.field = field;
+		this.domMatrix = new Array();
+		for (var i = 0; i < this.field.rows; i++) {
+			this.domMatrix[i] = new Array();
+		}
+	},
+
+	generateDOMElements: function () {
+		var fieldWrapper = $("#field-wrapper");
+		for (var row = 0; row < this.field.rows; row++) {
+			var line = $("<div></div>");
+			for (var col = 0; col < this.field.cols; col++) {
+				var cell = $("<button>C</button>").data("row", row);
+				cell.data("col", col);
+				cell.attr("class", "Cell");
+				line.append(cell);
+
+				this.domMatrix[row][col] = cell;
+			}
+
+			fieldWrapper.append(line);
+		}
+	}
+});

@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. ComparingBasicTypes", "2. ComparingBasic\2. ComparingBasicTypes.csproj", "{A733E155-0F96-4BC5-8F9E-66EA191AC3D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. ComparingFloatingPointTypes", "3. ComparingFloatingPointTypes\3. ComparingFloatingPointTypes.csproj", "{72C4886B-6CB2-40D3-A313-EA0FD3E5F632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. SolarSystem", "1. SolarSystem\1. SolarSystem.csproj", "{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ramiamaire.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 1.\u0020SolarSystem\\1.\u0020SolarSystem.csproj
+		SccProjectName1 = 1.\u0020SolarSystem
+		SccLocalPath1 = 1.\u0020SolarSystem
+		SccProjectUniqueName2 = 2.\u0020ComparingBasic\\2.\u0020ComparingBasicTypes.csproj
+		SccProjectName2 = 2.\u0020ComparingBasic
+		SccLocalPath2 = 2.\u0020ComparingBasic
+		SccProjectUniqueName3 = 3.\u0020ComparingFloatingPointTypes\\3.\u0020ComparingFloatingPointTypes.csproj
+		SccProjectName3 = 3.\u0020ComparingFloatingPointTypes
+		SccLocalPath3 = 3.\u0020ComparingFloatingPointTypes
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A733E155-0F96-4BC5-8F9E-66EA191AC3D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A733E155-0F96-4BC5-8F9E-66EA191AC3D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A733E155-0F96-4BC5-8F9E-66EA191AC3D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A733E155-0F96-4BC5-8F9E-66EA191AC3D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72C4886B-6CB2-40D3-A313-EA0FD3E5F632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C4886B-6CB2-40D3-A313-EA0FD3E5F632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72C4886B-6CB2-40D3-A313-EA0FD3E5F632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72C4886B-6CB2-40D3-A313-EA0FD3E5F632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

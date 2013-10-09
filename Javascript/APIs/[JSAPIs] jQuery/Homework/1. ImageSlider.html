@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slider</title>
+</head>
+<body>
+    <script src="utils/jquery-1.9.1.min.js"></script>
+    <script>
+        var ImageSliderControl = (function () {
+            var images = ["url('images/image0.jpg')", "url('images/image1.jpg')",
+            "url('images/image2.jpg')", "url('images/image3.jpg')", "url('images/image4.jpg')"];
+
+            var indexImage = 0;
+            var imageSrc;
+            var isSliding = false;
+            var timer;
+
+            function onNextImage() {
+                indexImage++;
+                if (indexImage == images.length) {
+                    indexImage = 0;
+                }
+
+                imageSrc = images[indexImage];
+                $("#holder").css("background-image", imageSrc);
+            }
+
+            function onPrevImage() {
+                indexImage--;
+                if (indexImage < 0) {
+                    indexImage = images.length - 1;
+                }
+
+                imageSrc = images[indexImage];
+                $("#holder").css("background-image", imageSrc);
+            }
+
+            function onEnableSliding() {
+                if (!isSliding) {
+                    timer = setInterval(onNextImage, 2000);
+                    isSliding = true;
+                    $("#button-slider").css("background-color", "green");
+                }
+                else {
+                    clearInterval(timer);
+                    isSliding = false;
+                    $("#button-slider").css("background-color", "#EDEDED");
+                }
+            }
+
+            var holderCSS = {
+                "position": "absolute",
+                "top": "360px",
+                "left": "370px",
+                "width": "500px",
+                "height": "250px",
+                "border": "3px solid black",
+                "border-radius": "15px",
+                "background-image": images[0]
+            };
+
+            var rightButtonCSS = {
+                "position": "absolute",
+                "top": "450px",
+                "left": "890px",
+            }
+
+            var leftButtonCSS = {
+                "position": "absolute",
+                "top": "450px",
+                "left": "265px",
+            };
+
+            var sliderButtonCSS = {
+                "position": "absolute",
+                "top": "280px",
+                "left": "560px",
+                "font-size": "25px",
+                "font-weight": "bold"
+            }
+
+            var holder = $("<div></div>").attr("id", "holder").css(holderCSS);
+            holder.appendTo("body");
+
+            var rightButton = $("<button></button>").attr("id", "button-right").css(rightButtonCSS).
+            on("click", onNextImage);
+            rightButton.append("<img src='images/arrow-right.jpg' />");
+            rightButton.appendTo("body");
+
+            var leftButton = $("<button></button>").attr("id", "button-left").css(leftButtonCSS).
+            on("click", onPrevImage);
+            leftButton.append("<img src='images/arrow-left.jpg' />");
+            leftButton.appendTo("body");
+
+            var sliderButton = $("<button>Sliding</button>").attr("id", "button-slider").css(sliderButtonCSS).
+            on("click", onEnableSliding);
+            sliderButton.appendTo("body");
+        })();
+    </script>
+</body>
+</html>

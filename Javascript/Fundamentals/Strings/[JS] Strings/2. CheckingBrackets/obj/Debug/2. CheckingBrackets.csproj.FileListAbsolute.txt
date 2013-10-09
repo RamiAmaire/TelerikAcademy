@@ -1,0 +1,5 @@
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\2. CheckingBrackets\bin\_2.CheckingBrackets.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\2. CheckingBrackets\bin\_2.CheckingBrackets.pdb
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\2. CheckingBrackets\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\2. CheckingBrackets\obj\Debug\_2.CheckingBrackets.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\2. CheckingBrackets\obj\Debug\_2.CheckingBrackets.pdb

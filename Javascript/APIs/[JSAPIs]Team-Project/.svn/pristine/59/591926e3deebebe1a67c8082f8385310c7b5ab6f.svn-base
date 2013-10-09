@@ -1,0 +1,81 @@
+﻿body {
+    margin:0;
+    padding:0;
+    border:none;
+}
+#gameInfo {
+    margin-top: 15px;
+    padding: 15px 15px 0 100px;
+}
+    #gameInfo span {
+        display: inline-block;
+        font-weight: bold;
+        font-family: Arial;
+    }
+#Time, #MineCount {
+    margin: 0 200px 0 10px;
+    width: 70px;
+}
+#field-wrapper {
+    float: left;
+    background: #606060;
+    padding: 2px;
+    margin: 30px;
+}
+#field-wrapper button {
+    margin: 2px;
+    border: 0;
+    border-radius: 4px; 
+    width: 35px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #81B1E8;
+}
+.Mine {
+    background-color: #FF2631;
+}
+
+.Flag {
+    background-color: #FFF04E;
+}
+
+.Number {
+    background-color: #eee;
+}
+
+.Cell {
+    background-color: #81B1E8;
+}
+
+#user-menu-popup {
+    background-color:white;
+    position:absolute;
+    top:250px;
+    left:350px;
+    height:500px;
+    width:500px;
+    border-radius:15px;
+}
+
+#popup-menu{
+    position: absolute;
+    border: 5px solid gray;
+    padding: 10px;
+    background: white;
+    width: 270px;
+    height: 190px;
+    display: none;
+}
+
+#start-game-button{
+
+}
+
+#share-button {
+
+}
+
+#close-button {
+
+}

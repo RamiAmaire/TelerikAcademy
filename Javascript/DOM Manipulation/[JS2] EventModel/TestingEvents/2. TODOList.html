@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO List</title>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+            border:none;
+        }
+
+        #wrapper {
+            position:relative;
+            top:400px;
+            left:400px;
+            font-family:Calibri;
+            font-size:17px;
+            font-weight:bold;
+            height:400px;
+            width:500px;
+            background:-webkit-linear-gradient(top,  #1B338C 0%, #2C1C53 100%);
+            background:-moz-linear-gradient(top,  #1B338C 0%, #2C1C53 100%);
+            color:white;
+            border-radius:10px;
+        }
+
+        #menu {
+            position:relative;
+            padding-top:20px;
+            padding-left:20px;
+            height:75px;
+            border-bottom:3px solid white;
+            border-top:3px solid white;
+            border-radius:10px;
+        }
+
+        button {
+            font-size:17px;
+            font-weight:bold;
+            border-radius:10px;
+            background:-webkit-linear-gradient(top,  #8A16DB 0%, #E93CF6 100%);
+            background:-moz-linear-gradient(top,  #8A16DB 0%, #E93CF6 100%);
+            color:white;
+            position:relative;
+        }
+
+        button:hover {
+            background:-webkit-linear-gradient(top, #E93CF6 0%, #8A16DB 100%);
+            background:-moz-linear-gradient(top,  #8A16DB 0%, #E93CF6 100%);
+        }
+
+        .down {
+            top:35px;
+            left:-250px;
+            margin-left:20px;
+        }
+
+        #show {
+            left:225px;
+            top:5px;
+        }
+
+        input {
+            padding-left: 5px;
+            border-radius:10px;
+            border:3px solid black;
+            height:20px;
+        }
+
+        .field {
+            position:relative;
+            display:block;
+            padding:5px;
+            border-bottom:3px solid white;
+            border-radius:10px;
+            padding-left:10px;
+        }
+
+        .field:hover {
+            background-color:green;
+            padding-bottom:10px;
+        }
+
+        .check-box {
+            position:absolute;
+            left:450px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="menu">
+            <label for="input">Enter text : </label>
+            <input type="text" id="input"/>
+            <button id="add">Add</button>
+            <button id="delete" class="down">Delete</button>
+            <button id="hide" class="down">Hide</button>
+            <button id="show" class="down">Show</button>
+        </div>
+        <div id="fields">
+        </div>
+        <script>
+            function generateCheckBox(e) {
+                e.preventDefault();
+                if (!this.firstElementChild) {
+                    var checkbox = document.createElement('input');
+                    checkbox.type = "checkbox";
+                    checkbox.className = "check-box";
+                    checkbox.checked = false;
+                    this.appendChild(checkbox);
+                }
+            }
+
+            function removeCheckBox(e) {
+                e.preventDefault();
+                if (!this.firstElementChild.checkIn) {
+                    this.removeChild(this.firstElementChild);
+                }
+            }
+
+            function makeCheck(e) {
+                e.preventDefault();
+                if (this.firstElementChild.checked) {
+                    this.firstElementChild.checked = false;
+                    this.firstElementChild.checkIn = false;
+                }
+                else {
+                    this.firstElementChild.checked = true;
+                    this.firstElementChild.checkIn = true;
+                }
+            }
+
+            function onAdd(e) {
+                e.preventDefault();
+                var element = document.createElement("div");
+                element.addEventListener("mouseover", generateCheckBox, false);
+                element.addEventListener("mouseout", removeCheckBox, false);
+                element.addEventListener("click", makeCheck, false);
+                element.className = "field";
+                element.innerHTML = counter + ". " + input.value;
+
+                fields.appendChild(element);
+                counter++;
+            }
+
+            function onDelete(e) {
+                e.preventDefault();
+                for (var i = 0; i < fields.children.length; i++) {
+                    var currentField = fields.children[i];
+                    if (currentField.firstElementChild && currentField.firstElementChild.checked) {
+                        currentField.parentNode.removeChild(currentField);
+                        i--;
+                        counter--;
+                    }
+                }
+
+                // reset numbers
+                for (var i = 0; i < fields.children.length; i++) {
+                    var currentField = fields.children[i];
+                    var replacedValue = currentField.innerHTML.substr(0, 3);
+                    currentField.innerHTML = currentField.innerHTML.
+                        replace(replacedValue, parseInt(i + 1) + ". ")
+                }
+            }
+
+            function onHide(e) {
+                e.preventDefault();
+                for (var i = 0; i < fields.children.length; i++) {
+                    var currentField = fields.children[i];
+                    if (currentField.firstElementChild && currentField.firstElementChild.checked) {
+                        currentField.style.display = "none";
+                    }
+                }
+            }
+
+            function onShow(e) {
+                e.preventDefault();
+                for (var i = 0; i < fields.children.length; i++) {
+                    var currentField = fields.children[i];
+                    if (currentField.style.display == "none") {
+                        currentField.style.display = "block";
+                    }
+                }
+            }
+
+            // Best in Chrome
+            var menu = document.getElementById("menu");
+            var fields = document.getElementById("fields");
+            var input = document.getElementById("input");
+            var addButton = document.getElementById("add").addEventListener("click", onAdd, false);
+            var deleteButton = document.getElementById("delete").addEventListener("click", onDelete, false);
+            var hideButton = document.getElementById("hide").addEventListener("click", onHide, false);
+            var showButton = document.getElementById("show").addEventListener("click", onShow, false);
+
+            var counter = 1;
+        </script>
+    </div>
+</body>
+</html>

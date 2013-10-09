@@ -1,0 +1,10 @@
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\4. KaspichanNumbers\bin\_4.KaspichanNumbers.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\4. KaspichanNumbers\bin\_4.KaspichanNumbers.pdb
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\4. KaspichanNumbers\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\4. KaspichanNumbers\obj\Debug\_4.KaspichanNumbers.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\4. KaspichanNumbers\obj\Debug\_4.KaspichanNumbers.pdb
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\4. KaspichanNumbers\bin\_4.KaspichanNumbers.dll
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\4. KaspichanNumbers\bin\_4.KaspichanNumbers.pdb
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\4. KaspichanNumbers\obj\Debug\ResolveAssemblyReference.cache
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\4. KaspichanNumbers\obj\Debug\_4.KaspichanNumbers.dll
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\4. KaspichanNumbers\obj\Debug\_4.KaspichanNumbers.pdb

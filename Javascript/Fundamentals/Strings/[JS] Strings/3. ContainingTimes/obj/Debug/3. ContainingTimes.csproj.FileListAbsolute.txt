@@ -1,0 +1,5 @@
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\3. ContainingTimes\bin\_3.ContainingTimes.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\3. ContainingTimes\bin\_3.ContainingTimes.pdb
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\3. ContainingTimes\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\3. ContainingTimes\obj\Debug\_3.ContainingTimes.dll
+C:\Documents and Settings\Rami\my documents\visual studio 2010\Homework\[JS] Strings\3. ContainingTimes\obj\Debug\_3.ContainingTimes.pdb

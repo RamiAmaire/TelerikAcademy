@@ -1,0 +1,10 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\1. GreedyDwarfs\bin\_1.GreedyDwarfs.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\1. GreedyDwarfs\bin\_1.GreedyDwarfs.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\1. GreedyDwarfs\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\1. GreedyDwarfs\obj\Debug\_1.GreedyDwarfs.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\[JS] ExamPreparation\1. GreedyDwarfs\obj\Debug\_1.GreedyDwarfs.pdb
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\1. GreedyDwarfs\bin\_1.GreedyDwarfs.dll
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\1. GreedyDwarfs\bin\_1.GreedyDwarfs.pdb
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\1. GreedyDwarfs\obj\Debug\ResolveAssemblyReference.cache
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\1. GreedyDwarfs\obj\Debug\_1.GreedyDwarfs.dll
+D:\Telerik\JS\JS PartOne\Exam Preparation\[JS] ExamPreparation\1. GreedyDwarfs\obj\Debug\_1.GreedyDwarfs.pdb

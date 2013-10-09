@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\5. ThirdBit0Or1\bin\_5.ThirdBit0Or1.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\5. ThirdBit0Or1\bin\_5.ThirdBit0Or1.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\5. ThirdBit0Or1\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\5. ThirdBit0Or1\obj\Debug\_5.ThirdBit0Or1.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\5. ThirdBit0Or1\obj\Debug\_5.ThirdBit0Or1.pdb

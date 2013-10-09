@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM module</title>
+</head>
+<body>
+    <div id="wrapper">
+    </div>
+    <script>
+        function showClicked() {
+            alert("clicked");
+        }
+
+        var domModule = (function () {
+            var buffer = [];
+            var BUFFER_MAX_LENGTH = 100;
+
+            function createChild(childSelector) {
+                var child = document.createElement(childSelector);
+                return child;
+            }
+
+            function appendChild(childSelector, parentSelector) {
+                var parent = document.querySelector(parentSelector);
+                if (typeof childSelector == "object") {
+                    parent.appendChild(childSelector);
+                }
+                else {
+                    var child = createChild(childSelector);
+                    parent.appendChild(child);
+                }
+            }
+
+            function removeChild(parentSelector, childSelector) {
+                if (typeof childSelector == "object") {
+                    var child = document.querySelector(childSelector);
+                    child.parentNode.removeChild(child);
+                }
+                else {
+                    var children = document.querySelectorAll(parentSelector + " " + childSelector);
+                    for (var i = 0; i < children.length; i++) {
+                        var child = children[i];
+                        child.parentElement.removeChild(child);
+                    }
+                }
+            }
+
+            function attachEvent(selector, event, action) {
+                var elements = document.querySelectorAll(selector);
+
+                for (var i = 0; i < elements.length; i++) {
+                    var element = elements[i];
+                    element.addEventListener("on" + event, action());
+                }
+            }
+
+            function appendToBuffer(parentSelector, childSelector) {
+                if (!buffer[parentSelector]) {
+                    buffer[parentSelector] = document.createDocumentFragment();
+                }
+
+                if (typeof childSelector == "object") {
+                    buffer[parentSelector].appendChild(childSelector);
+                }
+                else {
+                    var child = createChild(childSelector);
+                    buffer[parentSelector].appendChild(child);
+                }
+
+                if (buffer[parentSelector].childNodes.length == BUFFER_MAX_LENGTH) {
+                    var parent = document.querySelector(parentSelector);
+                    parent.appendChild(buffer[parentSelector]);
+                }
+            }
+
+            return {
+                appendChild: appendChild,
+                removeChild: removeChild,
+                attachEvent: attachEvent,
+                appendToBuffer: appendToBuffer
+            }
+        }());
+        
+        domModule.appendChild("div", "#wrapper");
+        //domModule.removeChild("#wrapper", "div");
+        //domModule.attachEvent("div", "click", showClicked);
+        domModule.appendToBuffer("#wrapper", "div");
+        domModule.appendToBuffer("#wrapper", "ul");
+    </script>
+</body>
+</html>

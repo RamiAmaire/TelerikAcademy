@@ -1,0 +1,5 @@
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\GoogleYoutube\bin\GoogleYoutube.dll
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\GoogleYoutube\bin\GoogleYoutube.pdb
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\GoogleYoutube\obj\Debug\GoogleYoutube.csprojResolveAssemblyReference.cache
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\GoogleYoutube\obj\Debug\GoogleYoutube.dll
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\GoogleYoutube\obj\Debug\GoogleYoutube.pdb

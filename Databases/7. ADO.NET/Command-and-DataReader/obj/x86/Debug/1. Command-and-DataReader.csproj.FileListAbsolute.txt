@@ -1,0 +1,7 @@
+D:\Telerik\DataBases\7. ADO.NET\Command-and-DataReader\bin\Debug\_2._7.Data_Access_with_ADO.NET.exe
+D:\Telerik\DataBases\7. ADO.NET\Command-and-DataReader\bin\Debug\_2._7.Data_Access_with_ADO.NET.pdb
+D:\Telerik\DataBases\7. ADO.NET\Command-and-DataReader\obj\x86\Debug\1. Command-and-DataReader.csprojResolveAssemblyReference.cache
+D:\Telerik\DataBases\7. ADO.NET\Command-and-DataReader\obj\x86\Debug\_2._7.Data_Access_with_ADO.NET.exe
+D:\Telerik\DataBases\7. ADO.NET\Command-and-DataReader\obj\x86\Debug\_2._7.Data_Access_with_ADO.NET.pdb
+D:\DataBases\7. ADO.NET\Command-and-DataReader\obj\x86\Debug\_2._7.Data_Access_with_ADO.NET.exe
+D:\DataBases\7. ADO.NET\Command-and-DataReader\obj\x86\Debug\_2._7.Data_Access_with_ADO.NET.pdb

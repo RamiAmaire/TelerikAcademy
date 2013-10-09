@@ -1,0 +1,4 @@
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] OOP\3. ImageSlider\bin\_3.ImageSlider.dll
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] OOP\3. ImageSlider\bin\_3.ImageSlider.pdb
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] OOP\3. ImageSlider\obj\Debug\_3.ImageSlider.dll
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] OOP\3. ImageSlider\obj\Debug\_3.ImageSlider.pdb

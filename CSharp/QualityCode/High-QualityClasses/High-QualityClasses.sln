@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Abstraction", "1. Abstraction\1. Abstraction.csproj", "{170A020E-EFA9-485E-806C-B3269496E922}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. CohesionAndCoupling", "2. CohesionAndCoupling\2. CohesionAndCoupling.csproj", "{D71BE65E-FC9E-474F-9E5B-DD1DFE02183D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. InheritanceAndPolymorphism", "3. InheritanceAndPolymorphism\3. InheritanceAndPolymorphism.csproj", "{3D5DA752-D51B-4678-906D-A0CF0EA3F294}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ramiamaire.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 1.\u0020Abstraction\\1.\u0020Abstraction.csproj
+		SccProjectName1 = 1.\u0020Abstraction
+		SccLocalPath1 = 1.\u0020Abstraction
+		SccProjectUniqueName2 = 2.\u0020CohesionAndCoupling\\2.\u0020CohesionAndCoupling.csproj
+		SccProjectName2 = 2.\u0020CohesionAndCoupling
+		SccLocalPath2 = 2.\u0020CohesionAndCoupling
+		SccProjectUniqueName3 = 3.\u0020InheritanceAndPolymorphism\\3.\u0020InheritanceAndPolymorphism.csproj
+		SccProjectName3 = 3.\u0020InheritanceAndPolymorphism
+		SccLocalPath3 = 3.\u0020InheritanceAndPolymorphism
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{170A020E-EFA9-485E-806C-B3269496E922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{170A020E-EFA9-485E-806C-B3269496E922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{170A020E-EFA9-485E-806C-B3269496E922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{170A020E-EFA9-485E-806C-B3269496E922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D71BE65E-FC9E-474F-9E5B-DD1DFE02183D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D71BE65E-FC9E-474F-9E5B-DD1DFE02183D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D71BE65E-FC9E-474F-9E5B-DD1DFE02183D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D71BE65E-FC9E-474F-9E5B-DD1DFE02183D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D5DA752-D51B-4678-906D-A0CF0EA3F294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5DA752-D51B-4678-906D-A0CF0EA3F294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D5DA752-D51B-4678-906D-A0CF0EA3F294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D5DA752-D51B-4678-906D-A0CF0EA3F294}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

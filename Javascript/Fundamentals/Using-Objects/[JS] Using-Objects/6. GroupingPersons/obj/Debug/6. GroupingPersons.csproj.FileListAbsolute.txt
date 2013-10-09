@@ -1,0 +1,5 @@
+C:\Documents and Settings\Rami\My Documents\Visual Studio 2010\Homework\[JS] Using-Objects\6. GroupingPersons\bin\_6.GroupingPersons.dll
+C:\Documents and Settings\Rami\My Documents\Visual Studio 2010\Homework\[JS] Using-Objects\6. GroupingPersons\bin\_6.GroupingPersons.pdb
+C:\Documents and Settings\Rami\My Documents\Visual Studio 2010\Homework\[JS] Using-Objects\6. GroupingPersons\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rami\My Documents\Visual Studio 2010\Homework\[JS] Using-Objects\6. GroupingPersons\obj\Debug\_6.GroupingPersons.dll
+C:\Documents and Settings\Rami\My Documents\Visual Studio 2010\Homework\[JS] Using-Objects\6. GroupingPersons\obj\Debug\_6.GroupingPersons.pdb

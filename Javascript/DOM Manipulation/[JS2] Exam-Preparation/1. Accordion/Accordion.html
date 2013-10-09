@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Accordion</title>
+</head>
+<body>
+    <div id="accordion">
+    </div>
+    <div id="accordion1">
+    </div>
+    <script>
+        (function () {
+            if (!Storage.prototype.setObject) {
+                Storage.prototype.setObject = function (key, obj) {
+                    this.setItem(key, JSON.stringify(obj));
+                }
+            }
+
+            if (!Storage.prototype.getObject) {
+                Storage.prototype.getObject = function (key) {
+                    return JSON.parse(this.getItem(key));
+                }
+            }
+        }());
+
+        var controls = (function (selector) {
+            function Accordion(selector) {
+                var accordion = document.querySelector(selector);
+                accordion.addEventListener('click', function (ev) {
+                    function setDisplay(item, displayType) {
+                        for (var i = 0; i < item.children.length; i++) {
+                            var child = item.children[i];
+                            if (!(child instanceof HTMLAnchorElement)) {
+                                child.style.display = displayType;
+                                for (var j = 0; j < child.children.length; j++) {
+                                    var subChild = child.children[j];
+                                    subChild.style.display = displayType;
+                                }
+                            }
+                        }
+                    }
+
+                    function hideSiblings(item) {
+                        var nextSib = item.nextElementSibling;
+                        while (nextSib) {
+                            if (nextSib.clicked) {
+                                for (var i = 0; i < nextSib.children.length; i++) {
+                                    var child = nextSib.children[i];
+                                    if (!(child instanceof HTMLAnchorElement)) {
+                                        child.style.display = "none";
+                                    }
+                                }
+
+                                nextSib.clicked = false;
+                            }
+                            
+                            nextSib = nextSib.nextElementSibling;
+                        }
+
+                        var prevSib = item.previousElementSibling;
+                        while (prevSib) {
+                            if (prevSib.clicked) {
+                                for (var i = 0; i < prevSib.children.length; i++) {
+                                    var child = prevSib.children[i];
+                                    if (!(child instanceof HTMLAnchorElement)) {
+                                        child.style.display = "none";
+                                    }
+                                }
+
+                                prevSib.clicked = false;
+                            }
+                            
+                            prevSib = prevSib.previousElementSibling;
+                        }
+                    }
+
+                    var item = ev.target.parentNode;
+                    if (!item.clicked) {
+                        setDisplay(item, "");
+                        item.clicked = true;
+                        hideSiblings(item);
+                    }
+                    else {
+                        setDisplay(item, "none");
+                        item.clicked = false;
+                    }
+                }, false)
+                var menuItems = [];
+
+                this.add = function (title) {
+                    var menuItem = new Item(title);
+                    menuItem.style.display = "";
+                    menuItems.push(menuItem);
+                    return menuItem;
+                }
+
+                this.render = function () {
+                    if (menuItems.length > 0) {
+                        var menuList = document.createElement("ul");
+                        for (var i = 0; i < menuItems.length; i++) {
+                            var menuItem = menuItems[i];
+                            menuItem.render();
+                            menuList.appendChild(menuItem);
+                        }
+
+                        accordion.appendChild(menuList);
+                    }
+                }
+
+                this.serialize = function () {
+                    var serializedItems = [];
+                    for (var i = 0; i < menuItems.length; i++) {
+                        var serItem = {
+                        };
+
+                        var menuItem = menuItems[i];
+                        serItem.title = menuItem.title;
+                        serItem.items = menuItem.serialize();
+
+                        serializedItems.push(serItem);
+                    }
+
+                    return serializedItems;
+                }
+
+                return this;
+            }
+
+            function Item(title) {
+                var item = document.createElement("li");
+                item.innerHTML = "<a href='#' />" + title;
+                item.title = title;
+                item.clicked = false;
+                item.style.display = "none";
+                var subItems = [];
+
+                item.add = function (title) {
+                    var subItem = new Item(title);
+                    subItems.push(subItem);
+                    return subItem;
+                }
+
+                item.render = function () {
+                    if (subItems.length > 0) {
+                        var subItemsList = document.createElement("ul");
+                        for (var i = 0; i < subItems.length; i++) {
+                            var subItem = subItems[i];
+                            subItem.render();
+                            subItemsList.appendChild(subItem);
+                        }
+
+                        item.appendChild(subItemsList);
+                    }
+                }
+
+                item.serialize = function () {
+                    var serializedItems = [];
+                    for (var i = 0; i < subItems.length; i++) {
+                        var serItem = {
+                        };
+                        var subItem = subItems[i];
+                        serItem.title = subItem.title;
+                        serItem.items = subItem.serialize();
+                        serializedItems.push(serItem);
+                    }
+
+                    return serializedItems;
+                }
+
+                return item;
+            }
+
+            function addItem(item, dataItem) {
+                var accItem = item.add(dataItem.title);
+                if (dataItem.items) {
+                    for (var i = 0; i < dataItem.items.length; i++) {
+                        addItem(accItem, dataItem.items[i]);
+                    }
+                }
+            }
+
+            return {
+                getAccordion: function (selector) {
+                    return new Accordion(selector);
+                },
+                getDeserializedAccordion: function (selector, data) {
+                    var accordion = this.getAccordion(selector);
+                    if (data) {
+                        for (var i = 0; i < data.length; i++) {
+                            addItem(accordion, data[i]);
+                        }
+                    }
+
+                    return accordion;
+                }
+            }
+        }());
+
+        var accordion = controls.getAccordion("#accordion");
+        var webItem = accordion.add("Web");
+        webItem.add("HTML");
+        webItem.add("CSS");
+        webItem.add("JavaScript");
+        webItem.add("jQuery");
+        var mvc = webItem.add("ASP.NET MVC");
+        webItem.add("PHP");
+        mvc.add("JS");
+        mvc.add("C#");
+        accordion.add("Desktop");
+        accordion.add("Mobile");
+        var embedded = accordion.add("Embedded");
+        var cpu = embedded.add("CPU");
+        cpu.add("Intel");
+        cpu.add("AMD");
+        var mb = embedded.add("MB");
+        mb.add("Asus");
+        mb.add("MSI");
+        accordion.render();
+        var serialized = accordion.serialize();
+        localStorage.setObject("acc", serialized);
+
+        var deserialized = localStorage.getObject("acc");
+        var acc = controls.getDeserializedAccordion("#accordion1", deserialized);
+        acc.render();
+    </script>
+</body>
+</html>

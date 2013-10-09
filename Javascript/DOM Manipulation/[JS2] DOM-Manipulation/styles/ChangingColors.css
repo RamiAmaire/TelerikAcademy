@@ -1,0 +1,52 @@
+﻿body {
+}
+
+#wrapper {
+    width:320px;
+    height:370px;
+    border-radius:15px;
+    background-image:-webkit-linear-gradient(top,  #083876 0%, #039ED1 100%)
+}
+
+#wrapper div {
+    color:white;
+    font-weight:bold;
+    font-family:Calibri;
+    font-size:20px;
+    text-align:start;
+    padding-left:10px;
+}
+
+.buttons button {
+    margin-top:30px;
+    height:50px;
+    border-radius:25px;
+    background-image:-webkit-linear-gradient(top,  #23A422 0%, #82EA11 100%);
+    color:white;
+    font-weight:bold;
+    font-family:Calibri;
+    font-size:17px;
+}
+
+input {
+    height:25px;
+    width:25px;
+    margin-top:10px;
+    background-image:-webkit-linear-gradient(top,  #DBE3F9 0%, #284492 100%)
+}
+
+#text-area {
+    margin-top:20px;
+}
+
+textarea {
+    margin-top:10px;
+    display:block;
+    height:150px;
+    width:250px;
+    border-radius:15px;
+    border:3px solid black;
+    font-family:Calibri;
+    font-size:17px;
+    text-align:left;
+}

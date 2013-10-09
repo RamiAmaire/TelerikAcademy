@@ -1,0 +1,5 @@
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\OnlineMapTourism\bin\OnlineMapTourism.dll
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\OnlineMapTourism\bin\OnlineMapTourism.pdb
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\OnlineMapTourism\obj\Debug\OnlineMapTourism.csprojResolveAssemblyReference.cache
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\OnlineMapTourism\obj\Debug\OnlineMapTourism.dll
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] Third-Party-APIs\OnlineMapTourism\obj\Debug\OnlineMapTourism.pdb

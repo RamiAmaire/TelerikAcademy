@@ -1,0 +1,16 @@
+﻿var GameEndsHandler = Class.create({
+    init: function () {
+        var popUp = $("<div></div>").attr("id", "user-menu-popup");
+        var startGameButton = $("<button></button>").attr("id", "start-game-button").
+            html("Start new game").appendTo(popUp);
+        var shareButton = $("<button></button>").attr("id", "share-button").
+            html("Share your score").appendTo(popUp);
+
+        popUp.bPopup({
+            easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 450,
+            transition: 'slideDown',
+            position: 'absolute'
+        });
+    }
+});

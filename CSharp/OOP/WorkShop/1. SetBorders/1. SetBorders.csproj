@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{805AE840-4E31-494A-9C44-2A9A308CD107}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_1.SetBorders</RootNamespace>
+    <AssemblyName>_1.SetBorders</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcademyPopcorn\Ball.cs" />
+    <Compile Include="AcademyPopcorn\Block.cs" />
+    <Compile Include="AcademyPopcorn\Bullet.cs" />
+    <Compile Include="AcademyPopcorn\CollisionData.cs" />
+    <Compile Include="AcademyPopcorn\CollisionDispatcher.cs" />
+    <Compile Include="AcademyPopcorn\ConsoleInterface.cs" />
+    <Compile Include="AcademyPopcorn\ConsoleRenderer.cs" />
+    <Compile Include="AcademyPopcorn\Engine.cs" />
+    <Compile Include="AcademyPopcorn\ExplodingBlock.cs" />
+    <Compile Include="AcademyPopcorn\ExplodingMissile.cs" />
+    <Compile Include="AcademyPopcorn\GameObject.cs" />
+    <Compile Include="AcademyPopcorn\Gift.cs" />
+    <Compile Include="AcademyPopcorn\ICollidable.cs" />
+    <Compile Include="AcademyPopcorn\IndestructibleBlock.cs" />
+    <Compile Include="AcademyPopcorn\IObjectProducer.cs" />
+    <Compile Include="AcademyPopcorn\IRenderable.cs" />
+    <Compile Include="AcademyPopcorn\IRenderer.cs" />
+    <Compile Include="AcademyPopcorn\IUserInterface.cs" />
+    <Compile Include="AcademyPopcorn\KeyboardInterface.cs" />
+    <Compile Include="AcademyPopcorn\MatrixCoords.cs" />
+    <Compile Include="AcademyPopcorn\MeteoriteBall.cs" />
+    <Compile Include="AcademyPopcorn\MovingObject.cs" />
+    <Compile Include="AcademyPopcorn\ShootEngine.cs" />
+    <Compile Include="AcademyPopcorn\Racket.cs" />
+    <Compile Include="AcademyPopcornMain.cs" />
+    <Compile Include="AcademyPopcorn\ShootingRacket.cs" />
+    <Compile Include="AcademyPopcorn\TrailObject.cs" />
+    <Compile Include="AcademyPopcorn\UnpassableBlock.cs" />
+    <Compile Include="AcademyPopcorn\UnstoppableBall.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="AcademyPopcorn\PopcornDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

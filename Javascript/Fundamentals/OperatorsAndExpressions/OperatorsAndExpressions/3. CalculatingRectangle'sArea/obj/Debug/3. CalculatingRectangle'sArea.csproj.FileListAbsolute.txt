@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\3. CalculatingRectangle'sArea\bin\_3.CalculatingRectangle_sArea.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\3. CalculatingRectangle'sArea\bin\_3.CalculatingRectangle_sArea.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\3. CalculatingRectangle'sArea\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\3. CalculatingRectangle'sArea\obj\Debug\_3.CalculatingRectangle_sArea.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\OperatorsAndExpressions\3. CalculatingRectangle'sArea\obj\Debug\_3.CalculatingRectangle_sArea.pdb

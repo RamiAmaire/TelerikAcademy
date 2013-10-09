@@ -1,0 +1,32 @@
+Extending User - 1:20:00 http://www.youtube.com/watch?v=w8GD-QIusKk
+EF partials and validation - http://msdn.microsoft.com/en-us/library/cc488527.aspx
+http://www.asp.net/web-forms/tutorials/data-access/model-binding/retrieving-data
+http://stackoverflow.com/questions/15608470/n-asp-net-4-5-selectmethod-is-not-able-to-bind-data-to-grid-view-on-button-clic
+Lazy vs eager loading - http://www.asp.net/mvc/tutorials/getting-started-with-ef-using-mvc/reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application
+Install-Package EntityFramework -Pre
+
+<div class="ValdiationSummary">
+   <asp:ValidationSummary  ShowModelStateErrors="true" runat="server" />
+</div>
+
+.ValdiationSummary {
+    font-size:20px;
+    color:red;
+}
+
+Use EventSystem
+Go
+Delete from UsersEvents
+Go
+Delete from Event
+Go
+Delete from AspNetRoles
+Go
+Delete from AspNetUserRoles
+Go
+Delete from AspNetUsers
+Go
+Delete from AspNetUserLogins
+Go
+delete from AspNetUserManagement
+go

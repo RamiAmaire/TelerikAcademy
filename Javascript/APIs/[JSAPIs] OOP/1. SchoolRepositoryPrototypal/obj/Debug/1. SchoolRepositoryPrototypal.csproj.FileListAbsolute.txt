@@ -1,0 +1,5 @@
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] OOP\1. SchoolRepositoryPrototypal\bin\_1.SchoolRepositoryPrototypal.dll
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] OOP\1. SchoolRepositoryPrototypal\bin\_1.SchoolRepositoryPrototypal.pdb
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] OOP\1. SchoolRepositoryPrototypal\obj\Debug\1. SchoolRepositoryPrototypal.csprojResolveAssemblyReference.cache
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] OOP\1. SchoolRepositoryPrototypal\obj\Debug\_1.SchoolRepositoryPrototypal.dll
+C:\Users\Ramii\documents\visual studio 2012\Projects\[JSAPIs] OOP\1. SchoolRepositoryPrototypal\obj\Debug\_1.SchoolRepositoryPrototypal.pdb

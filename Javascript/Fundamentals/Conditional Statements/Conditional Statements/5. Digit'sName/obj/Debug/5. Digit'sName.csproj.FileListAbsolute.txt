@@ -1,0 +1,5 @@
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\5. Digit'sName\bin\_5.Digit_sName.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\5. Digit'sName\bin\_5.Digit_sName.pdb
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\5. Digit'sName\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\5. Digit'sName\obj\Debug\_5.Digit_sName.dll
+c:\documents and settings\rami\my documents\visual studio 2010\Homework\Conditional Statements\5. Digit'sName\obj\Debug\_5.Digit_sName.pdb

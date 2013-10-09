@@ -1,0 +1,6 @@
+C:\Users\Rami\Desktop\ASP.NET - Web Forms\5. ASP.NET-Data-Binding-and-Data-Controls\Demos\Data-Binding-Simple-Example\bin\Data-Binding-Simple-Example.dll.config
+C:\Users\Rami\Desktop\ASP.NET - Web Forms\5. ASP.NET-Data-Binding-and-Data-Controls\Demos\Data-Binding-Simple-Example\bin\Data-Binding-Simple-Example.dll
+C:\Users\Rami\Desktop\ASP.NET - Web Forms\5. ASP.NET-Data-Binding-and-Data-Controls\Demos\Data-Binding-Simple-Example\bin\Data-Binding-Simple-Example.pdb
+C:\Users\Rami\Desktop\ASP.NET - Web Forms\5. ASP.NET-Data-Binding-and-Data-Controls\Demos\Data-Binding-Simple-Example\obj\Debug\1. Data-Binding-Simple-Example.csprojResolveAssemblyReference.cache
+C:\Users\Rami\Desktop\ASP.NET - Web Forms\5. ASP.NET-Data-Binding-and-Data-Controls\Demos\Data-Binding-Simple-Example\obj\Debug\Data-Binding-Simple-Example.dll
+C:\Users\Rami\Desktop\ASP.NET - Web Forms\5. ASP.NET-Data-Binding-and-Data-Controls\Demos\Data-Binding-Simple-Example\obj\Debug\Data-Binding-Simple-Example.pdb
