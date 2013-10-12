@@ -28,3 +28,9 @@ C:\Users\Ramii\Desktop\[APIs] Team-Project\BlueberryMinesweeper\BlueberryMineswe
 C:\Users\Ramii\Desktop\[APIs] Team-Project\BlueberryMinesweeper\BlueberryMinesweeper\obj\Debug\BlueberryMinesweeper.csprojResolveAssemblyReference.cache
 C:\Users\Ramii\Desktop\[APIs] Team-Project\BlueberryMinesweeper\BlueberryMinesweeper\obj\Debug\BlueberryMinesweeper.dll
 C:\Users\Ramii\Desktop\[APIs] Team-Project\BlueberryMinesweeper\BlueberryMinesweeper\obj\Debug\BlueberryMinesweeper.pdb
+D:\TelerikAcademy\Javascript\APIs\[JSAPIs]Teamwork\BlueberryMinesweeper\BlueberryMinesweeper\bin\BlueberryMinesweeper.dll.config
+D:\TelerikAcademy\Javascript\APIs\[JSAPIs]Teamwork\BlueberryMinesweeper\BlueberryMinesweeper\bin\BlueberryMinesweeper.dll
+D:\TelerikAcademy\Javascript\APIs\[JSAPIs]Teamwork\BlueberryMinesweeper\BlueberryMinesweeper\bin\BlueberryMinesweeper.pdb
+D:\TelerikAcademy\Javascript\APIs\[JSAPIs]Teamwork\BlueberryMinesweeper\BlueberryMinesweeper\obj\Debug\BlueberryMinesweeper.csprojResolveAssemblyReference.cache
+D:\TelerikAcademy\Javascript\APIs\[JSAPIs]Teamwork\BlueberryMinesweeper\BlueberryMinesweeper\obj\Debug\BlueberryMinesweeper.dll
+D:\TelerikAcademy\Javascript\APIs\[JSAPIs]Teamwork\BlueberryMinesweeper\BlueberryMinesweeper\obj\Debug\BlueberryMinesweeper.pdb

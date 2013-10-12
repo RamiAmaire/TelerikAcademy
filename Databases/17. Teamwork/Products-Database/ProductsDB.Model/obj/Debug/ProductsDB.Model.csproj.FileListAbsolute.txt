@@ -1,0 +1,5 @@
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Model\bin\Debug\ProductsDB.Model.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Model\bin\Debug\ProductsDB.Model.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Model\obj\Debug\ProductsDB.Model.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Model\obj\Debug\ProductsDB.Model.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Model\obj\Debug\ProductsDB.Model.csprojResolveAssemblyReference.cache

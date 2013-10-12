@@ -1,0 +1,8 @@
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDBMySQL.Data\bin\Debug\ProductsDBMySQL.Data.dll.config
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDBMySQL.Data\bin\Debug\ProductsDBMySQL.Data.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDBMySQL.Data\bin\Debug\ProductsDBMySQL.Data.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDBMySQL.Data\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDBMySQL.Data\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDBMySQL.Data\obj\Debug\ProductsDBMySQL.Data.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDBMySQL.Data\obj\Debug\ProductsDBMySQL.Data.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDBMySQL.Data\obj\Debug\ProductsDBMySQL.Data.csprojResolveAssemblyReference.cache

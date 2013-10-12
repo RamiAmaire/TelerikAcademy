@@ -1,0 +1,340 @@
+{"ProductId":1,"ProductName":"Beer \"Zagorka  normal\"","VendorName":"Zagorka Corp.","TotalQuantitySold":5384,"TotalIncome":158258.24}
+{"ProductId":2,"ProductName":"Beer \"Zagorka  special\"","VendorName":"Zagorka Corp.","TotalQuantitySold":1152,"TotalIncome":263520.80}
+{"ProductId":3,"ProductName":"Beer \"Zagorka  fusion\"","VendorName":"Zagorka Corp.","TotalQuantitySold":1888,"TotalIncome":43845.60}
+{"ProductId":4,"ProductName":"Beer \"Zagorka kenche\"","VendorName":"Zagorka Corp.","TotalQuantitySold":376,"TotalIncome":22154.40}
+{"ProductId":5,"ProductName":"Chocolate \"Milka normal\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":6,"ProductName":"Chocolate \"Milka banana\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":7,"ProductName":"Chocolate \"Milka white\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":8,"ProductName":"Chocolate \"Milka black\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":9,"ProductName":"Chocolate \"Milka exclusive\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":10,"ProductName":"Chocolate \"Milka strawberry\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":11,"ProductName":"Chocolate \"Milka almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":12,"ProductName":"Chocolate \"Milka garlic\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":13,"ProductName":"Chocolate \"Milka for kids\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":14,"ProductName":"Waffle\"Mura standart\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":15,"ProductName":"Waffle\"Mura sandwich\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":16,"ProductName":"Waffle\"Mura almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":17,"ProductName":"Waffle\"Kit kat\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":18,"ProductName":"Waffle\"Morena\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":19,"ProductName":"Wine \"Cardoney\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":20,"ProductName":"Wine \"GrapeBrandy\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":21,"ProductName":"Rakiq \"Muscart Brandy1\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":22,"ProductName":"Rakiq \"Muscart Brandy2\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":23,"ProductName":"Rakiq \"Muscart Brandy3\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":24,"ProductName":"Rakiq \"Muscart Brandy4\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":25,"ProductName":"Waffle\"Mura standart1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":26,"ProductName":"Waffle\"Mura standart2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":27,"ProductName":"Waffle\"Mura standart3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":28,"ProductName":"Beer \"Zagorka  fusion1\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":29,"ProductName":"Beer \"Zagorka  fusion2\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":30,"ProductName":"Beer \"Zagorka  fusion3\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":31,"ProductName":"Chocolate \"Milka banana1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":32,"ProductName":"Chocolate \"Milka banana2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":33,"ProductName":"Chocolate \"Milka banana3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":34,"ProductName":"Chocolate \"Milka banana4\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":35,"ProductName":"Beer \"Zagorka  normal\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":36,"ProductName":"Beer \"Zagorka  special\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":37,"ProductName":"Beer \"Zagorka  fusion\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":38,"ProductName":"Beer \"Zagorka kenche\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":39,"ProductName":"Chocolate \"Milka normal\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":40,"ProductName":"Chocolate \"Milka banana\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":41,"ProductName":"Chocolate \"Milka white\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":42,"ProductName":"Chocolate \"Milka black\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":43,"ProductName":"Chocolate \"Milka exclusive\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":44,"ProductName":"Chocolate \"Milka strawberry\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":45,"ProductName":"Chocolate \"Milka almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":46,"ProductName":"Chocolate \"Milka garlic\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":47,"ProductName":"Chocolate \"Milka for kids\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":48,"ProductName":"Waffle\"Mura standart\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":49,"ProductName":"Waffle\"Mura sandwich\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":50,"ProductName":"Waffle\"Mura almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":51,"ProductName":"Waffle\"Kit kat\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":52,"ProductName":"Waffle\"Morena\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":53,"ProductName":"Wine \"Cardoney\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":54,"ProductName":"Wine \"GrapeBrandy\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":55,"ProductName":"Rakiq \"Muscart Brandy1\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":56,"ProductName":"Rakiq \"Muscart Brandy2\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":57,"ProductName":"Rakiq \"Muscart Brandy3\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":58,"ProductName":"Rakiq \"Muscart Brandy4\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":59,"ProductName":"Waffle\"Mura standart1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":60,"ProductName":"Waffle\"Mura standart2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":61,"ProductName":"Waffle\"Mura standart3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":62,"ProductName":"Beer \"Zagorka  fusion1\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":63,"ProductName":"Beer \"Zagorka  fusion2\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":64,"ProductName":"Beer \"Zagorka  fusion3\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":65,"ProductName":"Chocolate \"Milka banana1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":66,"ProductName":"Chocolate \"Milka banana2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":67,"ProductName":"Chocolate \"Milka banana3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":68,"ProductName":"Chocolate \"Milka banana4\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":69,"ProductName":"Beer \"Zagorka  normal\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":70,"ProductName":"Beer \"Zagorka  special\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":71,"ProductName":"Beer \"Zagorka  fusion\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":72,"ProductName":"Beer \"Zagorka kenche\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":73,"ProductName":"Chocolate \"Milka normal\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":74,"ProductName":"Chocolate \"Milka banana\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":75,"ProductName":"Chocolate \"Milka white\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":76,"ProductName":"Chocolate \"Milka black\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":77,"ProductName":"Chocolate \"Milka exclusive\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":78,"ProductName":"Chocolate \"Milka strawberry\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":79,"ProductName":"Chocolate \"Milka almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":80,"ProductName":"Chocolate \"Milka garlic\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":81,"ProductName":"Chocolate \"Milka for kids\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":82,"ProductName":"Waffle\"Mura standart\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":83,"ProductName":"Waffle\"Mura sandwich\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":84,"ProductName":"Waffle\"Mura almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":85,"ProductName":"Waffle\"Kit kat\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":86,"ProductName":"Waffle\"Morena\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":87,"ProductName":"Wine \"Cardoney\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":88,"ProductName":"Wine \"GrapeBrandy\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":89,"ProductName":"Rakiq \"Muscart Brandy1\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":90,"ProductName":"Rakiq \"Muscart Brandy2\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":91,"ProductName":"Rakiq \"Muscart Brandy3\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":92,"ProductName":"Rakiq \"Muscart Brandy4\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":93,"ProductName":"Waffle\"Mura standart1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":94,"ProductName":"Waffle\"Mura standart2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":95,"ProductName":"Waffle\"Mura standart3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":96,"ProductName":"Beer \"Zagorka  fusion1\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":97,"ProductName":"Beer \"Zagorka  fusion2\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":98,"ProductName":"Beer \"Zagorka  fusion3\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":99,"ProductName":"Chocolate \"Milka banana1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":100,"ProductName":"Chocolate \"Milka banana2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":101,"ProductName":"Chocolate \"Milka banana3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":102,"ProductName":"Chocolate \"Milka banana4\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":103,"ProductName":"Beer \"Zagorka  normal\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":104,"ProductName":"Beer \"Zagorka  special\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":105,"ProductName":"Beer \"Zagorka  fusion\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":106,"ProductName":"Beer \"Zagorka kenche\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":107,"ProductName":"Chocolate \"Milka normal\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":108,"ProductName":"Chocolate \"Milka banana\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":109,"ProductName":"Chocolate \"Milka white\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":110,"ProductName":"Chocolate \"Milka black\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":111,"ProductName":"Chocolate \"Milka exclusive\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":112,"ProductName":"Chocolate \"Milka strawberry\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":113,"ProductName":"Chocolate \"Milka almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":114,"ProductName":"Chocolate \"Milka garlic\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":115,"ProductName":"Chocolate \"Milka for kids\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":116,"ProductName":"Waffle\"Mura standart\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":117,"ProductName":"Waffle\"Mura sandwich\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":118,"ProductName":"Waffle\"Mura almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":119,"ProductName":"Waffle\"Kit kat\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":120,"ProductName":"Waffle\"Morena\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":121,"ProductName":"Wine \"Cardoney\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":122,"ProductName":"Wine \"GrapeBrandy\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":123,"ProductName":"Rakiq \"Muscart Brandy1\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":124,"ProductName":"Rakiq \"Muscart Brandy2\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":125,"ProductName":"Rakiq \"Muscart Brandy3\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":126,"ProductName":"Rakiq \"Muscart Brandy4\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":127,"ProductName":"Waffle\"Mura standart1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":128,"ProductName":"Waffle\"Mura standart2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":129,"ProductName":"Waffle\"Mura standart3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":130,"ProductName":"Beer \"Zagorka  fusion1\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":131,"ProductName":"Beer \"Zagorka  fusion2\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":132,"ProductName":"Beer \"Zagorka  fusion3\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":133,"ProductName":"Chocolate \"Milka banana1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":134,"ProductName":"Chocolate \"Milka banana2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":135,"ProductName":"Chocolate \"Milka banana3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":136,"ProductName":"Chocolate \"Milka banana4\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":137,"ProductName":"Beer \"Zagorka  normal\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":138,"ProductName":"Beer \"Zagorka  special\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":139,"ProductName":"Beer \"Zagorka  fusion\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":140,"ProductName":"Beer \"Zagorka kenche\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":141,"ProductName":"Chocolate \"Milka normal\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":142,"ProductName":"Chocolate \"Milka banana\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":143,"ProductName":"Chocolate \"Milka white\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":144,"ProductName":"Chocolate \"Milka black\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":145,"ProductName":"Chocolate \"Milka exclusive\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":146,"ProductName":"Chocolate \"Milka strawberry\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":147,"ProductName":"Chocolate \"Milka almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":148,"ProductName":"Chocolate \"Milka garlic\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":149,"ProductName":"Chocolate \"Milka for kids\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":150,"ProductName":"Waffle\"Mura standart\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":151,"ProductName":"Waffle\"Mura sandwich\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":152,"ProductName":"Waffle\"Mura almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":153,"ProductName":"Waffle\"Kit kat\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":154,"ProductName":"Waffle\"Morena\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":155,"ProductName":"Wine \"Cardoney\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":156,"ProductName":"Wine \"GrapeBrandy\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":157,"ProductName":"Rakiq \"Muscart Brandy1\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":158,"ProductName":"Rakiq \"Muscart Brandy2\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":159,"ProductName":"Rakiq \"Muscart Brandy3\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":160,"ProductName":"Rakiq \"Muscart Brandy4\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":161,"ProductName":"Waffle\"Mura standart1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":162,"ProductName":"Waffle\"Mura standart2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":163,"ProductName":"Waffle\"Mura standart3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":164,"ProductName":"Beer \"Zagorka  fusion1\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":165,"ProductName":"Beer \"Zagorka  fusion2\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":166,"ProductName":"Beer \"Zagorka  fusion3\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":167,"ProductName":"Chocolate \"Milka banana1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":168,"ProductName":"Chocolate \"Milka banana2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":169,"ProductName":"Chocolate \"Milka banana3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":170,"ProductName":"Chocolate \"Milka banana4\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":171,"ProductName":"Beer \"Zagorka  normal\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":172,"ProductName":"Beer \"Zagorka  special\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":173,"ProductName":"Beer \"Zagorka  fusion\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":174,"ProductName":"Beer \"Zagorka kenche\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":175,"ProductName":"Chocolate \"Milka normal\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":176,"ProductName":"Chocolate \"Milka banana\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":177,"ProductName":"Chocolate \"Milka white\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":178,"ProductName":"Chocolate \"Milka black\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":179,"ProductName":"Chocolate \"Milka exclusive\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":180,"ProductName":"Chocolate \"Milka strawberry\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":181,"ProductName":"Chocolate \"Milka almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":182,"ProductName":"Chocolate \"Milka garlic\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":183,"ProductName":"Chocolate \"Milka for kids\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":184,"ProductName":"Waffle\"Mura standart\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":185,"ProductName":"Waffle\"Mura sandwich\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":186,"ProductName":"Waffle\"Mura almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":187,"ProductName":"Waffle\"Kit kat\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":188,"ProductName":"Waffle\"Morena\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":189,"ProductName":"Wine \"Cardoney\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":190,"ProductName":"Wine \"GrapeBrandy\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":191,"ProductName":"Rakiq \"Muscart Brandy1\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":192,"ProductName":"Rakiq \"Muscart Brandy2\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":193,"ProductName":"Rakiq \"Muscart Brandy3\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":194,"ProductName":"Rakiq \"Muscart Brandy4\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":195,"ProductName":"Waffle\"Mura standart1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":196,"ProductName":"Waffle\"Mura standart2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":197,"ProductName":"Waffle\"Mura standart3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":198,"ProductName":"Beer \"Zagorka  fusion1\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":199,"ProductName":"Beer \"Zagorka  fusion2\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":200,"ProductName":"Beer \"Zagorka  fusion3\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":201,"ProductName":"Chocolate \"Milka banana1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":202,"ProductName":"Chocolate \"Milka banana2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":203,"ProductName":"Chocolate \"Milka banana3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":204,"ProductName":"Chocolate \"Milka banana4\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":205,"ProductName":"Beer \"Zagorka  normal\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":206,"ProductName":"Beer \"Zagorka  special\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":207,"ProductName":"Beer \"Zagorka  fusion\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":208,"ProductName":"Beer \"Zagorka kenche\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":209,"ProductName":"Chocolate \"Milka normal\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":210,"ProductName":"Chocolate \"Milka banana\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":211,"ProductName":"Chocolate \"Milka white\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":212,"ProductName":"Chocolate \"Milka black\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":213,"ProductName":"Chocolate \"Milka exclusive\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":214,"ProductName":"Chocolate \"Milka strawberry\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":215,"ProductName":"Chocolate \"Milka almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":216,"ProductName":"Chocolate \"Milka garlic\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":217,"ProductName":"Chocolate \"Milka for kids\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":218,"ProductName":"Waffle\"Mura standart\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":219,"ProductName":"Waffle\"Mura sandwich\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":220,"ProductName":"Waffle\"Mura almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":221,"ProductName":"Waffle\"Kit kat\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":222,"ProductName":"Waffle\"Morena\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":223,"ProductName":"Wine \"Cardoney\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":224,"ProductName":"Wine \"GrapeBrandy\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":225,"ProductName":"Rakiq \"Muscart Brandy1\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":226,"ProductName":"Rakiq \"Muscart Brandy2\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":227,"ProductName":"Rakiq \"Muscart Brandy3\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":228,"ProductName":"Rakiq \"Muscart Brandy4\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":229,"ProductName":"Waffle\"Mura standart1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":230,"ProductName":"Waffle\"Mura standart2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":231,"ProductName":"Waffle\"Mura standart3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":232,"ProductName":"Beer \"Zagorka  fusion1\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":233,"ProductName":"Beer \"Zagorka  fusion2\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":234,"ProductName":"Beer \"Zagorka  fusion3\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":235,"ProductName":"Chocolate \"Milka banana1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":236,"ProductName":"Chocolate \"Milka banana2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":237,"ProductName":"Chocolate \"Milka banana3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":238,"ProductName":"Chocolate \"Milka banana4\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":239,"ProductName":"Beer \"Zagorka  normal\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":240,"ProductName":"Beer \"Zagorka  special\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":241,"ProductName":"Beer \"Zagorka  fusion\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":242,"ProductName":"Beer \"Zagorka kenche\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":243,"ProductName":"Chocolate \"Milka normal\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":244,"ProductName":"Chocolate \"Milka banana\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":245,"ProductName":"Chocolate \"Milka white\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":246,"ProductName":"Chocolate \"Milka black\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":247,"ProductName":"Chocolate \"Milka exclusive\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":248,"ProductName":"Chocolate \"Milka strawberry\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":249,"ProductName":"Chocolate \"Milka almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":250,"ProductName":"Chocolate \"Milka garlic\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":251,"ProductName":"Chocolate \"Milka for kids\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":252,"ProductName":"Waffle\"Mura standart\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":253,"ProductName":"Waffle\"Mura sandwich\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":254,"ProductName":"Waffle\"Mura almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":255,"ProductName":"Waffle\"Kit kat\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":256,"ProductName":"Waffle\"Morena\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":257,"ProductName":"Wine \"Cardoney\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":258,"ProductName":"Wine \"GrapeBrandy\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":259,"ProductName":"Rakiq \"Muscart Brandy1\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":260,"ProductName":"Rakiq \"Muscart Brandy2\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":261,"ProductName":"Rakiq \"Muscart Brandy3\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":262,"ProductName":"Rakiq \"Muscart Brandy4\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":263,"ProductName":"Waffle\"Mura standart1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":264,"ProductName":"Waffle\"Mura standart2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":265,"ProductName":"Waffle\"Mura standart3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":266,"ProductName":"Beer \"Zagorka  fusion1\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":267,"ProductName":"Beer \"Zagorka  fusion2\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":268,"ProductName":"Beer \"Zagorka  fusion3\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":269,"ProductName":"Chocolate \"Milka banana1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":270,"ProductName":"Chocolate \"Milka banana2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":271,"ProductName":"Chocolate \"Milka banana3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":272,"ProductName":"Chocolate \"Milka banana4\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":273,"ProductName":"Beer \"Zagorka  normal\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":274,"ProductName":"Beer \"Zagorka  special\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":275,"ProductName":"Beer \"Zagorka  fusion\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":276,"ProductName":"Beer \"Zagorka kenche\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":277,"ProductName":"Chocolate \"Milka normal\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":278,"ProductName":"Chocolate \"Milka banana\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":279,"ProductName":"Chocolate \"Milka white\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":280,"ProductName":"Chocolate \"Milka black\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":281,"ProductName":"Chocolate \"Milka exclusive\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":282,"ProductName":"Chocolate \"Milka strawberry\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":283,"ProductName":"Chocolate \"Milka almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":284,"ProductName":"Chocolate \"Milka garlic\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":285,"ProductName":"Chocolate \"Milka for kids\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":286,"ProductName":"Waffle\"Mura standart\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":287,"ProductName":"Waffle\"Mura sandwich\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":288,"ProductName":"Waffle\"Mura almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":289,"ProductName":"Waffle\"Kit kat\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":290,"ProductName":"Waffle\"Morena\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":291,"ProductName":"Wine \"Cardoney\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":292,"ProductName":"Wine \"GrapeBrandy\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":293,"ProductName":"Rakiq \"Muscart Brandy1\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":294,"ProductName":"Rakiq \"Muscart Brandy2\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":295,"ProductName":"Rakiq \"Muscart Brandy3\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":296,"ProductName":"Rakiq \"Muscart Brandy4\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":297,"ProductName":"Waffle\"Mura standart1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":298,"ProductName":"Waffle\"Mura standart2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":299,"ProductName":"Waffle\"Mura standart3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":300,"ProductName":"Beer \"Zagorka  fusion1\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":301,"ProductName":"Beer \"Zagorka  fusion2\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":302,"ProductName":"Beer \"Zagorka  fusion3\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":303,"ProductName":"Chocolate \"Milka banana1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":304,"ProductName":"Chocolate \"Milka banana2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":305,"ProductName":"Chocolate \"Milka banana3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":306,"ProductName":"Chocolate \"Milka banana4\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":307,"ProductName":"Beer \"Zagorka  normal\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":308,"ProductName":"Beer \"Zagorka  special\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":309,"ProductName":"Beer \"Zagorka  fusion\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":310,"ProductName":"Beer \"Zagorka kenche\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":311,"ProductName":"Chocolate \"Milka normal\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":312,"ProductName":"Chocolate \"Milka banana\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":313,"ProductName":"Chocolate \"Milka white\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":314,"ProductName":"Chocolate \"Milka black\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":315,"ProductName":"Chocolate \"Milka exclusive\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":316,"ProductName":"Chocolate \"Milka strawberry\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":317,"ProductName":"Chocolate \"Milka almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":318,"ProductName":"Chocolate \"Milka garlic\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":319,"ProductName":"Chocolate \"Milka for kids\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":320,"ProductName":"Waffle\"Mura standart\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":321,"ProductName":"Waffle\"Mura sandwich\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":322,"ProductName":"Waffle\"Mura almond\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":323,"ProductName":"Waffle\"Kit kat\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":324,"ProductName":"Waffle\"Morena\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":325,"ProductName":"Wine \"Cardoney\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":326,"ProductName":"Wine \"GrapeBrandy\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":327,"ProductName":"Rakiq \"Muscart Brandy1\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":328,"ProductName":"Rakiq \"Muscart Brandy2\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":329,"ProductName":"Rakiq \"Muscart Brandy3\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":330,"ProductName":"Rakiq \"Muscart Brandy4\"","VendorName":"Targovishte Bottling Company Ltd.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":331,"ProductName":"Waffle\"Mura standart1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":332,"ProductName":"Waffle\"Mura standart2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":333,"ProductName":"Waffle\"Mura standart3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":334,"ProductName":"Beer \"Zagorka  fusion1\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":335,"ProductName":"Beer \"Zagorka  fusion2\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":336,"ProductName":"Beer \"Zagorka  fusion3\"","VendorName":"Zagorka Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":337,"ProductName":"Chocolate \"Milka banana1\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":338,"ProductName":"Chocolate \"Milka banana2\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":339,"ProductName":"Chocolate \"Milka banana3\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}
+{"ProductId":340,"ProductName":"Chocolate \"Milka banana4\"","VendorName":"Nestle Sofia Corp.","TotalQuantitySold":0,"TotalIncome":0}

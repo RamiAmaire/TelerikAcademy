@@ -1,0 +1,10 @@
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Data\bin\Debug\ProductsDB.Data.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Data\bin\Debug\ProductsDB.Data.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Data\obj\Debug\ProductsDB.Data.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Data\obj\Debug\ProductsDB.Data.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Data\bin\Debug\ProductsDB.Data.dll.config
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Data\bin\Debug\EntityFramework.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Data\bin\Debug\EntityFramework.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Data\obj\Debug\ProductsDB.Data.csprojResolveAssemblyReference.cache
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Data\bin\Debug\ProductsDB.Model.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Data\bin\Debug\ProductsDB.Model.pdb

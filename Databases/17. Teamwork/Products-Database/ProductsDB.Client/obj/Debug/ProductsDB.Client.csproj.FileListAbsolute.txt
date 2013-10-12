@@ -1,0 +1,57 @@
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Client.exe.config
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Client.exe
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Client.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\obj\Debug\ProductsDB.Client.exe
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\obj\Debug\ProductsDB.Client.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\ProductsDBMySQL.Data.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\Telerik.OpenAccess.40.Extensions.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\ProductsDBMySQL.Data.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\Telerik.OpenAccess.40.Extensions.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\obj\Debug\ProductsDB.Client.csprojResolveAssemblyReference.cache
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\Ionic.Zip.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\Ionic.Zip.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Model.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Model.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\EntityFramework.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Data.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Data.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\EntityFramework.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\itextsharp.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\MongoDB.Bson.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\MongoDB.Driver.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\MongoDB.Bson.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\Team-Work\ProductsDB.Client\bin\Debug\MongoDB.Driver.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Client.exe.config
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\obj\Debug\ProductsDB.Client.exe
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\obj\Debug\ProductsDB.Client.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\obj\Debug\ProductsDB.Client.csprojResolveAssemblyReference.cache
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Client.exe
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Client.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\EntityFramework.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\Ionic.Zip.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\itextsharp.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\MongoDB.Bson.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\MongoDB.Driver.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Data.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Model.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\ProductsDBMySQL.Data.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\Telerik.OpenAccess.40.Extensions.dll
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Data.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\ProductsDB.Model.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\ProductsDBMySQL.Data.pdb
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\EntityFramework.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\Ionic.Zip.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\MongoDB.Bson.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\MongoDB.Driver.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\Users\Rami\Documents\Visual Studio 2012\Projects\[DB] Team-Work\ProductsDB.Client\bin\Debug\Telerik.OpenAccess.40.Extensions.xml
+D:\TelerikAcademy\Databases\17. Teamwork\Products-Database\ProductsDB.Client\bin\Debug\ProductsDB.Client.exe.config
+D:\TelerikAcademy\Databases\17. Teamwork\Products-Database\ProductsDB.Client\obj\Debug\ProductsDB.Client.exe
+D:\TelerikAcademy\Databases\17. Teamwork\Products-Database\ProductsDB.Client\obj\Debug\ProductsDB.Client.pdb
