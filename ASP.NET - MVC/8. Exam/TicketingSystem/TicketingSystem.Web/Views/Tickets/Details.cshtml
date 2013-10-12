@@ -1,0 +1,90 @@
+﻿@using Microsoft.AspNet.Identity;
+@model TicketingSystem.Web.Models.TicketDetailedViewModel
+@{
+    ViewBag.Title = "Ticketing System";
+}
+<h2>@ViewBag.Title</h2>
+
+<div>
+    <h3>@Model.Title</h3>
+</div>
+<div>
+    <h3>Category: @Model.CategoryName</h3>
+</div>
+
+<div class="row-fluid">
+    <div class="span4">
+        <div>
+            <strong>Author: </strong>@Model.AuthorName
+        </div>
+        <div>
+            <strong>Priority: </strong>@Model.Priority
+        </div>
+    </div>
+    <div class="span4">
+        <div>
+            @if (!string.IsNullOrEmpty(Model.ScreenShotUrl))
+            {
+                <img src="@Model.ScreenShotUrl" />
+            }
+        </div>
+    </div>
+    <div class="span4">
+        <div>
+            @if (!string.IsNullOrEmpty(Model.Description))
+            {
+                <div>
+                    <strong>Description: </strong>
+                    <div>@Model.Description</div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@if (string.IsNullOrEmpty(@Model.ScreenShotUrl))
+{
+    <br />
+    <br />
+    <br />
+}
+
+<div class="row-fluid" id="comments">
+    @foreach (var comment in Model.Comments)
+    {
+        @Html.Partial("_CommentPartial", comment)
+    }
+</div>
+
+<div></div>
+<div class="row-fluid">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <br />
+        <strong>Add comment</strong>
+        
+        using (Ajax.BeginForm("Comment", new { ticketId = Model.Id, authorId = User.Identity.GetUserId() },
+            new AjaxOptions
+            {
+                HttpMethod = "Post",
+                InsertionMode = InsertionMode.InsertAfter,
+                UpdateTargetId = "comments"
+            }))
+        {
+            <textarea name="content" id="content" placeholder="Comment should be atleast 6 characters long."></textarea>
+            @Html.AntiForgeryToken()
+            <div>
+                <input type="submit" value="Submit comment" />
+            </div>
+        }
+    }
+</div>
+
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+@section scripts{
+    <script>
+        function commentPostFailure() {
+            alert("Error");
+        }
+    </script>
+}

@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewBag.Title = "TicketsList";
+}
+
+<h1>@ViewBag.Title</h1>
+
+<div id="search">
+    @using (Html.BeginForm("Search", "Tickets", FormMethod.Post))
+    {
+        <label for="categorySearch">Search By category</label>
+        @(Html.Kendo().DropDownList()
+            .Name("categorySearch")
+            .DataTextField("CategoryName")
+            .DataValueField("Id")
+            .DataSource(source =>
+            {
+                   source.Read(read =>
+                   {
+                       read.Action("GetTicketCategories", "Tickets");
+                   })
+                   .ServerFiltering(true);
+            })
+            .SelectedIndex(0)
+        )
+
+        <br />
+        <br />
+        <div>
+            <input type="submit" value="Search" class="btn" />
+        </div>
+    }
+</div>
+
+<div class="row-fluid" style="background-color: #4D4D4D; color: white; ">
+    <div class="span2">
+        <h3>Title</h3>
+    </div>
+    <div class="span2">
+        <h3>Category</h3>
+    </div>
+    <div class="span2">
+        <h3>Author</h3>
+    </div>
+    <div class="span2">
+        <h3>Priority</h3>
+    </div>
+    <div class="span2">
+        <h3>Details</h3>
+    </div>
+</div>
+
+<div id="tickets">
+    @(Html.Kendo()
+        .ListView<TicketingSystem.Web.Models.TicketListViewModel>()
+        .Name("listViewTickets")
+        .TagName("div")
+        .ClientTemplateId("ticket-template")
+        .DataSource(data =>
+        {
+            data.Model(model => model.Id("Id"));
+            data.Read("ReadTickets", "Tickets");
+            data.ServerOperation(true);
+            data.PageSize(5);
+        })
+        .Pageable()
+        .Editable()
+    )
+</div>
+
+<script id="ticket-template" type="text/x-kendo-template">
+    <div class="row-fluid">
+        <div class="span2">
+            <h4>#: Title #</h4>
+        </div>
+        <div class="span2">
+            <h4>#: CategoryName #</h4>
+        </div>
+        <div class="span2">
+            <h4>#: AuthorName #</h4>
+        </div>
+        <div class="span2">
+            <h4>#: Priority #</h4>
+        </div>
+        <div class="span2">
+            <p><a href="/Tickets/Details/#: Id #" class="btn">More details...</a></p>
+        </div>
+    </div>
+</script>

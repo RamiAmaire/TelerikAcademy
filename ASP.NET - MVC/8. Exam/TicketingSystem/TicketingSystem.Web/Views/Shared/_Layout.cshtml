@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - TicketingSystem</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/kendo")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("TicketingSystem", "Index", "Home", null, new { @class = "brand" })
+                <div class="nav-collapse collapse">
+                    <ul class="nav" id="mainMenu">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li>@Html.ActionLink("Add ticket", "AddTicket", "Tickets")</li>
+                            <li>@Html.ActionLink("View all tickets", "List", "Tickets")</li>
+                        }
+                        @if (User.IsInRole("Admin"))
+                        {
+                            @(Html.Kendo().DropDownList()
+                                .Name("adminDropDownList")
+                                .BindTo(new[] { "Categories", "Comments" })
+                                .OptionLabel("Admin")
+                                .Events(e => e
+                                    .Change("dropdownlist_change")
+                                )
+                            )
+                        }
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - TicketingSystem</p>
+        </footer>
+    </div>
+
+    <script>
+        $("#mainMenu").kendoMenu();
+    </script>
+
+    <script>
+        function dropdownlist_change() {
+            var dropDownVal = $("#adminDropDownList").val();
+            if (dropDownVal != "Admin") {
+                window.location = "/" + dropDownVal + "Administration" + "/Index";
+            }
+        }
+    </script>
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

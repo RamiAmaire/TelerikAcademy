@@ -1,0 +1,46 @@
+﻿@using TicketingSystem.Web.Models
+@{
+    ViewBag.Title = "Categories";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@(Html.Kendo()
+    .Grid<CategoryAdminViewModel>()
+    .Name("gridViewAdminCategories")
+    .Columns(c =>
+    {
+        c.Bound(model => model.Name);
+        c.Command(command =>
+        {
+            command.Edit();
+            command.Destroy();
+        }).Title("Action");
+    })
+    .ToolBar(tool =>
+    {
+        tool.Create();
+    })
+    .DataSource(data =>
+    {
+        data.Ajax()
+            .Model(m => m.Id(c => c.Id))
+            .PageSize(5)
+            .ServerOperation(true)
+            .Read("GetCategories", "CategoriesAdministration")
+            .Update("UpdateCategory", "CategoriesAdministration")
+            .Destroy("DeleteCategory", "CategoriesAdministration")
+            .Create("CreateCategory", "CategoriesAdministration")
+            .Model(m =>
+            {
+                m.Field(c => c.Id).Editable(false);
+            });
+    })
+    .Editable(edit =>
+    {
+        edit.Mode(GridEditMode.InLine);
+    })
+    .Pageable()
+    .Sortable()
+    .Filterable()
+)
