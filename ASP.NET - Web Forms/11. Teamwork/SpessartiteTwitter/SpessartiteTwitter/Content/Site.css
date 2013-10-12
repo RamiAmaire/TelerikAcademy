@@ -1,0 +1,50 @@
+﻿body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.ValdiationSummary {
+    font-size: 20px;
+    color: red;
+}
+
+/* styles for removing the background from form */
+.no-color {
+    background-color: white;
+    border-style: none;
+}
+
+.grid-view-my-tweets table {
+    margin: 0 auto;
+}
+
+.tweet-title {
+    font-size: 17px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.tweet-footer {
+    font-style: italic;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.comment-footer {
+    font-style: italic;
+    margin: 20px;
+    font-weight: bold;
+}
+
+#edit-tweet-container, #edit-comment-container {
+    width: 222px;
+    margin: 0 auto;
+}
+
+.update-progress {
+    display: inline-block;
+}
+
+#error-page-container {
+    margin-top:300px;
+}
